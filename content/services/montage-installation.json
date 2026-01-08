@@ -1,0 +1,83 @@
+{
+    "title": "Montage & Installation",
+    "subline": "Fachgerechte Installation durch erfahrene Elektrofachkräfte",
+    "shortDescription": "Wir bringen Ihre Anlage sicher ans Netz – professionelle Montage und Inbetriebnahme vor Ort.",
+    "icon": "/images/services/installation.png",
+    "heroImage": "/images/services/installation.png",
+    "blocks": [
+        {
+            "discriminant": "featureGrid",
+            "value": {
+                "headline": "Leistungsspektrum",
+                "items": [
+                    {
+                        "title": "Vor-Ort-Montage",
+                        "description": "Einbringung & Aufbau",
+                        "icon": "settings"
+                    },
+                    {
+                        "title": "Inbetriebnahme",
+                        "description": "Funktionsprüfung",
+                        "icon": "zap"
+                    },
+                    {
+                        "title": "Verkabelung",
+                        "description": "Fachgerechter Anschluss",
+                        "icon": "layers"
+                    },
+                    {
+                        "title": "Anschluss & Prüfung",
+                        "description": "Messprotokolle",
+                        "icon": "check"
+                    },
+                    {
+                        "title": "Koordination",
+                        "description": "Schnittstellenmanagement",
+                        "icon": "layout"
+                    }
+                ]
+            }
+        },
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Sicher ans Netz",
+                "text": "Unsere zertifizierten Elektromonteure installieren Ihre Schaltanlagen fachgerecht und termingetreu vor Ort. Von der Anlieferung über die mechanische Montage bis zur elektrischen Inbetriebnahme übernehmen wir alle erforderlichen Arbeiten. Dabei koordinieren wir uns eng mit anderen Gewerken und Ihrem Zeitplan. Jede Installation erfolgt nach gültigen Sicherheitsvorschriften mit Prüfprotokollen und Messberichten. Ob Neubau, Sanierung oder Erweiterung – wir sorgen für einen reibungslosen Ablauf mit minimalen Betriebsunterbrechungen. Nach Abschluss erhalten Sie eine vollständige Dokumentation samt Revisionsunterlagen und Einweisung Ihres Personals in die Anlagenbedienung."
+            }
+        },
+        {
+            "discriminant": "timeline",
+            "value": {
+                "headline": "Projektablauf",
+                "steps": [
+                    {
+                        "title": "Terminplanung",
+                        "description": "Abstimmung der Montagefenster."
+                    },
+                    {
+                        "title": "Lieferung & Anlieferung",
+                        "description": "Sicherer Transport zum Aufstellort."
+                    },
+                    {
+                        "title": "Mechanische Montage",
+                        "description": "Aufbau und Zusammenbau der Felder."
+                    },
+                    {
+                        "title": "Elektrische Installation",
+                        "description": "Anschluss der Kabel und Leitungen."
+                    },
+                    {
+                        "title": "Prüfung & Inbetriebnahme",
+                        "description": "Funktionstests und Messungen."
+                    },
+                    {
+                        "title": "Dokumentation & Übergabe",
+                        "description": "Einweisung und Protokollübergabe."
+                    }
+                ]
+            }
+        }
+    ],
+    "seoTitle": "Montage & Installation von Schaltanlagen | Schaltkraft AG",
+    "seoDescription": "Fachgerechte Montage und Inbetriebnahme Ihrer Schaltanlagen vor Ort. Unsere Experten sorgen für einen sicheren Anschluss."
+}

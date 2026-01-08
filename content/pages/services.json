@@ -1,0 +1,82 @@
+{
+    "title": "services",
+    "seoTitle": "Dienstleistungen - Schaltkraft AG | Komplettlösungen für Schaltanlagen",
+    "seoDescription": "Von der Planung bis zum Service: Wir bieten umfassende Dienstleistungen im Bereich Schaltanlagenbau, Engineering und Automation.",
+    "isHomepage": false,
+    "blocks": [
+        {
+            "discriminant": "hero",
+            "value": {
+                "headline": "Unsere Dienstleistungen",
+                "subheadline": "Komplettlösungen für Ihren Schaltanlagenbau",
+                "image": "/images/services/production.png",
+                "ctaPrimary": {
+                    "text": "Projekt anfragen",
+                    "url": "/kontakt"
+                },
+                "ctaSecondary": {
+                    "text": "Mehr erfahren",
+                    "url": "#overview"
+                }
+            }
+        },
+        {
+            "discriminant": "richText",
+            "value": {
+                "content": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Unsere Kompetenzen im Überblick"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Als führender Anbieter für Schaltanlagen bieten wir Ihnen ein breites Spektrum an technischer Expertise und Branchen-Know-how."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "discriminant": "values",
+            "value": {
+                "items": [
+                    {
+                        "title": "Schweizer Qualität",
+                        "description": "Präzision und Zuverlässigkeit in jeder Anlage.",
+                        "icon": "check"
+                    },
+                    {
+                        "title": "Normgerecht",
+                        "description": "Konformität nach EN 61439 und NIV.",
+                        "icon": "shield"
+                    },
+                    {
+                        "title": "Erfahrenes Team",
+                        "description": "Jahrelange Expertise im Verteilerbau.",
+                        "icon": "users"
+                    },
+                    {
+                        "title": "Schnelle Reaktion",
+                        "description": "Kurze Wege und persönliche Ansprechpartner.",
+                        "icon": "zap"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #F18A5B;
+  --color-surface-warm: #B8AFAE;
+  --color-text-muted: rgba(255, 255, 255, 0.75);
+  --color-border-subtle: rgba(255, 255, 255, 0.18);
+
+  --radius-pill: 9999px;
+  --radius-super: 2rem;
+}
+
+:root {
+  /* Core Colors */
+  --background: #000000;
+  --foreground: #FFFFFF;
+
+  --accent: #F18A5B;
+  --accent-foreground: #FFFFFF;
+
+  --card: #B8AFAE;
+  --card-foreground: #FFFFFF;
+
+  --muted: rgba(255, 255, 255, 0.75);
+  --border: rgba(255, 255, 255, 0.18);
+
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-inter: var(--font-inter);
+  --font-oswald: var(--font-oswald);
+  --font-archivo: var(--font-archivo-black);
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans antialiased;
+    font-family: var(--font-inter);
+    font-size: 1.125rem;
+    /* Increased base size (18px) */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-archivo);
+    @apply font-bold tracking-tight text-white;
+  }
+}
+
+@layer components {
+
+  /* Layout Utilities */
+  .container-page {
+    @apply max-w-[2400px] mx-auto px-6 sm:px-8 lg:px-12;
+    /* Increased width and padding */
+  }
+
+  .section-padding {
+    @apply py-24 lg:py-40;
+    /* Increased vertical spacing */
+  }
+
+  /* Button Tokens */
+  .btn-primary {
+    @apply inline-flex items-center justify-center h-14 px-10 text-lg rounded-full bg-[#F18A5B] text-white font-semibold transition-transform hover:scale-105 active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+    /* Larger button */
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center h-14 px-10 text-lg rounded-full bg-white/10 text-white font-semibold backdrop-blur-sm hover:bg-white/20 transition-colors;
+    /* Larger button */
+  }
+
+  /* Typography */
+  /* Typography */
+  .hero-h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] xl:text-[6.5rem] font-[900] leading-[1.1] uppercase text-white break-words hyphens-auto;
+    /* Responsive Hero Text */
+  }
+
+  .text-brand-orange {
+    color: #F18A5B;
+  }
+
+  /* Manual Service Content Styling */
+  .service-content h2 {
+    font-family: var(--font-archivo);
+    @apply text-4xl lg:text-5xl font-bold uppercase text-white mt-20 mb-10 flex items-center gap-6;
+  }
+
+  .service-content h2::after {
+    content: "";
+    @apply h-[2px] flex-1 bg-zinc-800;
+  }
+
+  .service-content h3 {
+    font-family: var(--font-archivo);
+    @apply text-2xl lg:text-3xl font-bold uppercase text-[#F18A5B] mt-16 mb-6;
+  }
+
+  .service-content p {
+    @apply text-zinc-300 leading-relaxed font-light mb-8 text-xl lg:text-2xl;
+  }
+
+  .service-content ul {
+    @apply my-12 list-none pl-0;
+  }
+
+  .service-content li {
+    @apply relative pl-10 mb-6 text-xl text-zinc-300;
+  }
+
+  .service-content li::before {
+    content: "";
+    @apply absolute left-0 top-3.5 w-3 h-3 bg-[#F18A5B] rotate-45;
+  }
+
+  .service-content strong {
+    @apply text-white font-bold;
+  }
+
+  .service-content blockquote {
+    @apply border-l-[6px] border-[#F18A5B] bg-zinc-900/50 py-8 px-12 not-italic text-zinc-200 my-20 text-2xl;
+  }
+}

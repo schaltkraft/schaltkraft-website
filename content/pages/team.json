@@ -1,0 +1,38 @@
+{
+    "title": "team",
+    "seoTitle": "Unser Team | Schaltkraft AG",
+    "seoDescription": "Lernen Sie die Experten der Schaltkraft AG kennen. Ihr Partner für Schaltanlagen.",
+    "isHomepage": false,
+    "blocks": [
+        {
+            "discriminant": "hero",
+            "value": {
+                "headline": "Die Gesichter hinter Schaltkraft",
+                "subheadline": "Ein starkes Team für starke Leistungen. Wir sind Ihre Experten für Schaltanlagen.",
+                "image": "/images/team/team.jpeg"
+            }
+        },
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Zusammenhalt & Expertise",
+                "subheadline": "Unsere Philosophie",
+                "text": "Bei Schaltkraft arbeiten erfahrene Profis und junge Talente Hand in Hand. Wir glauben an flache Hierarchien, offenen Austausch und den gemeinsamen Willen, das beste Ergebnis für unsere Kunden zu erzielen."
+            }
+        },
+        {
+            "discriminant": "teamGrid",
+            "value": {
+                "headline": "Alle Teammitglieder",
+                "showMembers": true
+            }
+        },
+        {
+            "discriminant": "jobList",
+            "value": {
+                "headline": "Werde Teil des Teams",
+                "intro": "Wir suchen ständig nach neuen Talenten."
+            }
+        }
+    ]
+}

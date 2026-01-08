@@ -1,0 +1,56 @@
+{
+  "logo": "/images/schaltkraft-logo.png",
+  "logoAlt": "Schaltkraft AG Logo",
+  "navigationItems": [
+    {
+      "label": "Über Uns",
+      "url": "/about-us",
+      "children": []
+    },
+    {
+      "label": "Dienstleistungen",
+      "url": "/dienstleistungen",
+      "children": [
+        {
+          "label": "Planung & Engineering",
+          "url": "/dienstleistungen/planung-engineering",
+          "description": "Individuelle Konzepte für Ihre Anforderungen."
+        },
+        {
+          "label": "Schaltanlagenbau",
+          "url": "/dienstleistungen/schaltanlagenbau",
+          "description": "Niederspannungsverteilungen höchster Qualität."
+        },
+        {
+          "label": "Montage & Installation",
+          "url": "/dienstleistungen/montage-installation",
+          "description": "Fachgerechte Installation vor Ort."
+        },
+        {
+          "label": "Service & Modernisierung",
+          "url": "/dienstleistungen/service-modernisierung",
+          "description": "Wartung, Retrofit und Erweiterungen."
+        }
+      ]
+    },
+    {
+      "label": "Jobs / Karriere",
+      "url": "/jobs",
+      "children": []
+    },
+    {
+      "label": "Team",
+      "url": "/team",
+      "children": []
+    },
+    {
+      "label": "Kontakt",
+      "url": "/contact",
+      "children": []
+    }
+  ],
+  "ctaButton": {
+    "text": "Kontaktiere uns",
+    "url": "/contact"
+  }
+}

@@ -1,0 +1,45 @@
+{
+    "title": "jobs",
+    "seoTitle": "Jobs & Karriere | Schaltkraft AG",
+    "seoDescription": "Werden Sie Teil unseres Teams. Offene Stellen als Elektriker und im Anlagenbau bei Schaltkraft AG.",
+    "isHomepage": false,
+    "blocks": [
+        {
+            "discriminant": "hero",
+            "value": {
+                "headline": "Karriere bei Schaltkraft",
+                "subheadline": "Gestalten Sie mit uns die Energiezukunft. Wir suchen Talente, die anpacken und Präzision lieben.",
+                "image": "/images/hero/jobs-hero.jpg"
+            }
+        },
+        {
+            "discriminant": "jobList",
+            "value": {
+                "headline": "Offene Stellen",
+                "intro": "Wir wachsen weiter und suchen Verstärkung für unser Team in der Ostschweiz."
+            }
+        },
+        {
+            "discriminant": "values",
+            "value": {
+                "items": [
+                    {
+                        "title": "Weiterbildung",
+                        "description": "Wir fördern Ihre fachliche Entwicklung mit gezielten Schulungen und Weiterbildungen.",
+                        "icon": "book"
+                    },
+                    {
+                        "title": "Modernes Werkzeug",
+                        "description": "Arbeiten Sie mit top-modernem Equipment und Fahrzeugen.",
+                        "icon": "tool"
+                    },
+                    {
+                        "title": "Teamspirit",
+                        "description": "Ein kollegiales Umfeld und regelmässige Teamevents sind uns wichtig.",
+                        "icon": "users"
+                    }
+                ]
+            }
+        }
+    ]
+}

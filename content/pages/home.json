@@ -1,0 +1,141 @@
+{
+  "title": "home",
+  "seoTitle": "Schaltkraft AG - Startseite",
+  "seoDescription": "Willkommen bei Schaltkraft AG. Wir bieten hochwertige Lösungen für Ihre Elektro-Anforderungen.",
+  "isHomepage": true,
+  "blocks": [
+    {
+      "discriminant": "hero",
+      "value": {
+        "headline": "QUALITÄT\nIN JEDEM\nSCHALTMOMENT",
+        "subheadline": "Willkommen bei Schaltkraft AG – Ihrem vertrauensvollen Partner für innovative Schaltanlagenlösungen. Bei Schaltkraft AG legen wir höchsten Wert auf die Qualität unserer Produkte und Dienstleistungen. Jeder Schritt in unserem Produktionsprozess ist darauf ausgerichtet, Ihre Erwartungen zu übertreffen.",
+        "image": "/images/hero/heroimage.jpeg",
+        "ctaPrimary": {
+          "text": "Dienstleistungen",
+          "url": "/dienstleistungen"
+        },
+        "ctaSecondary": {
+          "text": "Kontakt",
+          "url": "/contact"
+        },
+        "ctaPhone": "+41 71 521 77 77"
+      }
+    },
+    {
+      "discriminant": "trustBar",
+      "value": {
+        "items": [
+          "SWISS MADE QUALITÄT",
+          "20+ JAHRE ERFAHRUNG",
+          "ZERTIFIZIERTE EXPERTEN"
+        ]
+      }
+    },
+    {
+      "discriminant": "intro",
+      "value": {
+        "headline": "Willkommen bei Schaltkraft",
+        "subheadline": "Ihr Spezialist für Elektro-Engineering",
+        "text": "In unserem modernen Firmengebäude in Romanshorn entwickeln und fertigen wir hochwertige Schaltanlagen für verschiedenste Anwendungen. Mit unserem erfahrenen Team garantieren wir Präzision, Zuverlässigkeit und Termintreue.",
+        "image": "/images/team/team.jpeg",
+        "links": []
+      }
+    },
+    {
+      "discriminant": "servicesTeaser",
+      "value": {
+        "title": "Unsere Kompetenzen",
+        "intro": "Wir bieten maßgeschneiderte Lösungen für komplexe Anforderungen.",
+        "items": [
+          {
+            "title": "Planung & Engineering",
+            "items": [
+              "Elektroschemata-Erstellung",
+              "Dispositionsplanung",
+              "Technische Beratung"
+            ],
+            "linkUrl": "/dienstleistungen/planung-engineering"
+          },
+          {
+            "title": "Schaltanlagenbau",
+            "items": [
+              "Niederspannungsverteilungen",
+              "Spezialanlagen",
+              "Steuerungsanlagen"
+            ],
+            "linkUrl": "/dienstleistungen/schaltanlagenbau"
+          },
+          {
+            "title": "Montage & Installation",
+            "items": [
+              "Vor-Ort-Montage",
+              "Inbetriebnahme",
+              "Verkabelung"
+            ],
+            "linkUrl": "/dienstleistungen/montage-installation"
+          },
+          {
+            "title": "Service & Modernisierung",
+            "items": [
+              "Retrofit",
+              "Anlagenerweiterungen",
+              "Wartung & Unterhalt"
+            ],
+            "linkUrl": "/dienstleistungen/service-modernisierung"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "testimonials",
+      "value": {
+        "title": "Was unsere Kunden sagen",
+        "items": [
+          {
+            "quote": "Die Firma SchaltKraft AG ist eine herausragende Firma im Schaltanlagenbau. Sie kombinieren technisches Wissen mit klarem Blick für Details und setzen auf moderne, ressourcenschonende Technologien. Durch die exzellente Kommunikationsfähigkeit ist ein reibungsloser Ablauf garantiert! Die Firma SchaltKraft AG hat sich als zuverlässiger Partner etabliert, der die Zukunft des Schaltanlagenbaus massgeblich mitgestaltet und kann deshalb bestens weiterempfohlen werden.",
+            "author": "Giovanni Pentrelli",
+            "role": "Projektleiter, Elektro Tel AG",
+            "rating": 5
+          },
+          {
+            "quote": "Wir sind äusserst zufrieden mit den Dienstleistungen von der SchaltKraft AG. Von der Planung bis zur Umsetzung unserer Schaltanlage war das Team stets professionell, zuverlässig und lösungsorientiert. Die Qualität der Arbeit ist hervorragend, und alle individuellen Anforderungen wurden genau nach unseren Wünschen umgesetzt. Besonders beeindruckt hat uns die termingerechte Lieferung und die kompetente Beratung. Wir können die SchaltKraft AG uneingeschränkt weiterempfehlen und freuen uns auf weitere Projekte in der Zukunft!",
+            "author": "Fitim Malici",
+            "role": "Geschäftsführer, Elektra Zürich",
+            "rating": 5
+          },
+          {
+            "quote": "Die SchaltKraft AG hat uns bei unserem Projekt von Anfang an überzeugt. Besonders geschätzt haben wir die strukturierte Vorgehensweise und die klare Kommunikation während des gesamten Prozesses. Fragen wurden schnell und verständlich beantwortet, und bei Herausforderungen wurden pragmatische Lösungen gefunden. Wir danken der SchaltKraft AG für die professionelle Zusammenarbeit und freuen uns auf weitere gemeinsame Projekte.",
+            "author": "Gerry Pedroncelli",
+            "role": "Inhaber, E Tec-Elektro",
+            "rating": 5
+          },
+          {
+            "quote": "Mit SchaltKraft AG haben wir einen Partner gefunden, der technische Kompetenz mit Praxisnähe verbindet. Besonders geschätzt haben wir die klare Kommunikation, das strukturierte Vorgehen und das Gespür für funktionale, massgeschneiderte Lösungen. Die Zusammenarbeit verlief reibungslos – Termine wurden eingehalten, Absprachen zuverlässig umgesetzt und die Qualität der gelieferten Arbeit hat unsere Erwartungen sogar übertroffen. Ein engagiertes Team, das nicht nur mitdenkt, sondern auch vorausdenkt. Für uns steht fest: Das war nicht das letzte Projekt mit SchaltKraft..",
+            "author": "Milos Stamatovic",
+            "role": "Elektro Appenzeller AG",
+            "rating": 5
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "partnerSlider",
+      "value": {
+        "title": "Unsere Partner & Mitgliedschaften",
+        "logos": [
+          {
+            "name": "Sonepar",
+            "logo": "/images/sonepar.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "contactTeaser",
+      "value": {
+        "headline": "Starten Sie Ihr Projekt mit uns",
+        "text": "Wir beraten Sie gerne unverbindlich zu Ihrem Vorhaben."
+      }
+    }
+  ]
+}

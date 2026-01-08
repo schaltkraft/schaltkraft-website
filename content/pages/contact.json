@@ -1,0 +1,99 @@
+{
+    "title": "contact",
+    "seoTitle": "Kontakt - Schaltkraft AG",
+    "seoDescription": "Ihr direkter Draht zu uns. Rufen Sie an oder schreiben Sie uns.",
+    "isHomepage": false,
+    "blocks": [
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Wir sind für Sie da",
+                "image": "/images/content/contact-hero.jpg",
+                "text": "Haben Sie eine Frage zu einem Projekt, benötigen Sie eine Offerte oder technischen Support? Unser Team steht Ihnen gerne zur Verfügung. Nutzen Sie das Kontaktformular oder rufen Sie uns direkt an."
+            }
+        },
+        {
+            "discriminant": "richText",
+            "value": {
+                "content": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Standort & Anfahrt"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Unser Hauptsitz befindet sich im Herzen der Ostschweiz, verkehrsgünstig gelegen in St. Gallen. Für Besucher stehen ausreichend Parkplätze direkt vor dem Gebäude zur Verfügung. Wir freuen uns auf Ihren Besuch auf einen Kaffee und ein persönliches Gespräch."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 3
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Öffnungszeiten"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Montag - Donnerstag: 07:30 - 12:00 | 13:15 - 17:00 Uhr"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Freitag: 07:30 - 12:00 | 13:15 - 16:00 Uhr"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Ausserhalb der Öffnungszeiten steht unseren Vertragskunden unser 24h-Pikettdienst zur Verfügung."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "discriminant": "contactForm",
+            "value": {
+                "headline": "Nachricht senden",
+                "image": "/images/contact/form-bg.jpg",
+                "subjects": [
+                    "Offertanfrage",
+                    "Technischer Support",
+                    "Bewerbung",
+                    "Allgemeines"
+                ]
+            }
+        }
+    ]
+}

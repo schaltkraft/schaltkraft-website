@@ -1,0 +1,70 @@
+{
+    "title": "Planung & Engineering",
+    "subline": "Professionelle Elektroplanung für Ihre Schaltanlagen",
+    "shortDescription": "Wir entwickeln massgeschneiderte Elektrokonzepte und normgerechte Schemata für Ihre Anlagen.",
+    "icon": "/images/services/planning.png",
+    "heroImage": "/images/services/planning.png",
+    "blocks": [
+        {
+            "discriminant": "featureGrid",
+            "value": {
+                "headline": "Leistungsübersicht",
+                "items": [
+                    {
+                        "title": "Elektroschemata-Erstellung",
+                        "description": "EPLAN P8 & Pro Panel",
+                        "icon": "check"
+                    },
+                    {
+                        "title": "Dispositionsplanung",
+                        "description": "3D-Aufbauplanung",
+                        "icon": "layout"
+                    },
+                    {
+                        "title": "Technische Beratung",
+                        "description": "Lösungsorientiert & Effizient",
+                        "icon": "zap"
+                    },
+                    {
+                        "title": "Normgerechte Dokumentation",
+                        "description": "Nach NIV & EN 61439",
+                        "icon": "file"
+                    }
+                ]
+            }
+        },
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Unsere Expertise für Ihr Projekt",
+                "text": "Als erfahrener Partner entwickeln wir massgeschneiderte Elektrokonzepte für Ihre Schaltanlagen. Unsere Ingenieure erstellen normgerechte Elektroschemata nach aktuellen SN-Normen und NIV-Richtlinien. Von der Grobdisposition bis zur detaillierten Stromlaufplanung begleiten wir Ihr Projekt mit technischer Präzision. Dabei berücksichtigen wir Ihre spezifischen Anforderungen an Leistung, Sicherheit und Zukunftsfähigkeit. Mit modernster CAD-Software visualisieren wir Ihre Anlagenstruktur und liefern vollständige Dokumentationen für Bau, Betrieb und Wartung. Profitieren Sie von klaren Planungsgrundlagen für eine effiziente Projektumsetzung."
+            }
+        },
+        {
+            "discriminant": "timeline",
+            "value": {
+                "headline": "Prozess",
+                "steps": [
+                    {
+                        "title": "Bedarfsanalyse",
+                        "description": "Aufnahme Ihrer Anforderungen und technischen Rahmenbedingungen."
+                    },
+                    {
+                        "title": "Konzeptentwicklung",
+                        "description": "Ausarbeitung erster Lösungsansätze und Grobplanung."
+                    },
+                    {
+                        "title": "Detailplanung",
+                        "description": "Erstellung der vollständigen Schemata und Aufbaupläne."
+                    },
+                    {
+                        "title": "Dokumentation",
+                        "description": "Übergabe der fertigen Fertigungsunterlagen."
+                    }
+                ]
+            }
+        }
+    ],
+    "seoTitle": "Elektroplanung & Engineering | Schaltkraft AG",
+    "seoDescription": "Professionelle Planung und Engineering für den Schaltanlagenbau. Elektroschemata, CAD-Planung und normgerechte Dokumentation."
+}

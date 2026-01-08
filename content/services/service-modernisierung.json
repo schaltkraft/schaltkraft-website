@@ -1,0 +1,79 @@
+{
+    "title": "Service & Modernisierung",
+    "subline": "Retrofit und Erweiterungen für zukunftssichere Anlagen",
+    "shortDescription": "Lebensdauer verlängern und Sicherheit erhöhen durch professionelles Retrofit und Wartung.",
+    "icon": "/images/services/maintenance.png",
+    "heroImage": "/images/services/maintenance.png",
+    "blocks": [
+        {
+            "discriminant": "featureGrid",
+            "value": {
+                "headline": "Service Kategorien",
+                "items": [
+                    {
+                        "title": "Anlagenumbau",
+                        "description": "Anpassung an neue Bedürfnisse",
+                        "icon": "settings"
+                    },
+                    {
+                        "title": "Erweiterungen",
+                        "description": "Ausbau der Kapazitäten",
+                        "icon": "layers"
+                    },
+                    {
+                        "title": "Retrofit",
+                        "description": "Modernisierung der Technik",
+                        "icon": "zap"
+                    },
+                    {
+                        "title": "Störungsbehebung",
+                        "description": "Schnelle Hilfe im Fehlerfall",
+                        "icon": "shield"
+                    },
+                    {
+                        "title": "Wartungsverträge",
+                        "description": "Präventiver Unterhalt",
+                        "icon": "file"
+                    }
+                ]
+            }
+        },
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Zukunftsfähigkeit sichern",
+                "text": "Ihre bestehenden Schaltanlagen sind wertvoll – wir halten sie zukunftsfähig. Mit professionellen Retrofit-Lösungen modernisieren wir veraltete Komponenten und erweitern Ihre Anlagen nach aktuellen Sicherheitsstandards. Ob Kapazitätserweiterung, Komponentenaustausch oder komplette Sanierung – wir arbeiten effizient bei laufendem Betrieb. Unsere Techniker analysieren Ihre Anlagen, entwickeln wirtschaftliche Lösungskonzepte und setzen diese termingerecht um. Dabei nutzen wir, wo möglich, bestehende Infrastruktur und minimieren Stillstandzeiten. Mit vorausschauender Wartung verlängern Sie die Lebensdauer Ihrer Investition. Profitieren Sie von erhöhter Betriebssicherheit, Energieeffizienz und Compliance mit aktuellen Normen."
+            }
+        },
+        {
+            "discriminant": "featureGrid",
+            "value": {
+                "headline": "Vorteile Retrofit",
+                "items": [
+                    {
+                        "title": "Kosteneffizient",
+                        "description": "Günstiger als Neuanlage",
+                        "icon": "check"
+                    },
+                    {
+                        "title": "Minimale Betriebsunterbrechung",
+                        "description": "Schneller Umbau",
+                        "icon": "check"
+                    },
+                    {
+                        "title": "Normkonformität",
+                        "description": "Sicherheit wiederherstellen",
+                        "icon": "shield"
+                    },
+                    {
+                        "title": "Einsparung",
+                        "description": "Energie & Kosten",
+                        "icon": "zap"
+                    }
+                ]
+            }
+        }
+    ],
+    "seoTitle": "Retrofit & Service für Schaltanlagen | Schaltkraft AG",
+    "seoDescription": "Modernisierung und Wartung Ihrer elektrischen Anlagen. Retrofit-Lösungen für mehr Sicherheit und Effizienz."
+}

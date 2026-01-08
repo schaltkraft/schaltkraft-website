@@ -1,0 +1,29 @@
+{
+  "logo": "/images/global/schaltkraft-logo.png",
+  "tagline": "Qualität in jedem Schaltmoment",
+  "quicklinks": [
+    {
+      "label": "Über Uns",
+      "url": "/about-us"
+    },
+    {
+      "label": "Dienstleistungen",
+      "url": "/services"
+    },
+    {
+      "label": "Projekte",
+      "url": "/projects"
+    },
+    {
+      "label": "Kontakt",
+      "url": "/contact"
+    }
+  ],
+  "contactInfo": {
+    "companyName": "Schaltkraft AG",
+    "address": "Mittliszelgstrasse 5, 8590 Romanshorn",
+    "email": "info@schaltkraft.ch",
+    "phone": "071 521 77 77"
+  },
+  "copyright": "© 2025 Schaltkraft AG. Alle Rechte vorbehalten."
+}

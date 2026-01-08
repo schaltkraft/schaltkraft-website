@@ -1,0 +1,78 @@
+{
+    "title": "Schaltanlagenbau",
+    "subline": "Zuverlässige Niederspannungsverteilungen für Industrie und Gewerbe",
+    "shortDescription": "Hochwertige Fertigung von Niederspannungsverteilungen und Steuerschränken nach Schweizer Standards.",
+    "icon": "/images/services/production.png",
+    "heroImage": "/images/services/production.png",
+    "blocks": [
+        {
+            "discriminant": "accordion",
+            "value": {
+                "headline": "Produktkategorien",
+                "items": [
+                    {
+                        "title": "Niederspannungsverteilungen",
+                        "content": "Energieverteilungen bis 4000A, gebaut nach EN 61439 für maximale Sicherheit und Verfügbarkeit."
+                    },
+                    {
+                        "title": "Haupt- und Grobverteilungen",
+                        "content": "Robuste Einspeisefelder und Hauptverteilungen für Industriegebäude und Infrastrukturprojekte."
+                    },
+                    {
+                        "title": "Unter- und Etageverteilungen",
+                        "content": "Kompakte Verteilerlösungen für Stockwerksverteilung und Endstromkreise."
+                    },
+                    {
+                        "title": "Spezialanlagen (PVA, E-Mobility, KNX)",
+                        "content": "Massgeschneiderte Lösungen für Photovoltaik-Einspeisung, Lademanagement und Gebäudeautomation."
+                    },
+                    {
+                        "title": "Aussenzählerkästen",
+                        "content": "Wetterfeste und normkonforme Zähleranschlusssäulen und Kabelverteilkabinen."
+                    },
+                    {
+                        "title": "Steuerungsanlagen",
+                        "content": "Komplexe Steuerschränke für Maschinen und Anlagen mit integrierter SPS-Technik."
+                    }
+                ]
+            }
+        },
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Präzision in der Fertigung",
+                "text": "Wir fertigen hochwertige Niederspannungs-Schaltanlagen nach Schweizer Qualitätsstandards. Unser Portfolio umfasst Hauptverteilungen, Unterverteilungen und spezialisierte Lösungen für Photovoltaik- und E-Mobility-Anwendungen. Jede Anlage wird individuell nach Ihren Anforderungen konfiguriert – von der Komponentenauswahl bis zur finalen Verdrahtung. Dabei setzen wir auf bewährte Markenfabrikate und modernste Steuerungstechnik. Für intelligente Gebäudetechnik integrieren wir KNX-Systeme in Ihre Verteilungen. Alle Anlagen werden werksseitig geprüft und mit vollständiger CE-Konformitätserklärung ausgeliefert. Auf Wunsch liefern wir mit kompletter Montageleistung vor Ort."
+            }
+        },
+        {
+            "discriminant": "featureGrid",
+            "value": {
+                "headline": "Technische Highlights",
+                "items": [
+                    {
+                        "title": "CE-konform",
+                        "description": "Nach EN 61439",
+                        "icon": "shield"
+                    },
+                    {
+                        "title": "Markenfabrikate",
+                        "description": "Hager, Schneider, ABB",
+                        "icon": "settings"
+                    },
+                    {
+                        "title": "Werksprüfung",
+                        "description": "Vollständig getestet",
+                        "icon": "check"
+                    },
+                    {
+                        "title": "Individuell",
+                        "description": "Massgeschneidert",
+                        "icon": "pen"
+                    }
+                ]
+            }
+        }
+    ],
+    "seoTitle": "Schaltanlagenbau Schweiz | Schaltkraft AG",
+    "seoDescription": "Ihr Partner für hochwertigen Schaltanlagenbau. Niederspannungsverteilungen, Steuerungsbau und Spezialanlagen aus Romanshorn."
+}

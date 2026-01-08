@@ -1,0 +1,92 @@
+{
+    "title": "projects",
+    "seoTitle": "Referenzprojekte - Schaltkraft AG",
+    "seoDescription": "Entdecken Sie unsere erfolgreich umgesetzten Projekte in Industrie, Infrastruktur und Gebäudeautomation.",
+    "isHomepage": false,
+    "blocks": [
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Referenzen, die überzeugen",
+                "image": "/images/content/projects-hero.jpg",
+                "text": "Erfolg misst sich an Resultaten. In den vergangenen Jahren durften wir für namhafte Kunden aus unterschiedlichsten Branchen anspruchsvolle Projekte realisieren. Hier finden Sie einen Auszug aus unserem Portfolio."
+            }
+        },
+        {
+            "discriminant": "richText",
+            "value": {
+                "content": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Case Study: Rechenzentrum Zürich Nord"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Für eines der modernsten Rechenzentren der Schweiz lieferten wir die komplette Energieverteilung. Die Herausforderung lag in der extrem hohen Verfügbarkeit (Tier IV Standard) und dem engen Zeitplan. Wir fertigten 12 Hauptverteilungen mit jeweils 4000A Bemessungsstrom sowie über 50 Unterverteilungen."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Lösung: Durch den Einsatz eines modularen Schienensystems konnten wir die Montagezeit vor Ort um 30% reduzieren. Ein integriertes Monitoringsystem überwacht permanent die Netzqualität."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Industrieautomation: Pharma Produktion Basel"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Für einen führenden Pharmahersteller entwickelten wir die Steuerung einer neuen Abfülllinie. Die Anforderungen an Hygiene und Nachverfolgbarkeit (FDA 21 CFR Part 11) waren extrem hoch."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Ergebnis: Eine vollautomatisierte Lösung auf Basis von Siemens TIA Portal, inklusive Audit-Trail und Rezepturverwaltung. Die Produktionskapazität konnte um 25% gesteigert werden."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "discriminant": "partnerSlider",
+            "value": {
+                "logos": []
+            }
+        }
+    ]
+}
