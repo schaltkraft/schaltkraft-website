@@ -24,7 +24,7 @@ export function ValuesBlock({ data }: ValuesBlockProps) {
     };
 
     return (
-        <section className="section-padding bg-black border-y border-white/10">
+        <section className="section-padding-compact bg-black border-y border-white/10">
             <PageContainer>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {items.map((item: any, idx: number) => {

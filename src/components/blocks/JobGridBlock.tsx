@@ -8,7 +8,7 @@ export async function JobGridBlock({ data }: { data: any }) {
     const { headline, intro } = data || {};
 
     return (
-        <section className="py-20 bg-zinc-950 text-white">
+        <section className="py-12 lg:py-14 bg-zinc-950 text-white">
             <div className="container mx-auto px-4">
                 <div className="max-w-3xl mx-auto text-center mb-16">
                     {headline && (

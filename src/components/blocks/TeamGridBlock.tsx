@@ -46,7 +46,7 @@ export async function TeamGridBlock({ data }: TeamGridBlockProps) {
     // Usually not needed if we control data.
 
     return (
-        <section className="section-padding">
+        <section className="section-padding-compact">
             <PageContainer>
                 {/* Group Image */}
                 {data.groupImage && (
@@ -56,11 +56,11 @@ export async function TeamGridBlock({ data }: TeamGridBlockProps) {
                 )}
 
                 {data.showMembers && rawMembers && (
-                    <div className="space-y-32">
+                    <div className="space-y-20">
                         {groupedMembers.map((group) => (
                             group.members.length > 0 && (
                                 <div key={group.id}>
-                                    <h2 className="text-3xl lg:text-4xl font-bold font-heading uppercase mb-16 text-center border-b border-white/10 pb-8">
+                                    <h2 className="text-3xl lg:text-4xl font-bold font-heading uppercase mb-10 text-center border-b border-white/10 pb-6">
                                         {group.label}
                                     </h2>
                                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">

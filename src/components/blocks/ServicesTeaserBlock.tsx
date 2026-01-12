@@ -21,7 +21,7 @@ export function ServicesTeaserBlock({ data }: ServicesTeaserBlockProps) {
     return (
         <section className="section-padding bg-zinc-950">
             <PageContainer>
-                <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16 lg:mb-24">
+                <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 lg:mb-16">
                     <div className="max-w-2xl">
                         <h2 className="text-4xl lg:text-5xl font-bold font-heading uppercase mb-6 text-white">
                             {title}

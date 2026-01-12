@@ -68,7 +68,7 @@ export function IntroBlock({ data, isNested }: IntroBlockProps) {
     }
 
     return (
-        <section className="section-padding bg-zinc-950">
+        <section className="section-padding-compact bg-zinc-950">
             <PageContainer>
                 {Content}
             </PageContainer>

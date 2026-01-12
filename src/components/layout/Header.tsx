@@ -44,22 +44,22 @@ export function Header({ data }: HeaderProps) {
       >
         <PageContainer className="flex items-center justify-between">
           {/* LOGO */}
-          <Link href="/" className="relative z-50 flex items-center gap-2 group">
+          <Link href="/" className="relative z-50 flex items-center gap-2 group shrink-0">
             {data?.logo ? (
               <img
                 src={logoUrl}
                 alt={data?.logoAlt || 'Schaltkraft'}
-                className="h-16 lg:h-20 w-auto transition-transform duration-300 group-hover:scale-105"
+                className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-20 w-auto max-w-[180px] sm:max-w-none object-contain transition-transform duration-300 group-hover:scale-105"
               />
             ) : (
-              <span className="text-3xl lg:text-4xl font-bold font-heading uppercase text-white tracking-widest">
+              <span className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold font-heading uppercase text-white tracking-widest">
                 Schalt<span className="text-brand-orange">kraft</span>
               </span>
             )}
           </Link>
 
           {/* DESKTOP NAV */}
-          <nav className="hidden lg:flex items-center gap-12">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-10 2xl:gap-12">
             {navItems.map((item: any, idx: number) => {
               const hasDropdown = item.children && item.children.length > 0;
               const isActive = pathname === item.url;
@@ -115,13 +115,14 @@ export function Header({ data }: HeaderProps) {
           </nav>
 
           {/* RIGHT ACTIONS */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-8">
             <a
               href="tel:+41715217777"
-              className="flex items-center gap-3 text-white/80 hover:text-white transition-colors text-lg font-medium"
+              className="flex items-center gap-2 xl:gap-3 text-white/80 hover:text-white transition-colors text-base xl:text-lg font-medium"
             >
-              <Phone className="w-6 h-6 text-brand-orange" />
-              <span>+41 71 521 77 77</span>
+              <Phone className="w-5 h-5 xl:w-6 xl:h-6 text-brand-orange" />
+              <span className="hidden xl:inline">+41 71 521 77 77</span>
+              <span className="xl:hidden">Anrufen</span>
             </a>
 
             {/* Optional CTA if set distinct from nav */}

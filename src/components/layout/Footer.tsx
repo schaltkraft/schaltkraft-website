@@ -20,9 +20,9 @@ export function Footer({ data }: FooterProps) {
   const links = data?.quicklinks || data?.links || [];
 
   return (
-    <footer className="bg-zinc-950 text-white pt-24 pb-8 border-t border-white/10">
+    <footer className="bg-zinc-950 text-white pt-16 pb-6 border-t border-white/10">
       <PageContainer>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12">
 
           {/* COL 1: Logo & Claim */}
           <div className="space-y-6">
@@ -33,12 +33,12 @@ export function Footer({ data }: FooterProps) {
               {claim}
             </p>
             {/* Association Logos */}
-            <div className="flex gap-4 pt-4">
-              <div className="bg-white/5 p-2 rounded-sm w-fit h-20 flex items-center justify-center">
-                <img src="/images/verband_vsas.png" alt="VSAS" className="h-full w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <div className="flex gap-4 pt-4 flex-wrap">
+              <div className="bg-white/5 p-2 rounded-sm h-16 md:h-20 flex items-center justify-center">
+                <img src="/images/verband_vsas.png" alt="VSAS" className="h-full w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
               </div>
-              <div className="bg-white/5 p-2 rounded-sm w-fit h-20 flex items-center justify-center">
-                <img src="/images/verband-romanshorn.png" alt="Gewerbe Romanshorn" className="h-full w-auto opacity-70 hover:opacity-100 transition-opacity" />
+              <div className="bg-white/5 p-2 rounded-sm h-16 md:h-20 flex items-center justify-center">
+                <img src="/images/verband-romanshorn.png" alt="Gewerbe Romanshorn" className="h-full w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
               </div>
             </div>
           </div>
@@ -48,13 +48,10 @@ export function Footer({ data }: FooterProps) {
             <h4 className="text-sm font-bold uppercase tracking-widest text-white/50 mb-6">Navigation</h4>
             <ul className="space-y-3">
               <li><Link href="/about-us" className="text-zinc-300 hover:text-brand-orange transition-colors">Über uns</Link></li>
+              <li><Link href="/dienstleistungen" className="text-zinc-300 hover:text-brand-orange transition-colors">Dienstleistungen</Link></li>
+              <li><Link href="/team" className="text-zinc-300 hover:text-brand-orange transition-colors">Team</Link></li>
+              <li><Link href="/jobs" className="text-zinc-300 hover:text-brand-orange transition-colors">Karriere</Link></li>
               <li><Link href="/contact" className="text-zinc-300 hover:text-brand-orange transition-colors">Kontakt</Link></li>
-              {/* Dynamic links from CMS if any extra */}
-              {links.map((link: any, i: number) => (
-                <li key={i}>
-                  <Link href={link.url} className="text-zinc-300 hover:text-brand-orange transition-colors">{link.label}</Link>
-                </li>
-              ))}
             </ul>
           </div>
 

@@ -7,18 +7,24 @@ export function SplashScreen() {
     const [showSplash, setShowSplash] = useState(false);
     const [phase, setPhase] = useState<'init' | 'active' | 'finished'>('init');
     const canvasRef = useRef<HTMLCanvasElement>(null);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
+        // Detect mobile/tablet for performance optimization
+        const checkMobile = () => window.innerWidth < 1024;
+        setIsMobile(checkMobile());
+
         const hasSeenSplash = sessionStorage.getItem('schaltkraft_splash_seen');
         if (!hasSeenSplash) {
             setShowSplash(true);
-            setTimeout(() => setPhase('active'), 100);
+            setTimeout(() => setPhase('active'), 50); // Faster start
             sessionStorage.setItem('schaltkraft_splash_seen', 'true');
-            // Auto close after 4s
+            // Total: 2.5s animations + 0.5s pause + fade
             setTimeout(() => {
                 setPhase('finished');
-                setTimeout(() => setShowSplash(false), 1000);
-            }, 4000);
+                // Pause 0.5s after animations, then fade out over 0.8s
+                setTimeout(() => setShowSplash(false), 1300);
+            }, 3000);
         }
     }, []);
 
@@ -31,6 +37,8 @@ export function SplashScreen() {
         if (!ctx) return;
 
         let animationFrameId: number;
+        const startTime = performance.now();
+        const PULSE_DURATION = 2500; // 2.5 seconds, matching orange line animation
 
         const DPR = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
         const COLORS = {
@@ -94,9 +102,9 @@ export function SplashScreen() {
                 bottom: cr.y + cr.h - pad
             };
 
-            // Ports around chip
+            // Ports around chip - reduced count on mobile
             const ports = [];
-            const perSide = randi(14, 18);
+            const perSide = isMobile ? randi(6, 10) : randi(14, 18);
             for (let i = 0; i < perSide; i++) {
                 ports.push({ x: rand(chip.left, chip.right), y: chip.top, dir: "up" });
                 ports.push({ x: rand(chip.left, chip.right), y: chip.bottom, dir: "down" });
@@ -104,9 +112,9 @@ export function SplashScreen() {
                 ports.push({ x: chip.right, y: rand(chip.top, chip.bottom), dir: "right" });
             }
 
-            // Targets evenly distributed on ALL edges
+            // Targets evenly distributed on ALL edges - reduced on mobile
             const edgeTargets = [];
-            const perEdge = randi(18, 24);
+            const perEdge = isMobile ? randi(8, 12) : randi(18, 24);
             for (let i = 0; i < perEdge; i++) {
                 edgeTargets.push({ x: (i + 0.5) * W / perEdge, y: 18 });
                 edgeTargets.push({ x: W - 18, y: (i + 0.5) * H / perEdge });
@@ -140,10 +148,10 @@ export function SplashScreen() {
                 const pts = pts1.concat(pts2.slice(1));
 
                 const width = Math.random() < 0.7 ? 1 : 1.6;
-                routes.push({ pts, width });
+                routes.push({ pts, width, length: polyLen(pts) }); // Cache length for performance
 
-                // many pulses => energy everywhere
-                if (Math.random() < 0.65) {
+                // many pulses => energy everywhere - fewer on mobile
+                if (Math.random() < (isMobile ? 0.4 : 0.65)) {
                     pulses.push({
                         routeIndex: routes.length - 1,
                         t: Math.random(),
@@ -153,8 +161,9 @@ export function SplashScreen() {
                 }
             }
 
-            // Subtle inner rings around center area
-            for (let k = 0; k < 10; k++) {
+            // Subtle inner rings around center area - fewer on mobile
+            const ringCount = isMobile ? 5 : 10;
+            for (let k = 0; k < ringCount; k++) {
                 const inset = 16 + k * 6.0;
                 const x1 = cr.x + inset;
                 const y1 = cr.y + inset;
@@ -167,7 +176,7 @@ export function SplashScreen() {
                     { x: x1, y: y2 },
                     { x: x1, y: y1 }
                 ];
-                routes.push({ pts, width: (k % 3 === 0 ? 1.4 : 1), ring: true, alpha: 0.10 });
+                routes.push({ pts, width: (k % 3 === 0 ? 1.4 : 1), ring: true, alpha: 0.10, length: polyLen(pts) });
             }
         }
 
@@ -180,9 +189,9 @@ export function SplashScreen() {
             return L;
         }
 
-        function pointAt(pts: any[], t: number) {
-            const total = polyLen(pts);
-            let dist = t * total;
+        // Use cached length for better performance
+        function pointAtCached(pts: any[], cachedLen: number, t: number) {
+            let dist = t * cachedLen;
             for (let i = 1; i < pts.length; i++) {
                 const a = pts[i - 1], b = pts[i];
                 const seg = Math.hypot(b.x - a.x, b.y - a.y);
@@ -201,9 +210,10 @@ export function SplashScreen() {
             ctx.fillStyle = COLORS.bg;
             ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
-            // tiny static noise
+            // tiny static noise - reduced on mobile for performance
+            const noiseCount = isMobile ? 40 : 120;
             ctx.globalAlpha = 0.05;
-            for (let i = 0; i < 120; i++) {
+            for (let i = 0; i < noiseCount; i++) {
                 ctx.fillStyle = "rgba(255,255,255,1)";
                 ctx.fillRect(rand(0, window.innerWidth), rand(0, window.innerHeight), 1, 1);
             }
@@ -230,36 +240,49 @@ export function SplashScreen() {
                 ctx.stroke();
             }
 
-            // highlight pass (white)
-            ctx.globalAlpha = 0.22;
-            ctx.strokeStyle = COLORS.line;
-            ctx.shadowBlur = 10;
-            ctx.shadowColor = "rgba(255,255,255,0.18)";
-            for (const rt of routes) {
-                ctx.lineWidth = (rt.width || 1) + 0.3;
-                const pts = rt.pts;
-                ctx.beginPath();
-                ctx.moveTo(pts[0].x, pts[0].y);
-                for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
-                ctx.stroke();
+            // highlight pass (white) - skip on mobile for performance
+            if (!isMobile) {
+                ctx.globalAlpha = 0.22;
+                ctx.strokeStyle = COLORS.line;
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = "rgba(255,255,255,0.18)";
+                for (const rt of routes) {
+                    ctx.lineWidth = (rt.width || 1) + 0.3;
+                    const pts = rt.pts;
+                    ctx.beginPath();
+                    ctx.moveTo(pts[0].x, pts[0].y);
+                    for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+                    ctx.stroke();
+                }
             }
 
-            // energy pulses (orange)
-            ctx.globalAlpha = 1;
+            // energy pulses (orange) - synchronized with 2.5s line animation
+            const elapsed = performance.now() - startTime;
+            const pulseProgress = Math.min(1, elapsed / PULSE_DURATION);
+            // Fade in during first 0.3s, fade out during last 0.3s
+            let pulseOpacity = 1;
+            if (pulseProgress < 0.12) {
+                pulseOpacity = pulseProgress / 0.12; // fade in
+            } else if (pulseProgress > 0.88) {
+                pulseOpacity = (1 - pulseProgress) / 0.12; // fade out
+            }
+            if (pulseProgress >= 1) pulseOpacity = 0; // fully hidden after animation
+
+            ctx.globalAlpha = pulseOpacity;
             for (const p of pulses) {
                 const rt = routes[p.routeIndex];
                 if (!rt) continue;
-                const pt = pointAt(rt.pts, p.t);
+                const pt = pointAtCached(rt.pts, rt.length, p.t);
 
                 ctx.fillStyle = COLORS.energy;
-                ctx.shadowBlur = 22;
+                ctx.shadowBlur = isMobile ? 12 : 22; // Reduced on mobile
                 ctx.shadowColor = COLORS.energy;
                 ctx.beginPath();
                 ctx.arc(pt.x, pt.y, p.size, 0, Math.PI * 2);
                 ctx.fill();
 
                 ctx.fillStyle = COLORS.energySoft;
-                ctx.shadowBlur = 30;
+                ctx.shadowBlur = isMobile ? 15 : 30; // Reduced on mobile
                 ctx.shadowColor = COLORS.energySoft;
                 ctx.beginPath();
                 ctx.arc(pt.x, pt.y, p.size + 4, 0, Math.PI * 2);
@@ -312,7 +335,9 @@ export function SplashScreen() {
                     key="splash-overlay"
                     className="fixed inset-0 z-[100] flex items-center justify-center bg-black overflow-hidden"
                     initial={{ opacity: 1 }}
-                    exit={{ opacity: 0, transition: { duration: 1.0, ease: "easeInOut" } }}
+                    animate={phase === 'finished' ? { opacity: 0 } : { opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
                     {/* LAYER 0: Canvas Background (Circuit Animation) */}
                     <div className="absolute inset-0 z-0 pointer-events-none">
@@ -366,7 +391,7 @@ export function SplashScreen() {
                                     strokeOpacity={0.8}
                                     initial={{ pathLength: 0 }}
                                     animate={phase === 'active' ? { pathLength: 1 } : { pathLength: 0 }}
-                                    transition={{ duration: 1.2, ease: "easeInOut" }}
+                                    transition={{ duration: 2.5, ease: "easeInOut" }}
                                 />
                             </svg>
                             {/* Glow */}
@@ -381,7 +406,7 @@ export function SplashScreen() {
                                         strokeOpacity={0.4}
                                         initial={{ pathLength: 0 }}
                                         animate={{ pathLength: 1 }}
-                                        transition={{ duration: 1.2, ease: "easeInOut" }}
+                                        transition={{ duration: 2.5, ease: "easeInOut" }}
                                     />
                                 </svg>
                             )}
@@ -395,7 +420,7 @@ export function SplashScreen() {
                                     initial="hidden"
                                     animate="visible"
                                     variants={{
-                                        visible: { transition: { staggerChildren: 0.05, delayChildren: 0.5 } }
+                                        visible: { transition: { staggerChildren: 0.08, delayChildren: 0 } }
                                     }}
                                 >
                                     {sloganText.split("").map((char, index) => (

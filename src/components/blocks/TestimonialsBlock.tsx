@@ -10,12 +10,10 @@ export function TestimonialsBlock({ data }: TestimonialsBlockProps) {
 
   if (items.length === 0) return null;
 
-  if (items.length === 0) return null;
-
   return (
     <section className="section-padding bg-black bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-900 via-black to-black">
       <PageContainer>
-        <div className="max-w-2xl mx-auto text-center mb-16 lg:mb-24">
+        <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold font-heading uppercase mb-6 text-white">
             {data.title}
           </h2>
