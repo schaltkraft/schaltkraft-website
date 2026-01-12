@@ -17,19 +17,155 @@
             "value": {
                 "headline": "Unsere Mission",
                 "subheadline": "Perfektion im Detail",
-                "text": "Unser Ziel ist es nicht nur, Gehäuse und Komponenten zu montieren. Wir verstehen uns als Architekten sicherer Energieflüsse. Jede von uns gefertigte Schaltanlage ist ein Unikat, exakt zugeschnitten auf die spezifischen Anforderungen unserer Kunden. Ob komplexe Steuerungen für die Industrieautomation oder robuste Energieverteilungen für Infrastrukturprojekte – unser Anspruch bleibt derselbe: Absolute Zuverlässigkeit und kompromisslose Qualität.",
-                "icons": [
-                    "Target",
-                    "Zap",
-                    "Flag",
-                    "Shield"
+                "text": "Unser Ziel ist es nicht nur, Gehäuse und Komponenten zu montieren. Wir verstehen uns als Architekten sicherer Energieflüsse. Jede von uns gefertigte Schaltanlage ist ein Unikat, exakt zugeschnitten auf die spezifischen Anforderungen unserer Kunden.\n\nOb komplexe Steuerungen für die Industrieautomation oder robuste Energieverteilungen für Infrastrukturprojekte – unser Anspruch bleibt derselbe: Absolute Zuverlässigkeit und kompromisslose Qualität.",
+                "image": "/images/about-team.png",
+                "links": [
+                    {
+                        "label": "Unser Team kennenlernen",
+                        "url": "/team"
+                    }
                 ]
             }
         },
         {
             "discriminant": "richText",
             "value": {
-                "content": "<div class=\"prose prose-invert max-w-none space-y-12 text-zinc-300\"><h2 class=\"text-3xl text-white font-bold uppercase mb-6\">Unsere Geschichte</h2><p>Gegründet aus der Überzeugung, dass der Schaltanlagenbau mehr ist als nur Technik, hat sich die Schaltkraft AG in den letzten zwei Jahrzehnten zu einer festen Grösse in der Schweizer Elektrobranche entwickelt. Was als kleine Werkstatt begann, ist heute ein hochmodernes Fertigungszentrum in Romanshorn. Wir haben den Wandel der Zeit nicht nur beobachtet, sondern aktiv mitgestaltet – von den ersten analogen Steuerungen bis hin zu den heutigen vernetzten Smart-Grid-Lösungen.</p><p>Unser Wachstum war dabei stets organisch und nachhaltig. Wir investieren kontinuierlich in die Weiterbildung unserer Mitarbeiter und in modernste Fertigungsmaschinen. Denn wir wissen: Die beste Maschine ist nur so gut wie der Mensch, der sie bedient. Diese Philosophie hat uns das Vertrauen zahlreicher namhafter Kunden aus Industrie, Gewerbe und der öffentlichen Hand eingebracht.</p><h2 class=\"text-3xl text-white font-bold uppercase mb-6\">Schweizer Qualität & Philosophie</h2><p>„Swiss Made“ ist für uns kein Marketing-Label, sondern ein gelebtes Versprechen. Unsere Fertigung erfolgt ausschliesslich an unserem Standort in der Schweiz. Das garantiert nicht nur kurze Wege und schnelle Reaktionszeiten, sondern auch eine lückenlose Qualitätskontrolle. Jede Schraube wird geprüft, jede Verbindung getestet. Wir verlassen uns nicht auf Stichproben, sondern auf 100%ige Prüfprotokolle.</p><p>Wir glauben an Partnerschaft auf Augenhöhe. Wir sind nicht nur Lieferant, sondern Lösungsfinder. Wenn ein Projekt herausfordernd wird, laufen wir zur Höchstform auf. Unsere Ingenieure denken mit und hinterfragen bestehende Lösungen, um Optimierungspotenziale aufzudecken. Das spart unseren Kunden oft bares Geld und sorgt für langlebige, wartungsarme Anlagen.</p><h2 class=\"text-3xl text-white font-bold uppercase mb-6\">Nachhaltigkeit & Zukunft</h2><p>Als Unternehmen im Energiesektor tragen wir eine besondere Verantwortung. Wir setzen uns aktiv für energieeffiziente Lösungen ein – sowohl in unserer eigenen Produktion als auch in den Anlagen, die wir bauen. Wir optimieren den Materialeinsatz, reduzieren Abfall durch präzise Planung und setzen auf langlebige Komponenten.</p><p>Die Zukunft ist digital. Mit modernsten CAE-Systemen planen wir Anlagen heute als digitalen Zwilling, bevor der erste Handgriff in der Werkstatt erfolgt. Das minimiert Fehler und beschleunigt die Durchlaufzeiten enorm. Wir sind bereit für die Herausforderungen von morgen und freuen uns darauf, gemeinsam mit Ihnen die Energiezukunft zu gestalten.</p></div>"
+                "content": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Unsere Geschichte"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Gegründet aus der Überzeugung, dass der Schaltanlagenbau mehr ist als nur Technik, hat sich die Schaltkraft AG in den letzten zwei Jahrzehnten zu einer festen Grösse in der Schweizer Elektrobranche entwickelt. Was als kleine Werkstatt begann, ist heute ein hochmodernes Fertigungszentrum in Romanshorn am Bodensee."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Wir haben den Wandel der Zeit nicht nur beobachtet, sondern aktiv mitgestaltet – von den ersten analogen Steuerungen bis hin zu den heutigen vernetzten Smart-Grid-Lösungen."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 3
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Meilensteine"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "2004: Gründung in Romanshorn | 2008: Erster Grossauftrag | 2012: Moderne Produktionshalle | 2016: EN 61439 Zertifizierung | 2020: Digitale Planung | 2023: 25+ Fachkräfte"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "discriminant": "richText",
+            "value": {
+                "content": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Schweizer Qualität"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Swiss Made ist für uns kein Marketing-Label, sondern ein gelebtes Versprechen. Unsere Fertigung erfolgt ausschliesslich an unserem Standort in der Schweiz. Das garantiert kurze Wege, schnelle Reaktionszeiten und lückenlose Qualitätskontrolle."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Jede Schraube wird geprüft, jede Verbindung getestet. Wir verlassen uns nicht auf Stichproben, sondern auf 100-prozentige Prüfprotokolle."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "discriminant": "richText",
+            "value": {
+                "content": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Nachhaltigkeit und Zukunft"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Als Unternehmen im Energiesektor tragen wir besondere Verantwortung. Wir setzen uns aktiv für energieeffiziente Lösungen ein – sowohl in unserer Produktion als auch in den Anlagen, die wir bauen."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Mit modernsten CAE-Systemen planen wir Anlagen als digitalen Zwilling, bevor der erste Handgriff in der Werkstatt erfolgt. Das minimiert Fehler und beschleunigt die Durchlaufzeiten."
+                                }
+                            ]
+                        }
+                    ]
+                }
             }
         },
         {
@@ -38,23 +174,41 @@
                 "items": [
                     {
                         "title": "Qualität",
-                        "description": "Wir setzen Massstäbe. Unsere internen Qualitätsstandards übertreffen oft die gesetzlichen Normen. Wir prüfen jede Anlage auf Herz und Nieren.",
+                        "description": "Wir setzen Massstäbe. Unsere internen Qualitätsstandards übertreffen oft die gesetzlichen Normen.",
                         "icon": "shield"
                     },
                     {
                         "title": "Innovation",
-                        "description": "Stillstand ist Rückschritt. Wir integrieren neuste Technologien wie IoT und Smart Metering direkt in unsere Anlagenkonzepte.",
+                        "description": "Stillstand ist Rückschritt. Wir integrieren neuste Technologien wie IoT und Smart Metering.",
                         "icon": "zap"
                     },
                     {
                         "title": "Partnerschaft",
-                        "description": "Ihr Erfolg ist unser Erfolg. Wir begleiten Sie von der ersten Idee über die Planung bis zur Inbetriebnahme und darüber hinaus.",
+                        "description": "Ihr Erfolg ist unser Erfolg. Wir begleiten Sie von der Idee bis zur Inbetriebnahme.",
                         "icon": "users"
                     },
                     {
                         "title": "Verlässlichkeit",
-                        "description": "Ein Wort ist ein Wort. Termintreue und Kostentransparenz sind für uns die Basis einer vertrauensvollen Zusammenarbeit.",
+                        "description": "Termintreue und Kostentransparenz sind die Basis unserer Zusammenarbeit.",
                         "icon": "flag"
+                    }
+                ]
+            }
+        },
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Bereit für Ihr Projekt?",
+                "subheadline": "Kontaktieren Sie uns",
+                "text": "Ob komplexe Industriesteuerung oder massgeschneiderte Energieverteilung – unser Team steht Ihnen zur Seite.",
+                "links": [
+                    {
+                        "label": "Kontakt aufnehmen",
+                        "url": "/contact"
+                    },
+                    {
+                        "label": "Dienstleistungen",
+                        "url": "/dienstleistungen"
                     }
                 ]
             }
