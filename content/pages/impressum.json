@@ -1,0 +1,12 @@
+{
+  "title": "impressum",
+  "seoTitle": "Impressum | SchaltKraft AG",
+  "seoDescription": "Rechtliche Hinweise und Impressum der SchaltKraft AG.",
+  "isHomepage": false,
+  "blocks": [
+    {
+      "discriminant": "richText",
+      "value": {}
+    }
+  ]
+}

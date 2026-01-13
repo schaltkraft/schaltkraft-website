@@ -310,7 +310,29 @@ export default config({
             richText: {
               label: 'Rich Text',
               schema: fields.object({
-                content: fields.markdoc({ label: 'Inhalt' })
+                content: fields.markdoc({
+                  label: 'Inhalt',
+                  options: {
+                    image: {
+                      directory: 'public/images/content',
+                      publicPath: '/images/content/',
+                    },
+                    table: true,
+                    link: true,
+                  },
+                  config: {
+                    tags: {
+                      icon: {
+                        render: 'icon',
+                        attributes: {
+                          name: { type: String },
+                          size: { type: Number, default: 24 },
+                          className: { type: String, default: 'text-brand-orange' },
+                        },
+                      },
+                    },
+                  },
+                })
               })
             }
           },

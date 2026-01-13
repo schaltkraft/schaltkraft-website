@@ -1,0 +1,12 @@
+{
+  "title": "datenschutz",
+  "seoTitle": "Datenschutzerklärung (Stand 2026) | SchaltKraft AG",
+  "seoDescription": "Datenschutzerklärung der SchaltKraft AG gemäss aktuellem Schweizer Datenschutzgesetz (nDSG) und EU-DSGVO.",
+  "isHomepage": false,
+  "blocks": [
+    {
+      "discriminant": "richText",
+      "value": {}
+    }
+  ]
+}

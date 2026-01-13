@@ -7,8 +7,8 @@ export async function generateMetadata(): Promise<Metadata> {
     const page = await getPage('datenschutz');
     if (!page) return {};
     return {
-        title: page.seoTitle || 'Datenschutz - Schaltkraft AG',
-        description: page.seoDescription || 'Datenschutzerklärung',
+        title: page.seoTitle || 'Datenschutzerklärung - Schaltkraft AG',
+        description: page.seoDescription || 'Datenschutzerklärung gemäss Schweizer DSG.',
     };
 }
 
@@ -19,5 +19,9 @@ export default async function DatenschutzPage() {
         return notFound();
     }
 
-    return <SectionRenderer blocks={page.blocks} />;
+    return (
+        <main className="pt-32 lg:pt-40">
+            <SectionRenderer blocks={page.blocks} />
+        </main>
+    );
 }

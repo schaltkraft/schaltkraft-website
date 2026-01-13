@@ -19,5 +19,9 @@ export default async function AgbPage() {
         return notFound();
     }
 
-    return <SectionRenderer blocks={page.blocks} />;
+    return (
+        <main className="pt-32 lg:pt-40">
+            <SectionRenderer blocks={page.blocks} />
+        </main>
+    );
 }

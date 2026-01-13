@@ -8,7 +8,7 @@ export async function generateMetadata(): Promise<Metadata> {
     if (!page) return {};
     return {
         title: page.seoTitle || 'Impressum - Schaltkraft AG',
-        description: page.seoDescription || 'Rechtliche Hinweise',
+        description: page.seoDescription || 'Impressum und rechtliche Hinweise',
     };
 }
 
@@ -19,5 +19,9 @@ export default async function ImpressumPage() {
         return notFound();
     }
 
-    return <SectionRenderer blocks={page.blocks} />;
+    return (
+        <main className="pt-32 lg:pt-40">
+            <SectionRenderer blocks={page.blocks} />
+        </main>
+    );
 }

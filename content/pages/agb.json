@@ -1,0 +1,12 @@
+{
+  "title": "agb",
+  "seoTitle": "Allgemeine Geschäftsbedingungen (AGB) | Schaltkraft AG",
+  "seoDescription": "Allgemeine Geschäftsbedingungen der Schaltkraft AG für Lieferungen, Leistungen und Schaltanlagenbau.",
+  "isHomepage": false,
+  "blocks": [
+    {
+      "discriminant": "richText",
+      "value": {}
+    }
+  ]
+}
