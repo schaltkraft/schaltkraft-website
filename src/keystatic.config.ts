@@ -3,8 +3,7 @@ import { block } from '@keystatic/core/content-components';
 
 export default config({
   storage: {
-    kind: 'github',
-    repo: 'schaltkraft/schaltkraft-website',
+    kind: 'local',
   },
 
   // ==============================================
