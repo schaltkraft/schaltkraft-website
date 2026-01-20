@@ -172,7 +172,6 @@ export default config({
     // ANLEITUNGEN (CMS-Dokumentation)
     anleitungen: collection({
       label: 'Anleitungen',
-      description: 'Hilfe und Dokumentation für die Benutzung dieser Website und des CMS.',
       slugField: 'title',
       path: 'content/anleitungen/*',
       format: { data: 'json' },
@@ -563,7 +562,6 @@ export default config({
     // JOBS
     jobs: collection({
       label: 'Jobs & Karriere',
-      description: 'Stellenangebote verwalten - erscheinen automatisch auf der Karriere-Seite.',
       slugField: 'title',
       path: 'content/jobs/*',
       format: { data: 'json' },
