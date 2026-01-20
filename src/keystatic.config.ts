@@ -14,7 +14,6 @@ export default config({
     // HEADER NAVIGATION
     header: singleton({
       label: 'Header / Kopfzeile',
-      description: 'Hier können Sie das Logo und die Navigation der Website bearbeiten.',
       path: 'content/global/header',
       format: { data: 'json' },
       schema: {
@@ -55,7 +54,6 @@ export default config({
     // FOOTER
     footer: singleton({
       label: 'Footer / Fusszeile',
-      description: 'Bearbeiten Sie hier die Fusszeile mit Kontaktdaten, Quick Links und Copyright.',
       path: 'content/global/footer',
       format: { data: 'json' },
       schema: {
@@ -88,7 +86,6 @@ export default config({
     // SEO DEFAULTS
     seoDefaults: singleton({
       label: 'SEO Einstellungen',
-      description: 'Standard SEO-Werte für die gesamte Website (Titel, Beschreibung, Social Media Bild).',
       path: 'content/global/seo',
       format: { data: 'json' },
       schema: {
@@ -105,7 +102,6 @@ export default config({
     // TEAM MITGLIEDER (Singleton mit 3 Abteilungen)
     teamMembers: singleton({
       label: 'Team-Mitglieder',
-      description: 'Alle Teammitglieder nach Abteilung organisiert.',
       path: 'content/global/team-members',
       format: { data: 'json' },
       schema: {
