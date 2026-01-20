@@ -137,7 +137,10 @@ export default async function JobDetailPage({ params }: { params: Promise<{ slug
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                     <div className="lg:col-span-8">
                         {/* Custom styled job content with icons */}
-                        <JobContent description={job.description} />
+                        <JobContent
+                            sections={job.sections}
+                            description={job.description}
+                        />
                     </div>
 
                     <div className="lg:col-span-4">

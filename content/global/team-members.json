@@ -1,0 +1,68 @@
+{
+  "management": [
+    {
+      "name": "Albert Sulejmani",
+      "role": "Geschäftsführer",
+      "image": "/images/team/management/0/image.jpeg"
+    },
+    {
+      "name": "Miodrag Dokmic",
+      "role": "Teamleiter Aufbau",
+      "image": "/images/team/management/1/image.jpeg"
+    },
+    {
+      "name": "Alexej Kimmerle",
+      "role": "Teamleiter Verdrahten",
+      "image": "/images/team/management/2/image.jpeg"
+    },
+    {
+      "name": "Riccardo Puleo",
+      "role": "Junior Projektleiter",
+      "image": "/images/team/management/3/image.jpeg"
+    },
+    {
+      "name": "Vladislav Stenke",
+      "role": "Junior Projektleiter",
+      "image": "/images/team/management/4/image.jpg"
+    }
+  ],
+  "office": [
+    {
+      "name": "Regula Lorenz",
+      "role": "Buchhaltung",
+      "image": "/images/team/office/0/image.jpg"
+    },
+    {
+      "name": "Valentina Dokmic",
+      "role": "Administration / Personal",
+      "image": "/images/team/office/1/image.jpeg"
+    }
+  ],
+  "production": [
+    {
+      "name": "Baraa Ataya",
+      "role": "Produktion",
+      "image": "/images/team/production/0/image.jpg"
+    },
+    {
+      "name": "Burak Ayri",
+      "role": "Produktion / Auslieferung",
+      "image": "/images/team/production/1/image.jpeg"
+    },
+    {
+      "name": "Edis Alija",
+      "role": "Qualitätssicherung",
+      "image": "/images/team/production/2/image.jpeg"
+    },
+    {
+      "name": "Eduet Spahiu",
+      "role": "Produktion",
+      "image": "/images/team/production/3/image.jpeg"
+    },
+    {
+      "name": "Raimond Markaj",
+      "role": "Produktion",
+      "image": "/images/team/production/4/image.jpg"
+    }
+  ]
+}

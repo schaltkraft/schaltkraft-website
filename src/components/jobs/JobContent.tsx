@@ -1,24 +1,19 @@
+'use client';
+
 import { Target, User, Gift, Mail, Briefcase, CheckCircle2 } from 'lucide-react';
 
-interface JobContentProps {
-    description: string;
-}
-
-interface Section {
+interface JobSection {
+    icon: string;
     title: string;
-    content: string;
-    iconType: string;
+    text?: string;
+    items?: string[];
 }
 
-// Map section headers to icon types
-function getIconType(title: string): string {
-    const normalizedTitle = title.toLowerCase();
-    if (normalizedTitle.includes('mission')) return 'briefcase';
-    if (normalizedTitle.includes('aufgaben')) return 'target';
-    if (normalizedTitle.includes('profil') || normalizedTitle.includes('mitbringst')) return 'user';
-    if (normalizedTitle.includes('bieten')) return 'gift';
-    if (normalizedTitle.includes('kontakt')) return 'mail';
-    return 'check';
+interface JobContentProps {
+    // New structured format
+    sections?: JobSection[];
+    // Legacy HTML format
+    description?: string;
 }
 
 function IconComponent({ iconType }: { iconType: string }) {
@@ -32,14 +27,29 @@ function IconComponent({ iconType }: { iconType: string }) {
     }
 }
 
-function parseHtmlToSections(html: string): { intro: string; sections: Section[] } {
-    const sections: Section[] = [];
+// Legacy: Parse HTML to sections for old jobs
+interface LegacySection {
+    title: string;
+    content: string;
+    iconType: string;
+}
+
+function getIconType(title: string): string {
+    const normalizedTitle = title.toLowerCase();
+    if (normalizedTitle.includes('mission')) return 'briefcase';
+    if (normalizedTitle.includes('aufgaben')) return 'target';
+    if (normalizedTitle.includes('profil') || normalizedTitle.includes('mitbringst')) return 'user';
+    if (normalizedTitle.includes('bieten')) return 'gift';
+    if (normalizedTitle.includes('kontakt')) return 'mail';
+    return 'check';
+}
+
+function parseHtmlToSections(html: string): { intro: string; sections: LegacySection[] } {
+    const sections: LegacySection[] = [];
     let intro = '';
 
-    // Split by h2/h3 tags while keeping them
     const parts = html.split(/(<h[23][^>]*>.*?<\/h[23]>)/gi);
-
-    let currentSection: Section | null = null;
+    let currentSection: LegacySection | null = null;
 
     parts.forEach((part) => {
         const headerMatch = part.match(/<h[23][^>]*>(.*?)<\/h[23]>/i);
@@ -67,12 +77,59 @@ function parseHtmlToSections(html: string): { intro: string; sections: Section[]
     return { intro, sections };
 }
 
-export function JobContent({ description }: JobContentProps) {
+export function JobContent({ sections, description }: JobContentProps) {
+    // Check if we have new structured format
+    const hasStructuredContent = sections && sections.length > 0;
+
+    if (hasStructuredContent) {
+        // New structured format - all sections uniform with icon, title, text, items
+        return (
+            <div className="space-y-6">
+                {sections.map((section, idx) => (
+                    <div
+                        key={idx}
+                        className="bg-zinc-900/60 rounded-2xl p-6 md:p-8 border border-white/10 hover:border-brand-orange/30 transition-all duration-300"
+                    >
+                        {/* Section header with icon */}
+                        <div className="flex items-center gap-4 mb-6 pb-4 border-b border-white/10">
+                            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-orange/20 to-brand-orange/5 border border-brand-orange/30 flex items-center justify-center shrink-0">
+                                <IconComponent iconType={section.icon} />
+                            </div>
+                            <h3 className="text-xl md:text-2xl font-bold text-white">
+                                {section.title}
+                            </h3>
+                        </div>
+
+                        {/* Section text (optional) */}
+                        {section.text && (
+                            <p className="text-zinc-300 leading-relaxed mb-4 whitespace-pre-line">
+                                {section.text}
+                            </p>
+                        )}
+
+                        {/* Section items as bullet list (optional) */}
+                        {section.items && section.items.length > 0 && (
+                            <ul className="space-y-3">
+                                {section.items.map((item, itemIdx) => (
+                                    <li key={itemIdx} className="flex items-start gap-3 text-zinc-300">
+                                        <span className="text-brand-orange mt-1.5 shrink-0">•</span>
+                                        <span dangerouslySetInnerHTML={{ __html: item }} />
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+                ))}
+            </div>
+        );
+    }
+
+    // Legacy HTML format fallback
     if (!description) {
         return null;
     }
 
-    const { intro, sections } = parseHtmlToSections(description);
+    const { intro, sections: legacySections } = parseHtmlToSections(description);
 
     return (
         <div className="space-y-6">
@@ -85,7 +142,7 @@ export function JobContent({ description }: JobContentProps) {
             )}
 
             {/* Content sections as cards */}
-            {sections.map((section, idx) => (
+            {legacySections.map((section, idx) => (
                 <div
                     key={idx}
                     className="bg-zinc-900/60 rounded-2xl p-6 md:p-8 border border-white/10 hover:border-brand-orange/30 transition-all duration-300"

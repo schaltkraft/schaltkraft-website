@@ -1,103 +1,113 @@
 {
-    "title": "about-us",
-    "seoTitle": "Über Uns - Schaltkraft AG | Präzision, Tradition, Zukunft",
-    "seoDescription": "Erfahren Sie alles über Schaltkraft AG. Unsere 20-jährige Geschichte, unsere Schweizer Qualitätsphilosophie und unsere Vision für die Zukunft des Schaltanlagenbaus.",
-    "isHomepage": false,
-    "blocks": [
-        {
-            "discriminant": "hero",
-            "value": {
-                "headline": "Präzision aus Leidenschaft",
-                "subheadline": "Schaltkraft AG verbindet traditionelles Handwerk mit modernster Industrie 4.0 Technologie. Wir bauen das Herzstück Ihrer Energieversorgung.",
-                "image": "/images/hero/about-hero.png"
-            }
-        },
-        {
-            "discriminant": "intro",
-            "value": {
-                "headline": "Unsere Mission",
-                "subheadline": "Perfektion im Detail",
-                "text": "Wir verstehen uns als Architekten sicherer Energieflüsse. Jede von uns gefertigte Schaltanlage ist ein Unikat, exakt zugeschnitten auf die spezifischen Anforderungen unserer Kunden.\n\nOb komplexe Steuerungen für die Industrieautomation oder robuste Energieverteilungen für Infrastrukturprojekte – unser Anspruch bleibt derselbe: Absolute Zuverlässigkeit und kompromisslose Qualität.",
-                "image": "/images/about-team.png",
-                "links": [
-                    {
-                        "label": "Unser Team kennenlernen",
-                        "url": "/team"
-                    }
-                ]
-            }
-        },
-        {
-            "discriminant": "intro",
-            "value": {
-                "headline": "Unsere Geschichte",
-                "subheadline": "Seit 2004 in der Schweiz",
-                "text": "Was als kleine Werkstatt begann, ist heute ein hochmodernes Fertigungszentrum in Romanshorn am Bodensee. Wir haben den Wandel der Zeit nicht nur beobachtet, sondern aktiv mitgestaltet.\n\nVon den ersten analogen Steuerungen bis zu vernetzten Smart-Grid-Lösungen – unser Wachstum war stets organisch und nachhaltig. Heute beschäftigen wir über 25 spezialisierte Fachkräfte.",
-                "image": "/images/firmengebäude.jpeg"
-            }
-        },
-        {
-            "discriminant": "intro",
-            "value": {
-                "headline": "Swiss Made Qualität",
-                "subheadline": "100% Schweizer Fertigung",
-                "text": "Swiss Made ist für uns kein Label, sondern ein gelebtes Versprechen. Unsere gesamte Fertigung erfolgt ausschliesslich an unserem Standort in der Schweiz.\n\nJede Schraube wird geprüft, jede Verbindung getestet. Wir verlassen uns nicht auf Stichproben, sondern auf lückenlose Prüfprotokolle. Das garantiert kurze Wege, schnelle Reaktionszeiten und kompromisslose Qualitätskontrolle.",
-                "image": "/images/spezialist-schaltanlagen.jpeg"
-            }
-        },
-        {
-            "discriminant": "intro",
-            "value": {
-                "headline": "Zukunft gestalten",
-                "subheadline": "Innovation & Nachhaltigkeit",
-                "text": "Als Unternehmen im Energiesektor tragen wir besondere Verantwortung. Wir investieren kontinuierlich in digitale Planungstools, CAE-Integration und energieeffiziente Produktionsprozesse.\n\nMit modernsten Systemen planen wir Anlagen als digitalen Zwilling, bevor der erste Handgriff in der Werkstatt erfolgt. Das minimiert Fehler und beschleunigt die Durchlaufzeiten erheblich.",
-                "image": "/images/hero/jobs-hero.jpg"
-            }
-        },
-        {
-            "discriminant": "values",
-            "value": {
-                "items": [
-                    {
-                        "title": "Qualität",
-                        "description": "Unsere internen Standards übertreffen oft die gesetzlichen Normen. Jede Anlage wird auf Herz und Nieren geprüft.",
-                        "icon": "shield"
-                    },
-                    {
-                        "title": "Innovation",
-                        "description": "Wir integrieren neuste Technologien wie IoT und Smart Metering direkt in unsere Anlagenkonzepte.",
-                        "icon": "zap"
-                    },
-                    {
-                        "title": "Partnerschaft",
-                        "description": "Wir begleiten Sie von der ersten Idee über die Planung bis zur Inbetriebnahme und darüber hinaus.",
-                        "icon": "users"
-                    },
-                    {
-                        "title": "Verlässlichkeit",
-                        "description": "Termintreue und Kostentransparenz sind die Basis einer vertrauensvollen Zusammenarbeit.",
-                        "icon": "flag"
-                    }
-                ]
-            }
-        },
-        {
-            "discriminant": "intro",
-            "value": {
-                "headline": "Bereit für Ihr Projekt?",
-                "subheadline": "Kontaktieren Sie uns",
-                "text": "Ob komplexe Industriesteuerung oder massgeschneiderte Energieverteilung – unser erfahrenes Team steht Ihnen mit Rat und Tat zur Seite. Wir freuen uns auf Ihre Anfrage.",
-                "links": [
-                    {
-                        "label": "Kontakt aufnehmen",
-                        "url": "/contact"
-                    },
-                    {
-                        "label": "Unsere Dienstleistungen",
-                        "url": "/dienstleistungen"
-                    }
-                ]
-            }
-        }
-    ]
+  "title": "about-us",
+  "seoTitle": "Über Uns - Schaltkraft AG | Präzision, Tradition, Zukunft",
+  "seoDescription": "Schaltkraft AG – Ihr Schweizer Partner für Schaltanlagenbau in Romanshorn. Qualität, Präzision und Innovation für Industrie und Infrastruktur.",
+  "isHomepage": false,
+  "blocks": [
+    {
+      "discriminant": "hero",
+      "value": {
+        "headline": "Präzision aus Leidenschaft",
+        "subheadline": "Schaltkraft AG verbindet traditionelles Handwerk mit modernster Industrie 4.0 Technologie. Wir bauen das Herzstück Ihrer Energieversorgung.",
+        "ctaPrimary": {},
+        "ctaSecondary": {},
+        "image": "/images/hero/about-us/blocks/0/value/image.png"
+      }
+    },
+    {
+      "discriminant": "intro",
+      "value": {
+        "headline": "Unsere Mission",
+        "subheadline": "Perfektion im Detail",
+        "text": "Wir verstehen uns als Architekten sicherer Energieflüsse. Jede von uns gefertigte Schaltanlage ist ein Unikat, exakt zugeschnitten auf die spezifischen Anforderungen unserer Kunden.\n\nOb komplexe Steuerungen für die Industrieautomation oder robuste Energieverteilungen für Infrastrukturprojekte – unser Anspruch bleibt derselbe: Absolute Zuverlässigkeit und kompromisslose Qualität.",
+        "image": "/images/content/about-us/blocks/1/value/image.png",
+        "icons": [],
+        "links": [
+          {
+            "label": "Unser Team kennenlernen",
+            "url": "/team"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "intro",
+      "value": {
+        "headline": "Unsere Geschichte",
+        "subheadline": "Seit 2004 in der Schweiz",
+        "text": "Was als kleine Werkstatt begann, ist heute ein hochmodernes Fertigungszentrum in Romanshorn am Bodensee. Wir haben den Wandel der Zeit nicht nur beobachtet, sondern aktiv mitgestaltet.\n\nVon den ersten analogen Steuerungen bis zu vernetzten Smart-Grid-Lösungen – unser Wachstum war stets organisch und nachhaltig. Heute beschäftigen wir über 25 spezialisierte Fachkräfte.",
+        "image": "/images/content/about-us/blocks/2/value/image.jpeg",
+        "icons": [],
+        "links": []
+      }
+    },
+    {
+      "discriminant": "intro",
+      "value": {
+        "headline": "Swiss Made Qualität",
+        "subheadline": "100% Schweizer Fertigung",
+        "text": "Swiss Made ist für uns kein Label, sondern ein gelebtes Versprechen. Unsere gesamte Fertigung erfolgt ausschliesslich an unserem Standort in der Schweiz.\n\nJede Schraube wird geprüft, jede Verbindung getestet. Wir verlassen uns nicht auf Stichproben, sondern auf lückenlose Prüfprotokolle. Das garantiert kurze Wege, schnelle Reaktionszeiten und kompromisslose Qualitätskontrolle.",
+        "image": "/images/content/about-us/blocks/3/value/image.jpeg",
+        "icons": [],
+        "links": []
+      }
+    },
+    {
+      "discriminant": "intro",
+      "value": {
+        "headline": "Zukunft gestalten",
+        "subheadline": "Innovation & Nachhaltigkeit",
+        "text": "Als Unternehmen im Energiesektor tragen wir besondere Verantwortung. Wir investieren kontinuierlich in digitale Planungstools, CAE-Integration und energieeffiziente Produktionsprozesse.\n\nMit modernsten Systemen planen wir Anlagen als digitalen Zwilling, bevor der erste Handgriff in der Werkstatt erfolgt. Das minimiert Fehler und beschleunigt die Durchlaufzeiten erheblich.",
+        "image": "/images/content/about-us/blocks/4/value/image.jpg",
+        "icons": [],
+        "links": []
+      }
+    },
+    {
+      "discriminant": "values",
+      "value": {
+        "items": [
+          {
+            "title": "Qualität",
+            "description": "Unsere internen Standards übertreffen oft die gesetzlichen Normen. Jede Anlage wird auf Herz und Nieren geprüft.",
+            "icon": "shield"
+          },
+          {
+            "title": "Innovation",
+            "description": "Wir integrieren neuste Technologien wie IoT und Smart Metering direkt in unsere Anlagenkonzepte.",
+            "icon": "zap"
+          },
+          {
+            "title": "Partnerschaft",
+            "description": "Wir begleiten Sie von der ersten Idee über die Planung bis zur Inbetriebnahme und darüber hinaus.",
+            "icon": "users"
+          },
+          {
+            "title": "Verlässlichkeit",
+            "description": "Termintreue und Kostentransparenz sind die Basis einer vertrauensvollen Zusammenarbeit.",
+            "icon": "flag"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "intro",
+      "value": {
+        "headline": "Bereit für Ihr Projekt?",
+        "subheadline": "Kontaktieren Sie uns",
+        "text": "Ob komplexe Industriesteuerung oder massgeschneiderte Energieverteilung – unser erfahrenes Team steht Ihnen mit Rat und Tat zur Seite. Wir freuen uns auf Ihre Anfrage.",
+        "icons": [],
+        "links": [
+          {
+            "label": "Kontakt aufnehmen",
+            "url": "/contact"
+          },
+          {
+            "label": "Unsere Dienstleistungen",
+            "url": "/dienstleistungen"
+          }
+        ]
+      }
+    }
+  ]
 }

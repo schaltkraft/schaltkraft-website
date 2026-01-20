@@ -1,7 +1,7 @@
 {
   "title": "home",
-  "seoTitle": "Schaltkraft AG - Startseite",
-  "seoDescription": "Willkommen bei Schaltkraft AG. Wir bieten hochwertige Lösungen für Ihre Elektro-Anforderungen.",
+  "seoTitle": "Schaltkraft AG | Schaltanlagenbau & Elektro-Engineering Schweiz",
+  "seoDescription": "Schaltanlagenbau, Steuerungsbau und Elektroplanung aus der Schweiz. Schaltkraft AG – Ihr Partner für individuelle Niederspannungsverteilungen und Automation in Romanshorn.",
   "isHomepage": true,
   "blocks": [
     {
@@ -26,8 +26,8 @@
       "value": {
         "items": [
           "SWISS MADE QUALITÄT",
-          "20+ JAHRE ERFAHRUNG",
-          "ZERTIFIZIERTE EXPERTEN"
+          "ISO 9001 ZERTIFIZIERT",
+          "PERSÖNLICHE BETREUUNG"
         ]
       }
     },

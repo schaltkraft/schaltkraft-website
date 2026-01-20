@@ -172,33 +172,22 @@ export async function getHomepage() {
 
 
 // ==============================================
-// TEAM MEMBERS
+// TEAM MEMBERS (from Singleton)
 // ==============================================
 export async function getTeamMembers() {
-  const members = await reader.collections.team.all();
-  // members: { slug: string, entry: ... }[]
-
-  const resolvedMembers = await Promise.all(members.map(async (m) => {
-    // Cast entry to any to avoid TS errors with inferred schema
-    const entry = m.entry as any;
-
-    let bio = entry.bio;
-    if (typeof bio === 'function') bio = await bio();
-
-    const bioHtml = await renderMarkdoc(bio);
+  try {
+    const teamData = await reader.singletons.teamMembers.read();
+    if (!teamData) return { management: [], office: [], production: [] };
 
     return {
-      ...entry,
-      slug: m.slug,
-      bio: bioHtml
+      management: teamData.management || [],
+      office: teamData.office || [],
+      production: teamData.production || [],
     };
-  }));
-
-  return resolvedMembers.sort((a, b) => {
-    const orderA = typeof a.order === 'number' ? a.order : 999;
-    const orderB = typeof b.order === 'number' ? b.order : 999;
-    return orderA - orderB;
-  });
+  } catch (e) {
+    console.error("Failed to read teamMembers singleton", e);
+    return { management: [], office: [], production: [] };
+  }
 }
 
 // ==============================================
@@ -264,8 +253,11 @@ export async function getAllJobs() {
     };
   }));
 
+  // Filter out inactive jobs (isActive undefined = active for backwards compatibility)
+  const activeJobs = resolvedJobs.filter(job => job.isActive !== false);
+
   // Sort by date (newest first)
-  return resolvedJobs.sort((a, b) => new Date(b.datePosted).getTime() - new Date(a.datePosted).getTime());
+  return activeJobs.sort((a, b) => new Date(b.datePosted).getTime() - new Date(a.datePosted).getTime());
 }
 
 export async function getJob(slug: string) {

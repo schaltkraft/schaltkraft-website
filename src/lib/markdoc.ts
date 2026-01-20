@@ -159,5 +159,55 @@ export const markdocConfig: Config = {
         // Merge custom nodes for Keystatic compatibility
         ...customNodes as any,
     },
-    tags: {},
+    tags: {
+        // Custom Bild (Image) component from Keystatic content-components
+        Bild: {
+            render: 'figure',
+            attributes: {
+                image: { type: String },
+                alt: { type: String },
+                caption: { type: String },
+                size: { type: String },
+                position: { type: String },
+            },
+            transform(node: any) {
+                const { image, alt, caption, size, position } = node.attributes;
+
+                // Size classes
+                const sizeClasses: Record<string, string> = {
+                    'small': 'max-w-[25%]',
+                    'medium': 'max-w-[50%]',
+                    'large': 'max-w-[75%]',
+                    'full': 'max-w-full w-full',
+                };
+
+                // Position classes
+                const positionClasses: Record<string, string> = {
+                    'left': 'mr-auto',
+                    'center': 'mx-auto',
+                    'right': 'ml-auto',
+                };
+
+                const sizeClass = sizeClasses[size] || sizeClasses['medium'];
+                const posClass = positionClasses[position] || positionClasses['center'];
+
+                const imgTag = new Tag('img', {
+                    src: image || '',
+                    alt: alt || '',
+                    class: `rounded-xl shadow-lg w-full`,
+                    loading: 'lazy'
+                });
+
+                const figureClasses = `my-8 ${sizeClass} ${posClass}`;
+
+                if (caption) {
+                    return new Tag('figure', { class: figureClasses }, [
+                        imgTag,
+                        new Tag('figcaption', { class: 'text-sm text-zinc-400 mt-2 text-center' }, [caption])
+                    ]);
+                }
+                return new Tag('figure', { class: figureClasses }, [imgTag]);
+            }
+        },
+    },
 };

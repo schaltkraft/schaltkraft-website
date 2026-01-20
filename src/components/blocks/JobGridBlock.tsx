@@ -16,24 +16,31 @@ export async function JobGridBlock({ data }: { data: any }) {
                             {headline}
                         </h2>
                     )}
-                    {intro && (
-                        <p className="text-lg text-zinc-400">
-                            {intro}
-                        </p>
-                    )}
+                    <p className="text-lg text-zinc-400">
+                        {jobs.length > 0
+                            ? (intro || 'Wir wachsen weiter und suchen Verstärkung für unser Team.')
+                            : 'Aktuell haben wir keine offenen Stellen, aber wir freuen uns jederzeit über Initiativbewerbungen.'
+                        }
+                    </p>
                 </div>
 
                 {jobs.length === 0 ? (
-                    <div className="text-center py-12 bg-zinc-900/50 rounded-2xl border border-white/5">
-                        <p className="text-xl text-zinc-500">
+                    <div className="text-center py-12 bg-zinc-900/50 rounded-2xl border border-white/5 max-w-2xl mx-auto">
+                        <p className="text-xl text-zinc-400 mb-4">
                             Aktuell sind keine offenen Stellen ausgeschrieben.
                         </p>
-                        <p className="mt-2 text-zinc-600">
-                            Initiativbewerbungen sind jederzeit willkommen.
+                        <p className="text-zinc-500">
+                            Wir freuen uns aber jederzeit über Initiativbewerbungen an{' '}
+                            <a href="mailto:info@schaltkraft.ch" className="text-brand-orange hover:text-white transition-colors">
+                                info@schaltkraft.ch
+                            </a>
                         </p>
                     </div>
                 ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                    <div className={`grid gap-6 max-w-5xl mx-auto ${jobs.length === 1
+                        ? 'grid-cols-1 max-w-lg'
+                        : 'grid-cols-1 md:grid-cols-2'
+                        }`}>
                         {jobs.map((job) => (
                             <Link
                                 key={job.slug}
