@@ -1,8 +1,10 @@
 import { config, fields, collection, singleton } from '@keystatic/core';
+import { block } from '@keystatic/core/content-components';
 
 export default config({
   storage: {
-    kind: 'local',
+    kind: 'github',
+    repo: 'schaltkraft/schaltkraft-website',
   },
 
   // ==============================================
@@ -11,7 +13,8 @@ export default config({
   singletons: {
     // HEADER NAVIGATION
     header: singleton({
-      label: 'Header Navigation',
+      label: 'Header / Kopfzeile',
+      description: 'Hier können Sie das Logo und die Navigation der Website bearbeiten.',
       path: 'content/global/header',
       format: { data: 'json' },
       schema: {
@@ -51,7 +54,8 @@ export default config({
 
     // FOOTER
     footer: singleton({
-      label: 'Footer',
+      label: 'Footer / Fusszeile',
+      description: 'Bearbeiten Sie hier die Fusszeile mit Kontaktdaten, Quick Links und Copyright.',
       path: 'content/global/footer',
       format: { data: 'json' },
       schema: {
@@ -83,17 +87,84 @@ export default config({
 
     // SEO DEFAULTS
     seoDefaults: singleton({
-      label: 'SEO Standard',
+      label: 'SEO Einstellungen',
+      description: 'Standard SEO-Werte für die gesamte Website (Titel, Beschreibung, Social Media Bild).',
       path: 'content/global/seo',
       format: { data: 'json' },
       schema: {
-        siteTitle: fields.text({ label: 'Website Titel' }),
-        siteDescription: fields.text({ label: 'Website Beschreibung', multiline: true }),
+        siteTitle: fields.text({ label: 'Website Titel', description: 'Der Haupttitel der Website (erscheint im Browser-Tab)' }),
+        siteDescription: fields.text({ label: 'Website Beschreibung', description: 'Kurze Beschreibung für Suchmaschinen (max. 160 Zeichen)', multiline: true }),
         ogImage: fields.image({
           label: 'OG Image',
           directory: 'public/images/global',
           publicPath: '/images/global/',
         }),
+      },
+    }),
+
+    // TEAM MITGLIEDER (Singleton mit 3 Abteilungen)
+    teamMembers: singleton({
+      label: 'Team-Mitglieder',
+      description: 'Alle Teammitglieder nach Abteilung organisiert.',
+      path: 'content/global/team-members',
+      format: { data: 'json' },
+      schema: {
+        // Führung & Projektleitung
+        management: fields.array(
+          fields.object({
+            name: fields.text({ label: 'Name', validation: { isRequired: true } }),
+            role: fields.text({ label: 'Position', validation: { isRequired: true } }),
+            image: fields.image({
+              label: 'Foto',
+              directory: 'public/images/team',
+              publicPath: '/images/team/',
+            }),
+            email: fields.text({ label: 'E-Mail (optional)' }),
+          }),
+          {
+            label: 'Führung & Projektleitung',
+            description: 'Geschäftsführung und Projektleiter',
+            itemLabel: (props) => props.fields.name.value || 'Neues Mitglied',
+          }
+        ),
+
+        // Buchhaltung & Personal
+        office: fields.array(
+          fields.object({
+            name: fields.text({ label: 'Name', validation: { isRequired: true } }),
+            role: fields.text({ label: 'Position', validation: { isRequired: true } }),
+            image: fields.image({
+              label: 'Foto',
+              directory: 'public/images/team',
+              publicPath: '/images/team/',
+            }),
+            email: fields.text({ label: 'E-Mail (optional)' }),
+          }),
+          {
+            label: 'Buchhaltung & Personal',
+            description: 'Büro und Administration',
+            itemLabel: (props) => props.fields.name.value || 'Neues Mitglied',
+          }
+        ),
+
+        // Produktion
+        production: fields.array(
+          fields.object({
+            name: fields.text({ label: 'Name', validation: { isRequired: true } }),
+            role: fields.text({ label: 'Position', validation: { isRequired: true } }),
+            image: fields.image({
+              label: 'Foto',
+              directory: 'public/images/team',
+              publicPath: '/images/team/',
+            }),
+            email: fields.text({ label: 'E-Mail (optional)' }),
+          }),
+          {
+            label: 'Produktion',
+            description: 'Fertigung und Montage',
+            itemLabel: (props) => props.fields.name.value || 'Neues Mitglied',
+          }
+        ),
       },
     }),
   },
@@ -102,6 +173,31 @@ export default config({
   // COLLECTIONS
   // ==============================================
   collections: {
+    // ANLEITUNGEN (CMS-Dokumentation)
+    anleitungen: collection({
+      label: 'Anleitungen',
+      description: 'Hilfe und Dokumentation für die Benutzung dieser Website und des CMS.',
+      slugField: 'title',
+      path: 'content/anleitungen/*',
+      format: { data: 'json' },
+      schema: {
+        title: fields.slug({ name: { label: 'Anleitungs-Titel' } }),
+        kategorie: fields.select({
+          label: 'Kategorie',
+          options: [
+            { label: 'Für Benutzer (ohne Technik)', value: 'benutzer' },
+            { label: 'Für Entwickler (technisch)', value: 'entwickler' },
+          ],
+          defaultValue: 'benutzer',
+        }),
+        content: fields.text({
+          label: 'Inhalt',
+          description: 'Die vollständige Anleitung (Markdown-Format möglich)',
+          multiline: true,
+        }),
+      },
+    }),
+
     // PAGES
     pages: collection({
       label: 'Seiten (flexibel)',
@@ -109,18 +205,19 @@ export default config({
       path: 'content/pages/*',
       format: { data: 'json' },
       schema: {
-        title: fields.slug({ name: { label: 'Seiten-Slug' } }),
-        seoTitle: fields.text({ label: 'SEO Titel' }),
-        seoDescription: fields.text({ label: 'SEO Beschreibung', multiline: true }),
-        isHomepage: fields.checkbox({ label: 'Startseite?' }),
+        title: fields.slug({ name: { label: 'Seiten-Slug', description: 'URL-freundlicher Name (z.B. "ueber-uns" für /ueber-uns)' } }),
+        seoTitle: fields.text({ label: 'SEO Titel', description: 'Titel für Suchmaschinen und Browser-Tab' }),
+        seoDescription: fields.text({ label: 'SEO Beschreibung', description: 'Kurze Beschreibung für Suchmaschinen (max. 160 Zeichen)', multiline: true }),
+        isHomepage: fields.checkbox({ label: 'Als Startseite verwenden', description: '⚠️ NICHT ÄNDERN! Diese Option ist nur für das System.' }),
         blocks: fields.blocks(
           {
             // HERO
             hero: {
-              label: 'Hero Section',
+              label: 'Grosser Startbereich',
+              description: 'Der prominente Bereich ganz oben auf der Seite mit Hauptüberschrift, kurzem Text und Call-to-Action Button.',
               schema: fields.object({
-                headline: fields.text({ label: 'H1 Headline', multiline: true }),
-                subheadline: fields.text({ label: 'Subheadline', multiline: true }), // Was 'lead'
+                headline: fields.text({ label: 'Hauptüberschrift (H1)', description: 'Die wichtigste Überschrift der Seite', multiline: true }),
+                subheadline: fields.text({ label: 'Unterüberschrift', description: 'Ergänzender Text unter der Hauptüberschrift', multiline: true }),
                 ctaPrimary: fields.object({
                   text: fields.text({ label: 'Button Text' }), // Was 'label'
                   url: fields.text({ label: 'URL' }),
@@ -138,24 +235,26 @@ export default config({
               }),
             },
 
-            // TRUST BAR (New block, keeping it)
+            // TRUST BAR
             trustBar: {
-              label: 'Trust Bar (3 Items)',
+              label: 'Vertrauensleiste',
+              description: 'Drei kurze Vertrauens-Aussagen direkt unter dem Startbereich (z.B. "20 Jahre Erfahrung").',
               schema: fields.object({
                 items: fields.array(
-                  fields.text({ label: 'Trust Item Text' }),
-                  { label: 'Items', validation: { length: { min: 3, max: 3 } } }
+                  fields.text({ label: 'Trust-Punkt', description: 'Kurzer Text (max. 5 Wörter)' }),
+                  { label: 'Trust-Punkte (genau 3)', validation: { length: { min: 3, max: 3 } } }
                 )
               })
             },
 
             // INTRO
             intro: {
-              label: 'Intro',
+              label: 'Text mit Bild',
+              description: 'Einführungstext mit Bild daneben - ideal für "Über uns" oder Firmenbeschreibung.',
               schema: fields.object({
                 headline: fields.text({ label: 'Überschrift' }),
-                subheadline: fields.text({ label: 'Subline / Firmenname' }),
-                text: fields.text({ label: 'Text', multiline: true }),
+                subheadline: fields.text({ label: 'Subline', description: 'z.B. Firmenname oder Slogan' }),
+                text: fields.text({ label: 'Haupttext', description: 'Der ausführliche Beschreibungstext', multiline: true }),
                 image: fields.image({
                   label: 'Bild',
                   directory: 'public/images/content',
@@ -174,9 +273,10 @@ export default config({
 
             // PARTNER SLIDER
             partnerSlider: {
-              label: 'Partner Slider',
+              label: 'Partner & Zertifikate',
+              description: 'Animierter Slider mit Logos von Partnern, Lieferanten oder Zertifizierungen.',
               schema: fields.object({
-                title: fields.text({ label: 'Titel', defaultValue: 'Partner' }),
+                title: fields.text({ label: 'Titel', description: 'z.B. "Unsere Partner"', defaultValue: 'Partner' }),
                 logos: fields.array(
                   fields.object({
                     name: fields.text({ label: 'Partner Name' }),
@@ -191,16 +291,17 @@ export default config({
               })
             },
 
-            // SERVICES (Restoring old block name for compatibility)
+            // SERVICES
             services: {
-              label: 'Dienstleistungen (Startseite)',
+              label: 'Leistungs-Kacheln',
+              description: 'Mehrere Kacheln mit Bild und Stichpunkten - zeigt Dienstleistungen auf der Startseite.',
               schema: fields.object({
-                title: fields.text({ label: 'Titel' }),
-                subtitle: fields.text({ label: 'Untertitel' }), // Match existing data
+                title: fields.text({ label: 'Abschnitts-Titel', description: 'z.B. "Unsere Leistungen"' }),
+                subtitle: fields.text({ label: 'Untertitel' }),
                 items: fields.array(
                   fields.object({
-                    number: fields.text({ label: 'Nummer' }), // Match existing
-                    title: fields.text({ label: 'Titel' }),
+                    number: fields.text({ label: 'Nummer', description: 'z.B. "01", "02"' }),
+                    title: fields.text({ label: 'Service-Name' }),
                     bullets: fields.array(fields.text({ label: 'Punkt' }), { label: 'Bullets' }),
                     // Additional fields for new design can stay optional or use defaults
                     linkUrl: fields.text({ label: 'Link URL' }),
@@ -239,13 +340,14 @@ export default config({
 
             // VALUES
             values: {
-              label: 'Werte',
+              label: 'Werte / Vorteile',
+              description: 'Karten mit Icon, Titel und Beschreibung - für Firmenwerte oder Kundenvorteile.',
               schema: fields.object({
                 items: fields.array(
                   fields.object({
                     title: fields.text({ label: 'Titel' }),
                     description: fields.text({ label: 'Beschreibung', multiline: true }),
-                    icon: fields.text({ label: 'Icon Name' })
+                    icon: fields.text({ label: 'Icon-Name', description: 'Lucide Icon Name (z.B. "check", "shield", "zap")' })
                   }),
                   { label: 'Werte', itemLabel: (props) => props.fields.title.value }
                 )
@@ -255,70 +357,121 @@ export default config({
             // TESTIMONIALS
             testimonials: {
               label: 'Kundenstimmen',
+              description: 'Bewertungen und Zitate von zufriedenen Kunden mit Sterne-Rating.',
               schema: fields.object({
-                title: fields.text({ label: 'Titel' }),
+                title: fields.text({ label: 'Abschnitts-Titel', description: 'z.B. "Was unsere Kunden sagen"' }),
                 items: fields.array(
                   fields.object({
-                    quote: fields.text({ label: 'Zitat', multiline: true }),
-                    author: fields.text({ label: 'Name' }),
-                    role: fields.text({ label: 'Rolle/Firma' }),
-                    rating: fields.integer({ label: 'Rating (1-5)' }) // Added back
+                    quote: fields.text({ label: 'Zitat', description: 'Das Kundenzitat', multiline: true }),
+                    author: fields.text({ label: 'Name des Kunden' }),
+                    role: fields.text({ label: 'Position/Firma', description: 'z.B. "Geschäftsführer, Muster AG"' }),
+                    rating: fields.integer({ label: 'Sterne-Bewertung', description: '1-5 Sterne' })
                   }),
                   { label: 'Testimonials', itemLabel: (props) => props.fields.author.value }
                 )
               })
             },
 
-            // CONTACT FORM (Restoring old block)
+            // CONTACT FORM
             contactForm: {
-              label: 'Kontakt Formular (Legacy)',
+              label: 'Kontakt-Formular',
+              description: 'Kontaktbereich mit Formular - Anfragen werden automatisch per E-Mail gesendet.',
               schema: fields.object({
-                headline: fields.text({ label: 'Headline' }),
-                image: fields.image({ label: 'Image', directory: 'public/images/contact', publicPath: '/images/contact/' }),
-                subjects: fields.array(fields.text({ label: 'Subject' }), { label: 'Subjects' })
+                headline: fields.text({ label: 'Überschrift' }),
+                image: fields.image({ label: 'Bild (optional)', directory: 'public/images/contact', publicPath: '/images/contact/' }),
+                subjects: fields.array(fields.text({ label: 'Betreff-Option' }), { label: 'Betreff-Auswahloptionen', description: 'Was kann der Besucher als Grund für die Anfrage wählen?' })
               })
             },
 
-            // CONTACT TEASER (New block)
+            // CONTACT TEASER
             contactTeaser: {
-              label: 'Kontakt Teaser (Neu)',
+              label: 'Kontakt-Aufruf',
+              description: 'Kurzer Textblock mit Aufforderung zur Kontaktaufnahme - ideal am Seitenende.',
               schema: fields.object({
-                headline: fields.text({ label: 'Überschrift' }),
-                text: fields.text({ label: 'Text', multiline: true }),
+                headline: fields.text({ label: 'Überschrift', description: 'z.B. "Haben Sie Fragen?"' }),
+                text: fields.text({ label: 'Text', description: 'Einladender Text für Kontaktaufnahme', multiline: true }),
               })
             },
 
             // JOB LIST
             jobList: {
-              label: 'Job Liste (Automatisch)',
+              label: 'Stellenangebote',
+              description: 'Zeigt automatisch alle offenen Stellen an, die unter "Jobs & Karriere" erfasst wurden.',
               schema: fields.object({
                 headline: fields.text({ label: 'Überschrift', defaultValue: 'Offene Stellen' }),
-                intro: fields.text({ label: 'Einleitungstext', multiline: true }),
+                intro: fields.text({ label: 'Einleitungstext', description: 'Optionaler Text vor der Stellenliste', multiline: true }),
               })
             },
 
             // TEAM GRID
             teamGrid: {
-              label: 'Team Grid',
+              label: 'Team-Übersicht',
+              description: 'Zeigt automatisch alle Teammitglieder an, die unter "Team" erfasst wurden.',
               schema: fields.object({
-                headline: fields.text({ label: 'Überschrift' }),
-                showMembers: fields.checkbox({ label: 'Team Mitglieder anzeigen', defaultValue: true }),
+                headline: fields.text({ label: 'Überschrift', description: 'z.B. "Unser Team"' }),
+                showMembers: fields.checkbox({ label: 'Teammitglieder anzeigen', description: 'Deaktivieren um temporär zu verstecken', defaultValue: true }),
               })
             },
 
             // RICH TEXT
             richText: {
-              label: 'Rich Text',
+              label: 'Freier Textbereich',
+              description: 'Flexibler Texteditor mit Formatierung, Bildern und Links - für AGB, Impressum, Datenschutz etc.',
               schema: fields.object({
                 content: fields.markdoc({
                   label: 'Inhalt',
                   options: {
+                    // Formatting options (divider removed for cleaner toolbar)
+                    heading: [1, 2, 3, 4, 5, 6],
+                    bold: true,
+                    italic: true,
+                    strikethrough: true,
+                    code: true,
+                    blockquote: true,
+                    orderedList: true,
+                    unorderedList: true,
+                    codeBlock: true,
+                    link: true,
+                    table: true,
+                    // Image upload configuration
                     image: {
                       directory: 'public/images/content',
                       publicPath: '/images/content/',
                     },
-                    table: true,
-                    link: true,
+                  },
+                  components: {
+                    // Custom Image Block for inserting images
+                    Bild: block({
+                      label: 'Bild einfügen',
+                      schema: {
+                        image: fields.image({
+                          label: 'Bild',
+                          directory: 'public/images/content',
+                          publicPath: '/images/content/',
+                        }),
+                        alt: fields.text({ label: 'Alt-Text (Beschreibung)' }),
+                        caption: fields.text({ label: 'Bildunterschrift (optional)' }),
+                        size: fields.select({
+                          label: 'Bildgrösse',
+                          options: [
+                            { label: 'Klein (25%)', value: 'small' },
+                            { label: 'Mittel (50%)', value: 'medium' },
+                            { label: 'Gross (75%)', value: 'large' },
+                            { label: 'Volle Breite (100%)', value: 'full' },
+                          ],
+                          defaultValue: 'medium',
+                        }),
+                        position: fields.select({
+                          label: 'Ausrichtung',
+                          options: [
+                            { label: 'Links', value: 'left' },
+                            { label: 'Zentriert', value: 'center' },
+                            { label: 'Rechts', value: 'right' },
+                          ],
+                          defaultValue: 'center',
+                        }),
+                      },
+                    }),
                   },
                 })
               })
@@ -411,57 +564,79 @@ export default config({
 
 
 
-    // TEAM
-    team: collection({
-      label: 'Team',
-      slugField: 'name',
-      path: 'content/team/*',
-      format: { data: 'json' },
-      columns: ['name', 'department', 'role', 'order'],
-      schema: {
-        name: fields.slug({ name: { label: 'Name' } }),
-        role: fields.text({ label: 'Position' }),
-        department: fields.select({
-          label: 'Abteilung',
-          options: [
-            { label: 'Führung & Projektleitung', value: 'management' },
-            { label: 'Buchhaltung & Personal', value: 'office' },
-            { label: 'Produktion', value: 'production' }
-          ],
-          defaultValue: 'production'
-        }),
-        order: fields.integer({ label: 'Sortierung (1=Chef, 2=Leiter...)' }),
-        image: fields.image({
-          label: 'Foto',
-          directory: 'public/images/team',
-          publicPath: '/images/team/',
-        }),
-        email: fields.text({ label: 'E-Mail (optional)' }),
-        bio: fields.markdoc({ label: 'Bio / Beschreibung' }),
-        socials: fields.array(
-          fields.object({
-            platform: fields.text({ label: 'Plattform (LinkedIn, Xing...)' }),
-            url: fields.text({ label: 'URL' }),
-          }),
-          { label: 'Social Media Links', itemLabel: (props) => props.fields.platform.value || 'Link' }
-        ),
-      },
-    }),
-
     // JOBS
     jobs: collection({
       label: 'Jobs & Karriere',
+      description: 'Stellenangebote verwalten - erscheinen automatisch auf der Karriere-Seite.',
       slugField: 'title',
       path: 'content/jobs/*',
-      format: { contentField: 'description' },
+      format: { data: 'json' },
+      columns: ['title', 'isActive', 'location', 'employmentType'],
       schema: {
-        title: fields.slug({ name: { label: 'Job Titel' } }),
-        location: fields.text({ label: 'Standort', defaultValue: 'Romanshorn / Amriswil' }),
-        employmentType: fields.text({ label: 'Anstellungsart', defaultValue: 'Vollzeit' }),
+        title: fields.slug({ name: { label: 'Stellentitel', description: 'z.B. "Elektroinstallateur EFZ"' } }),
+        isActive: fields.checkbox({
+          label: 'Aktiv (online)',
+          description: 'Deaktivieren um Stelle zu verstecken ohne zu löschen',
+          defaultValue: true,
+        }),
+        location: fields.text({ label: 'Arbeitsort', defaultValue: 'Romanshorn' }),
+        employmentType: fields.select({
+          label: 'Anstellungsart',
+          options: [
+            { label: 'Vollzeit', value: 'Vollzeit' },
+            { label: 'Teilzeit', value: 'Teilzeit' },
+          ],
+          defaultValue: 'Vollzeit',
+        }),
         datePosted: fields.date({ label: 'Veröffentlichungsdatum', validation: { isRequired: true } }),
-        description: fields.markdoc({ label: 'Job Beschreibung (Haupttext)' }),
-        seoTitle: fields.text({ label: 'SEO Titel' }),
-        seoDescription: fields.text({ label: 'SEO Beschreibung', multiline: true }),
+        seoTitle: fields.text({ label: 'SEO Titel', description: 'z.B. "Elektriker Job Romanshorn | Schaltkraft AG"' }),
+        seoDescription: fields.text({ label: 'SEO Beschreibung', description: 'Kurze Beschreibung für Google (max. 160 Zeichen)', multiline: true }),
+
+        // Alle Abschnitte der Jobbeschreibung (inkl. Intro)
+        sections: fields.array(
+          fields.object({
+            icon: fields.select({
+              label: 'Icon',
+              options: [
+                { label: '💼 Intro / Mission (Koffer)', value: 'briefcase' },
+                { label: '🎯 Aufgaben (Target)', value: 'target' },
+                { label: '👤 Profil / Anforderungen (Person)', value: 'user' },
+                { label: '🎁 Benefits / Was wir bieten (Geschenk)', value: 'gift' },
+                { label: '📧 Kontakt (Brief)', value: 'mail' },
+              ],
+              defaultValue: 'briefcase',
+            }),
+            title: fields.text({
+              label: 'Abschnitts-Titel',
+              description: 'z.B. "Deine Mission", "Deine Aufgaben", "Was du mitbringst", "Was wir bieten", "Kontakt"'
+            }),
+            text: fields.text({
+              label: 'Fliesstext (optional)',
+              description: 'Absatz-Text für diesen Abschnitt (ideal für Intro und Kontakt)',
+              multiline: true,
+            }),
+            items: fields.array(
+              fields.text({ label: 'Aufzählungspunkt' }),
+              {
+                label: 'Aufzählungspunkte (optional)',
+                description: 'Liste von Punkten (ideal für Aufgaben, Profil, Benefits)',
+                itemLabel: (props) => props.value?.substring(0, 50) || 'Neuer Punkt',
+              }
+            ),
+          }),
+          {
+            label: 'Abschnitte der Jobbeschreibung',
+            description: 'Fügen Sie Abschnitte hinzu: Intro/Mission, Aufgaben, Profil, Benefits, Kontakt',
+            itemLabel: (props) => props.fields.title.value || 'Neuer Abschnitt',
+          }
+        ),
+
+        // Keep legacy field for backwards compatibility
+        description: fields.text({
+          label: 'Legacy-Beschreibung (nicht verwenden)',
+          description: '⚠️ Dieses Feld wird nur für alte Jobs verwendet. Für neue Jobs bitte die Abschnitte oben verwenden.',
+          multiline: true,
+        }),
       },
     }),
   },

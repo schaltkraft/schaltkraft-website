@@ -1,273 +1,34 @@
 {
-    "title": "cms-test",
-    "seoTitle": "CMS Test Page",
-    "seoDescription": "Testing new CMS features",
-    "isHomepage": false,
-    "blocks": [
-        {
-            "discriminant": "richText",
-            "value": {
-                "content": {
-                    "type": "doc",
-                    "content": [
-                        {
-                            "type": "heading",
-                            "attrs": {
-                                "level": 1
-                            },
-                            "content": [
-                                {
-                                    "type": "text",
-                                    "text": "CMS Feature Test"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "heading",
-                            "attrs": {
-                                "level": 2
-                            },
-                            "content": [
-                                {
-                                    "type": "text",
-                                    "text": "1. External Links & Mailto"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "paragraph",
-                            "content": [
-                                {
-                                    "type": "text",
-                                    "text": "External Link: "
-                                },
-                                {
-                                    "type": "link",
-                                    "attrs": {
-                                        "href": "https://google.com",
-                                        "target": "_blank"
-                                    },
-                                    "content": [
-                                        {
-                                            "type": "text",
-                                            "text": "Google"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "paragraph",
-                            "content": [
-                                {
-                                    "type": "text",
-                                    "text": "Mailto Link: "
-                                },
-                                {
-                                    "type": "link",
-                                    "attrs": {
-                                        "href": "mailto:test@example.com"
-                                    },
-                                    "content": [
-                                        {
-                                            "type": "text",
-                                            "text": "test@example.com"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "paragraph",
-                            "content": [
-                                {
-                                    "type": "text",
-                                    "text": "Tel Link: "
-                                },
-                                {
-                                    "type": "link",
-                                    "attrs": {
-                                        "href": "tel:+41123456789"
-                                    },
-                                    "content": [
-                                        {
-                                            "type": "text",
-                                            "text": "+41 123 456 789"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "heading",
-                            "attrs": {
-                                "level": 2
-                            },
-                            "content": [
-                                {
-                                    "type": "text",
-                                    "text": "2. Table Support"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "table",
-                            "content": [
-                                {
-                                    "type": "thead",
-                                    "content": [
-                                        {
-                                            "type": "tr",
-                                            "content": [
-                                                {
-                                                    "type": "th",
-                                                    "content": [
-                                                        {
-                                                            "type": "paragraph",
-                                                            "content": [
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "Service"
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "type": "th",
-                                                    "content": [
-                                                        {
-                                                            "type": "paragraph",
-                                                            "content": [
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "Price"
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "tbody",
-                                    "content": [
-                                        {
-                                            "type": "tr",
-                                            "content": [
-                                                {
-                                                    "type": "td",
-                                                    "content": [
-                                                        {
-                                                            "type": "paragraph",
-                                                            "content": [
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "Basic"
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "type": "td",
-                                                    "content": [
-                                                        {
-                                                            "type": "paragraph",
-                                                            "content": [
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "100 CHF"
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "type": "tr",
-                                            "content": [
-                                                {
-                                                    "type": "td",
-                                                    "content": [
-                                                        {
-                                                            "type": "paragraph",
-                                                            "content": [
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "Pro"
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "type": "td",
-                                                    "content": [
-                                                        {
-                                                            "type": "paragraph",
-                                                            "content": [
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "200 CHF"
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "heading",
-                            "attrs": {
-                                "level": 2
-                            },
-                            "content": [
-                                {
-                                    "type": "text",
-                                    "text": "3. Icons Support"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "paragraph",
-                            "content": [
-                                {
-                                    "type": "text",
-                                    "text": "Here is a check icon: "
-                                },
-                                {
-                                    "type": "icon",
-                                    "attrs": {
-                                        "name": "check",
-                                        "size": 24,
-                                        "className": "text-green-500"
-                                    }
-                                },
-                                {
-                                    "type": "text",
-                                    "text": " and a zap icon: "
-                                },
-                                {
-                                    "type": "icon",
-                                    "attrs": {
-                                        "name": "zap",
-                                        "size": 32,
-                                        "className": "text-yellow-500"
-                                    }
-                                }
-                            ]
-                        }
-                    ]
-                }
-            }
-        }
-    ]
+  "title": "cms-test",
+  "seoTitle": "CMS Test Page",
+  "seoDescription": "Testing new CMS features",
+  "isHomepage": false,
+  "blocks": [
+    {
+      "discriminant": "hero",
+      "value": {
+        "headline": "TEST",
+        "subheadline": "TEST",
+        "ctaPrimary": {},
+        "ctaSecondary": {}
+      }
+    },
+    {
+      "discriminant": "richText",
+      "value": {}
+    },
+    {
+      "discriminant": "intro",
+      "value": {
+        "headline": "TEST",
+        "subheadline": "TSET",
+        "text": "**Titel: Lorem Ipsum Beispiel**\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.\n\n* Lorem ipsum dolor sit amet\n* Consectetur adipiscing elit\n* Sed do eiusmod tempor\n* Ut labore et dolore magna\n",
+        "image": "/images/content/cms-test/blocks/2/value/image.png",
+        "icons": [
+          "TEST"
+        ],
+        "links": []
+      }
+    }
+  ]
 }
