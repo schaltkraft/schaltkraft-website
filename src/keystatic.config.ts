@@ -209,7 +209,6 @@ export default config({
             // HERO
             hero: {
               label: 'Grosser Startbereich',
-              description: 'Der prominente Bereich ganz oben auf der Seite mit Hauptüberschrift, kurzem Text und Call-to-Action Button.',
               schema: fields.object({
                 headline: fields.text({ label: 'Hauptüberschrift (H1)', description: 'Die wichtigste Überschrift der Seite', multiline: true }),
                 subheadline: fields.text({ label: 'Unterüberschrift', description: 'Ergänzender Text unter der Hauptüberschrift', multiline: true }),
@@ -233,7 +232,6 @@ export default config({
             // TRUST BAR
             trustBar: {
               label: 'Vertrauensleiste',
-              description: 'Drei kurze Vertrauens-Aussagen direkt unter dem Startbereich (z.B. "20 Jahre Erfahrung").',
               schema: fields.object({
                 items: fields.array(
                   fields.text({ label: 'Trust-Punkt', description: 'Kurzer Text (max. 5 Wörter)' }),
@@ -245,7 +243,6 @@ export default config({
             // INTRO
             intro: {
               label: 'Text mit Bild',
-              description: 'Einführungstext mit Bild daneben - ideal für "Über uns" oder Firmenbeschreibung.',
               schema: fields.object({
                 headline: fields.text({ label: 'Überschrift' }),
                 subheadline: fields.text({ label: 'Subline', description: 'z.B. Firmenname oder Slogan' }),
@@ -269,7 +266,6 @@ export default config({
             // PARTNER SLIDER
             partnerSlider: {
               label: 'Partner & Zertifikate',
-              description: 'Animierter Slider mit Logos von Partnern, Lieferanten oder Zertifizierungen.',
               schema: fields.object({
                 title: fields.text({ label: 'Titel', description: 'z.B. "Unsere Partner"', defaultValue: 'Partner' }),
                 logos: fields.array(
@@ -289,7 +285,6 @@ export default config({
             // SERVICES
             services: {
               label: 'Leistungs-Kacheln',
-              description: 'Mehrere Kacheln mit Bild und Stichpunkten - zeigt Dienstleistungen auf der Startseite.',
               schema: fields.object({
                 title: fields.text({ label: 'Abschnitts-Titel', description: 'z.B. "Unsere Leistungen"' }),
                 subtitle: fields.text({ label: 'Untertitel' }),
@@ -336,7 +331,6 @@ export default config({
             // VALUES
             values: {
               label: 'Werte / Vorteile',
-              description: 'Karten mit Icon, Titel und Beschreibung - für Firmenwerte oder Kundenvorteile.',
               schema: fields.object({
                 items: fields.array(
                   fields.object({
@@ -352,7 +346,6 @@ export default config({
             // TESTIMONIALS
             testimonials: {
               label: 'Kundenstimmen',
-              description: 'Bewertungen und Zitate von zufriedenen Kunden mit Sterne-Rating.',
               schema: fields.object({
                 title: fields.text({ label: 'Abschnitts-Titel', description: 'z.B. "Was unsere Kunden sagen"' }),
                 items: fields.array(
@@ -370,7 +363,6 @@ export default config({
             // CONTACT FORM
             contactForm: {
               label: 'Kontakt-Formular',
-              description: 'Kontaktbereich mit Formular - Anfragen werden automatisch per E-Mail gesendet.',
               schema: fields.object({
                 headline: fields.text({ label: 'Überschrift' }),
                 image: fields.image({ label: 'Bild (optional)', directory: 'public/images/contact', publicPath: '/images/contact/' }),
@@ -381,7 +373,6 @@ export default config({
             // CONTACT TEASER
             contactTeaser: {
               label: 'Kontakt-Aufruf',
-              description: 'Kurzer Textblock mit Aufforderung zur Kontaktaufnahme - ideal am Seitenende.',
               schema: fields.object({
                 headline: fields.text({ label: 'Überschrift', description: 'z.B. "Haben Sie Fragen?"' }),
                 text: fields.text({ label: 'Text', description: 'Einladender Text für Kontaktaufnahme', multiline: true }),
@@ -391,7 +382,6 @@ export default config({
             // JOB LIST
             jobList: {
               label: 'Stellenangebote',
-              description: 'Zeigt automatisch alle offenen Stellen an, die unter "Jobs & Karriere" erfasst wurden.',
               schema: fields.object({
                 headline: fields.text({ label: 'Überschrift', defaultValue: 'Offene Stellen' }),
                 intro: fields.text({ label: 'Einleitungstext', description: 'Optionaler Text vor der Stellenliste', multiline: true }),
@@ -401,7 +391,6 @@ export default config({
             // TEAM GRID
             teamGrid: {
               label: 'Team-Übersicht',
-              description: 'Zeigt automatisch alle Teammitglieder an, die unter "Team" erfasst wurden.',
               schema: fields.object({
                 headline: fields.text({ label: 'Überschrift', description: 'z.B. "Unser Team"' }),
                 showMembers: fields.checkbox({ label: 'Teammitglieder anzeigen', description: 'Deaktivieren um temporär zu verstecken', defaultValue: true }),
@@ -411,7 +400,6 @@ export default config({
             // RICH TEXT
             richText: {
               label: 'Freier Textbereich',
-              description: 'Flexibler Texteditor mit Formatierung, Bildern und Links - für AGB, Impressum, Datenschutz etc.',
               schema: fields.object({
                 content: fields.markdoc({
                   label: 'Inhalt',
