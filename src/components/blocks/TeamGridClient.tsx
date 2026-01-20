@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer, viewportOnce } from '@/lib/animations';
 
 interface TeamGridClientProps {
-    groupedMembers: {
+    groupedMembers: readonly {
         id: string;
         label: string;
-        members: any[];
+        members: readonly any[];
     }[];
 }
 
