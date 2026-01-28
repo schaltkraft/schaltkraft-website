@@ -3,9 +3,45 @@
   "isActive": true,
   "location": "Romanshorn",
   "employmentType": "Vollzeit",
-  "datePosted": "2024-01-08",
+  "datePosted": "2026-01-28",
   "seoTitle": "Elektriker im Anlagenbau - Romanshorn | Schaltkraft AG",
   "seoDescription": "Spannende Stelle als Elektriker im Anlagenbau in Romanshorn. Bewerben Sie sich jetzt bei Schaltkraft AG.",
-  "sections": [],
-  "description": "<h2>Deine Mission</h2><p>Als <strong>Elektriker im Anlagenbau</strong> bist du das Herzstück unserer Projekte in der Region Romanshorn. Du sorgst dafür, dass komplexe Schaltanlagen präzise verdrahtet und montiert werden. Deine Arbeit garantiert die Energieversorgung von morgen – für Industrie, Gewerbe und öffentliche Infrastruktur.</p><h3>Deine Aufgaben</h3><ul><li>Selbstständiger Aufbau und Verdrahtung von Schaltgerätekombinationen anhand von Schemata</li><li>Mechanische Bearbeitung von Montageplatten und Schrankgehäusen</li><li>Durchführung von Qualitätskontrollen, Prüfungen und Funktionstests</li><li>Mithilfe bei Inbetriebnahmen vor Ort beim Kunden</li><li>Dokumentation und Beschriftung der fertigen Anlagen</li><li>Enge Zusammenarbeit mit Projektleitung und Engineering</li></ul><h3>Was du mitbringst</h3><ul><li>Abgeschlossene Ausbildung als Elektroinstallateur, Automatiker oder Schaltanlagenmonteur EFZ</li><li>Freude an präzisem Arbeiten und handwerkliches Geschick</li><li>Erfahrung im Lesen von elektrischen Schemata</li><li>Teamfähigkeit, Zuverlässigkeit und Eigeninitiative</li><li>Gute Deutschkenntnisse in Wort und Schrift</li><li>Führerschein Kat. B von Vorteil</li></ul><h3>Was wir bieten</h3><ul><li><strong>Top Ausrüstung:</strong> Modernstes Werkzeug, hochwertige Arbeitskleidung und bestens ausgestattete Firmenfahrzeuge</li><li><strong>Flexibilität:</strong> Zeitgemässe Arbeitszeitmodelle und 5 Wochen Ferien</li><li><strong>Entwicklung:</strong> Übernahme von Weiterbildungskosten und Karrierechancen</li><li><strong>Kultur:</strong> Flache Hierarchien, familiäres Umfeld und ein Chef, der zuhört</li><li><strong>Faire Konditionen:</strong> Attraktiver Lohn und moderne Sozialleistungen</li><li><strong>Abwechslung:</strong> Vielfältige Projekte in spannenden Branchen</li></ul><h3>Kontakt</h3><p>Bist du bereit für den nächsten Schritt? Wir freuen uns auf deine vollständigen Bewerbungsunterlagen per E-Mail an <strong>info@schaltkraft.ch</strong>.</p>"
+  "sections": [
+    {
+      "icon": "briefcase",
+      "title": "Deine Mission",
+      "text": "Als Elektriker im Anlagenbau bist du das Herzstück unserer Projekte in der Region Romanshorn. Du sorgst dafür, dass komplexe Schaltanlagen präzise verdrahtet und montiert werden. Deine Arbeit garantiert die Energieversorgung von morgen – für Industrie, Gewerbe und öffentliche Infrastruktur.",
+      "items": []
+    },
+    {
+      "icon": "target",
+      "title": "Deine Aufgaben",
+      "text": "Selbstständiger Aufbau und Verdrahtung von Schaltgerätekombinationen anhand von Schemata\nMechanische Bearbeitung von Montageplatten und Schrankgehäusen\nDurchführung von Qualitätskontrollen, Prüfungen und Funktionstests\nMithilfe bei Inbetriebnahmen vor Ort beim Kunden\nDokumentation und Beschriftung der fertigen Anlagen\nEnge Zusammenarbeit mit Projektleitung und Engineering",
+      "items": []
+    },
+    {
+      "icon": "user",
+      "title": "Was du mitbringst",
+      "text": "Abgeschlossene Ausbildung als Elektroinstallateur, Automatiker oder Schaltanlagenmonteur EFZ\nFreude an präzisem Arbeiten und handwerkliches Geschick\nErfahrung im Lesen von elektrischen Schemata\nTeamfähigkeit, Zuverlässigkeit und Eigeninitiative\nGute Deutschkenntnisse in Wort und Schrift\nFührerschein Kat. B von Vorteil",
+      "items": []
+    },
+    {
+      "icon": "gift",
+      "title": "Was wir bieten",
+      "items": [
+        "Top Ausrüstung: Modernstes Werkzeug, hochwertige Arbeitskleidung und bestens ausgestattete Firmenfahrzeuge",
+        "Flexibilität: Zeitgemässe Arbeitszeitmodelle und 5 Wochen Ferien",
+        "Entwicklung: Übernahme von Weiterbildungskosten und Karrierechancen",
+        "Kultur: Flache Hierarchien, familiäres Umfeld und ein Chef, der zuhört",
+        "Faire Konditionen: Attraktiver Lohn und moderne Sozialleistungen",
+        "Abwechslung: Vielfältige Projekte in spannenden Branchen"
+      ]
+    },
+    {
+      "icon": "mail",
+      "title": "Kontakt",
+      "text": "Bist du bereit für den nächsten Schritt? Wir freuen uns auf deine vollständigen Bewerbungsunterlagen per E-Mail an info@schaltkraft.ch.",
+      "items": []
+    }
+  ]
 }

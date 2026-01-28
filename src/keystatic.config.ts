@@ -89,10 +89,11 @@ export default config({
       path: 'content/global/seo',
       format: { data: 'json' },
       schema: {
-        siteTitle: fields.text({ label: 'Website Titel', description: 'Der Haupttitel der Website (erscheint im Browser-Tab)' }),
-        siteDescription: fields.text({ label: 'Website Beschreibung', description: 'Kurze Beschreibung für Suchmaschinen (max. 160 Zeichen)', multiline: true }),
+        siteTitle: fields.text({ label: 'Website Titel', description: '⚠️ EXPERTENEINSTELLUNG: Haupttitel für Google-Suchergebnisse. Nur mit SEO-Kenntnissen ändern!' }),
+        siteDescription: fields.text({ label: 'Website Beschreibung', description: '⚠️ EXPERTENEINSTELLUNG: Beschreibung für Google-Suchergebnisse (max. 160 Zeichen). Nur mit SEO-Kenntnissen ändern!', multiline: true }),
         ogImage: fields.image({
           label: 'OG Image',
+          description: '⚠️ EXPERTENEINSTELLUNG: Vorschaubild für Social Media (Facebook, LinkedIn, etc.). Nur mit SEO-Kenntnissen ändern!',
           directory: 'public/images/global',
           publicPath: '/images/global/',
         }),
@@ -115,7 +116,6 @@ export default config({
               directory: 'public/images/team',
               publicPath: '/images/team/',
             }),
-            email: fields.text({ label: 'E-Mail (optional)' }),
           }),
           {
             label: 'Führung & Projektleitung',
@@ -134,7 +134,6 @@ export default config({
               directory: 'public/images/team',
               publicPath: '/images/team/',
             }),
-            email: fields.text({ label: 'E-Mail (optional)' }),
           }),
           {
             label: 'Buchhaltung & Personal',
@@ -153,7 +152,6 @@ export default config({
               directory: 'public/images/team',
               publicPath: '/images/team/',
             }),
-            email: fields.text({ label: 'E-Mail (optional)' }),
           }),
           {
             label: 'Produktion',
@@ -176,7 +174,7 @@ export default config({
       path: 'content/anleitungen/*',
       format: { data: 'json' },
       schema: {
-        title: fields.slug({ name: { label: 'Anleitungs-Titel' } }),
+        title: fields.slug({ name: { label: 'Anleitungs-Titel', description: 'Wird automatisch in eine URL umgewandelt (z.B. "Erste Schritte" → /anleitungen/erste-schritte)' } }),
         kategorie: fields.select({
           label: 'Kategorie',
           options: [
@@ -200,9 +198,9 @@ export default config({
       path: 'content/pages/*',
       format: { data: 'json' },
       schema: {
-        title: fields.slug({ name: { label: 'Seiten-Slug', description: 'URL-freundlicher Name (z.B. "ueber-uns" für /ueber-uns)' } }),
-        seoTitle: fields.text({ label: 'SEO Titel', description: 'Titel für Suchmaschinen und Browser-Tab' }),
-        seoDescription: fields.text({ label: 'SEO Beschreibung', description: 'Kurze Beschreibung für Suchmaschinen (max. 160 Zeichen)', multiline: true }),
+        title: fields.slug({ name: { label: 'Seiten-Slug', description: 'Bestimmt die URL der Seite (z.B. "ueber-uns" → /ueber-uns). Wird automatisch aus dem Titel generiert, kann aber angepasst werden.' } }),
+        seoTitle: fields.text({ label: 'SEO Titel', description: '⚠️ EXPERTENEINSTELLUNG: Titel für Google-Suchergebnisse und Browser-Tab. Nur mit SEO-Kenntnissen ändern!' }),
+        seoDescription: fields.text({ label: 'SEO Beschreibung', description: '⚠️ EXPERTENEINSTELLUNG: Kurze Beschreibung für Google-Suchergebnisse (max. 160 Zeichen). Nur mit SEO-Kenntnissen ändern!', multiline: true }),
         isHomepage: fields.checkbox({ label: 'Als Startseite verwenden', description: '⚠️ NICHT ÄNDERN! Diese Option ist nur für das System.' }),
         blocks: fields.blocks(
           {
@@ -460,7 +458,7 @@ export default config({
               })
             }
           },
-          { label: 'Page Blocks' }
+          { label: 'Seiten-Abschnitte', description: 'Hier können Sie die einzelnen Abschnitte Ihrer Webseite bearbeiten, hinzufügen oder entfernen. Jeder Block repräsentiert einen eigenen Bereich auf der Seite (z.B. Hero, Dienstleistungen, Kontaktformular).' }
         ),
       },
     }),
@@ -472,7 +470,7 @@ export default config({
       path: 'content/services/*',
       format: { data: 'json' },
       schema: {
-        title: fields.slug({ name: { label: 'Titel' } }),
+        title: fields.slug({ name: { label: 'Titel', description: 'Name der Dienstleistung - wird automatisch in eine URL umgewandelt (z.B. "Planung & Engineering" → /dienstleistungen/planung-engineering)' } }),
         subline: fields.text({ label: 'Subline (Hero)' }),
         shortDescription: fields.text({ label: 'Kurzbeschreibung (für Übersichten)', multiline: true }),
         icon: fields.image({
@@ -540,8 +538,8 @@ export default config({
           }
         }, { label: 'Service Blocks' }),
 
-        seoTitle: fields.text({ label: 'SEO Titel' }),
-        seoDescription: fields.text({ label: 'SEO Beschreibung' }),
+        seoTitle: fields.text({ label: 'SEO Titel', description: '⚠️ EXPERTENEINSTELLUNG: Titel für Google-Suchergebnisse. Nur mit SEO-Kenntnissen ändern!' }),
+        seoDescription: fields.text({ label: 'SEO Beschreibung', description: '⚠️ EXPERTENEINSTELLUNG: Beschreibung für Google-Suchergebnisse (max. 160 Zeichen). Nur mit SEO-Kenntnissen ändern!' }),
       }
     }),
 
@@ -555,7 +553,7 @@ export default config({
       format: { data: 'json' },
       columns: ['title', 'isActive', 'location', 'employmentType'],
       schema: {
-        title: fields.slug({ name: { label: 'Stellentitel', description: 'z.B. "Elektroinstallateur EFZ"' } }),
+        title: fields.slug({ name: { label: 'Stellentitel', description: 'Wird automatisch in eine URL umgewandelt (z.B. "Elektroinstallateur EFZ" → /jobs/elektroinstallateur-efz)' } }),
         isActive: fields.checkbox({
           label: 'Aktiv (online)',
           description: 'Deaktivieren um Stelle zu verstecken ohne zu löschen',
@@ -571,8 +569,8 @@ export default config({
           defaultValue: 'Vollzeit',
         }),
         datePosted: fields.date({ label: 'Veröffentlichungsdatum', validation: { isRequired: true } }),
-        seoTitle: fields.text({ label: 'SEO Titel', description: 'z.B. "Elektriker Job Romanshorn | Schaltkraft AG"' }),
-        seoDescription: fields.text({ label: 'SEO Beschreibung', description: 'Kurze Beschreibung für Google (max. 160 Zeichen)', multiline: true }),
+        seoTitle: fields.text({ label: 'SEO Titel', description: '⚠️ EXPERTENEINSTELLUNG: Titel für Google-Suchergebnisse (z.B. "Elektriker Job Romanshorn | Schaltkraft AG"). Nur mit SEO-Kenntnissen ändern!' }),
+        seoDescription: fields.text({ label: 'SEO Beschreibung', description: '⚠️ EXPERTENEINSTELLUNG: Kurze Beschreibung für Google-Suchergebnisse (max. 160 Zeichen). Nur mit SEO-Kenntnissen ändern!', multiline: true }),
 
         // Alle Abschnitte der Jobbeschreibung (inkl. Intro)
         sections: fields.array(
@@ -613,12 +611,7 @@ export default config({
           }
         ),
 
-        // Keep legacy field for backwards compatibility
-        description: fields.text({
-          label: 'Legacy-Beschreibung (nicht verwenden)',
-          description: '⚠️ Dieses Feld wird nur für alte Jobs verwendet. Für neue Jobs bitte die Abschnitte oben verwenden.',
-          multiline: true,
-        }),
+
       },
     }),
   },

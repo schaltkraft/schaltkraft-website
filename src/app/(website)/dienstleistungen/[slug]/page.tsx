@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { SectionRenderer } from '@/components/blocks/SectionRenderer';
 import { ServiceHeroClient, ServiceContentClient, ServiceSidebarClient } from './ServiceDetailClient';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -37,8 +39,42 @@ export default async function ServiceDetailPage({ params }: Props) {
 
     if (!service) return notFound();
 
+    // Service Structured Data
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": service.title,
+        "description": service.shortDescription || service.seoDescription,
+        "provider": {
+            "@id": "https://schaltkraft.ch/#organization"
+        },
+        "url": `https://schaltkraft.ch/dienstleistungen/${slug}`,
+        "areaServed": {
+            "@type": "Country",
+            "name": "Switzerland"
+        }
+    };
+
     return (
         <article className="min-h-screen bg-black text-white relative selection:bg-brand-orange selection:text-white">
+
+            {/* Structured Data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
+            <WebPageSchema
+                title={service.seoTitle || service.title}
+                description={service.seoDescription || service.shortDescription}
+                url={`https://schaltkraft.ch/dienstleistungen/${slug}`}
+            />
+            <BreadcrumbSchema
+                items={[
+                    { name: 'Home', url: 'https://schaltkraft.ch' },
+                    { name: 'Dienstleistungen', url: 'https://schaltkraft.ch/dienstleistungen' },
+                    { name: service.title, url: `https://schaltkraft.ch/dienstleistungen/${slug}` }
+                ]}
+            />
 
             {/* HERO SECTION */}
             <div className="relative pt-24 pb-16 md:pt-32 md:pb-20 lg:pt-48 min-h-[50vh] md:min-h-[60vh] flex items-center">

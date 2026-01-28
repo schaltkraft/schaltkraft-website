@@ -9,9 +9,16 @@
       "value": {
         "headline": "Präzision aus Leidenschaft",
         "subheadline": "Schaltkraft AG verbindet traditionelles Handwerk mit modernster Industrie 4.0 Technologie. Wir bauen das Herzstück Ihrer Energieversorgung.",
-        "ctaPrimary": {},
-        "ctaSecondary": {},
-        "image": "/images/hero/about-us/blocks/0/value/image.png"
+        "ctaPrimary": {
+          "text": "test",
+          "url": "test url"
+        },
+        "ctaSecondary": {
+          "text": "button link text",
+          "url": "url"
+        },
+        "image": "/images/hero/about-us/blocks/0/value/image.png",
+        "ctaPhone": "phone "
       }
     },
     {

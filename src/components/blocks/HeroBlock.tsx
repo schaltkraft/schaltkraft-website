@@ -102,18 +102,6 @@ export function HeroBlock({ data }: HeroBlockProps) {
 
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-zinc-950/20 opacity-80" />
-
-              {/* Technical Overlay UI */}
-              <div className="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-8 flex justify-between items-end border-t border-white/20 pt-4 md:pt-6">
-                <div className="text-white/50 text-[10px] md:text-xs font-mono uppercase tracking-widest">
-                  System Status<br />
-                  <span className="text-brand-orange">Operational</span>
-                </div>
-                <div className="text-white/50 text-[10px] md:text-xs font-mono uppercase tracking-widest text-right">
-                  Kategorie<br />
-                  <span className="text-white">Industry 4.0</span>
-                </div>
-              </div>
             </div>
           </motion.div>
         </div>

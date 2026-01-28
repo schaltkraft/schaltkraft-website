@@ -5,7 +5,7 @@ export function StructuredData() {
         "@id": "https://schaltkraft.ch/#organization",
         "name": "Schaltkraft AG",
         "alternateName": "SchaltKraft AG",
-        "description": "Ihr Schweizer Partner für Schaltanlagenbau, Steuerungsbau und Elektro-Engineering in Romanshorn. Niederspannungsverteilungen, Planung und Montage aus einer Hand.",
+        "description": "Ihr Schweizer Partner für Elektro-Schaltanlagenbau, Steuerungsbau und Elektro-Engineering in Romanshorn. Niederspannungsverteilungen, Planung und Montage aus einer Hand.",
         "image": "https://schaltkraft.ch/images/global/logo.svg",
         "logo": "https://schaltkraft.ch/images/global/logo.svg",
         "telephone": "+41 71 521 77 77",
@@ -32,6 +32,30 @@ export function StructuredData() {
             {
                 "@type": "State",
                 "name": "Ostschweiz"
+            },
+            {
+                "@type": "State",
+                "name": "Zürich"
+            },
+            {
+                "@type": "State",
+                "name": "Zentralschweiz"
+            },
+            {
+                "@type": "State",
+                "name": "Nordwestschweiz"
+            },
+            {
+                "@type": "State",
+                "name": "Region Bern"
+            },
+            {
+                "@type": "State",
+                "name": "Westschweiz"
+            },
+            {
+                "@type": "State",
+                "name": "Tessin"
             }
         ],
         "openingHoursSpecification": [

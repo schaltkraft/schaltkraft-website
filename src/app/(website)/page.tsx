@@ -2,6 +2,8 @@ import { getHomepage, getSEODefaults } from '@/lib/cms-server';
 import { SectionRenderer } from '@/components/blocks';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { StructuredData } from '@/components/seo/StructuredData';
 
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getHomepage();
@@ -21,5 +23,15 @@ export default async function HomePage() {
     return notFound();
   }
 
-  return <SectionRenderer blocks={page.blocks} />;
+  return (
+    <>
+      <StructuredData />
+      <WebPageSchema
+        title={page.seoTitle || 'Schaltkraft AG'}
+        description={page.seoDescription || 'Ihr Schweizer Partner für Elektro-Schaltanlagenbau'}
+        url="https://schaltkraft.ch"
+      />
+      <SectionRenderer blocks={page.blocks} />
+    </>
+  );
 }

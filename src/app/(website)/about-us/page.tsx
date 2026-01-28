@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { PageContainer } from '@/components/layout/PageContainer';
 import Link from 'next/link';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 
 export const metadata: Metadata = {
     title: 'Über Uns | Schaltkraft AG',
@@ -36,5 +38,20 @@ export default async function AboutPage() {
         )
     }
 
-    return <SectionRenderer blocks={page.blocks} />;
+    return (
+        <>
+            <WebPageSchema
+                title={page.seoTitle || 'Über Uns | Schaltkraft AG'}
+                description={page.seoDescription || 'Erfahren Sie mehr über Schaltkraft AG.'}
+                url="https://schaltkraft.ch/about-us"
+            />
+            <BreadcrumbSchema
+                items={[
+                    { name: 'Home', url: 'https://schaltkraft.ch' },
+                    { name: 'Über Uns', url: 'https://schaltkraft.ch/about-us' }
+                ]}
+            />
+            <SectionRenderer blocks={page.blocks} />
+        </>
+    );
 }
