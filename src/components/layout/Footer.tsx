@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { PageContainer } from '@/components/layout/PageContainer';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
 
@@ -135,6 +135,15 @@ export function Footer({ data }: FooterProps) {
                   <Phone className="w-5 h-5 text-brand-orange group-hover:scale-110 transition-transform" />
                   <span className="font-bold">{phone}</span>
                 </a>
+              </div>
+              <div className="flex items-start gap-3 text-zinc-300">
+                <Clock className="w-5 h-5 text-brand-orange shrink-0 mt-1" />
+                <div className="grid grid-cols-[min-content_1fr] gap-x-3">
+                  <span className="whitespace-nowrap">Mo - Do:</span>
+                  <span>07:30 - 17:00</span>
+                  <span>Fr:</span>
+                  <span>07:30 - 16:00</span>
+                </div>
               </div>
             </div>
           </motion.div>

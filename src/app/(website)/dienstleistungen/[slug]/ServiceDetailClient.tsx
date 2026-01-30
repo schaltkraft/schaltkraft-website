@@ -126,8 +126,8 @@ export function ServiceSidebarClient() {
                                 ✓
                             </div>
                             <div>
-                                <h4 className="text-white font-bold text-sm uppercase">Zertifiziert</h4>
-                                <p className="text-xs text-zinc-500 mt-1">ISO 9001 & EN 61439</p>
+                                <h4 className="text-white font-bold text-sm uppercase">20+ Jahre Berufserfahrung</h4>
+                                <p className="text-xs text-zinc-500 mt-1">Persönliche Betreuung</p>
                             </div>
                         </motion.div>
                     </motion.div>

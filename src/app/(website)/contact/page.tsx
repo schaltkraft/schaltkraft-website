@@ -1,7 +1,7 @@
 'use client';
 
 import { PageContainer } from '@/components/layout/PageContainer';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { ContactForm } from '@/components/features/contact/ContactForm';
 import { motion } from 'framer-motion';
 import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer } from '@/lib/animations';
@@ -78,6 +78,21 @@ export default function ContactPage() {
                                     <a href="tel:+41715217777" className="text-lg md:text-xl font-bold hover:text-brand-orange transition-colors">
                                         +41 71 521 77 77
                                     </a>
+                                </div>
+                            </motion.div>
+
+                            <motion.div variants={fadeInUp} className="flex gap-4 md:gap-6">
+                                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center text-brand-orange shrink-0">
+                                    <Clock className="w-5 h-5 md:w-6 md:h-6" />
+                                </div>
+                                <div>
+                                    <h3 className="text-base md:text-lg font-bold uppercase tracking-wider text-white/50 mb-2">Öffnungszeiten</h3>
+                                    <div className="text-lg md:text-xl leading-relaxed grid grid-cols-[min-content_1fr] gap-x-4">
+                                        <span className="whitespace-nowrap">Mo - Do:</span>
+                                        <span>07:30 - 17:00 Uhr</span>
+                                        <span>Fr:</span>
+                                        <span>07:30 - 16:00 Uhr</span>
+                                    </div>
                                 </div>
                             </motion.div>
 

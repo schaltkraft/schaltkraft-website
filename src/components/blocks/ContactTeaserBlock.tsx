@@ -48,7 +48,12 @@ export function ContactTeaserBlock({ data }: ContactTeaserBlockProps) {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-white mb-1">Rufen Sie uns an</h3>
-                                        <p className="text-zinc-400 mb-1 text-sm">Mo-Fr, 07:30 - 17:00 Uhr</p>
+                                        <div className="text-zinc-400 mb-1 text-sm grid grid-cols-[min-content_1fr] gap-x-2">
+                                            <span className="whitespace-nowrap">Mo-Do</span>
+                                            <span>07:30 - 17:00 Uhr</span>
+                                            <span className="whitespace-nowrap">Fr</span>
+                                            <span>07:30 - 16:00 Uhr</span>
+                                        </div>
                                         <a href="tel:+41715217777" className="text-white hover:text-brand-orange transition-colors font-semibold text-lg">+41 71 521 77 77</a>
                                     </div>
                                 </div>
