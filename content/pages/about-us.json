@@ -90,6 +90,10 @@
       }
     },
     {
+      "discriminant": "richText",
+      "value": {}
+    },
+    {
       "discriminant": "intro",
       "value": {
         "headline": "Bereit für Ihr Projekt?",
