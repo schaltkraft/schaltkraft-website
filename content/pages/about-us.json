@@ -33,9 +33,9 @@
     {
       "discriminant": "intro",
       "value": {
-        "headline": "Unsere Geschichte",
-        "subheadline": "Seit 2004 in der Schweiz",
-        "text": "Was als kleine Werkstatt begann, ist heute ein hochmodernes Fertigungszentrum in Romanshorn am Bodensee. Wir haben den Wandel der Zeit nicht nur beobachtet, sondern aktiv mitgestaltet.\n\nVon den ersten analogen Steuerungen bis zu vernetzten Smart-Grid-Lösungen – unser Wachstum war stets organisch und nachhaltig. Heute beschäftigen wir über 25 spezialisierte Fachkräfte.",
+        "headline": "Qualität und Sicherheit",
+        "subheadline": "Unsere Werte",
+        "text": "Die Sicherheit und Zufriedenheit unserer Kunden stehen für uns an erster Stelle. Wir garantieren höchste Qualität in allen Bereichen – von der Planung bis hin zur Ausführung. Jede Schaltanlage, die wir liefern, ist ein Versprechen für Zuverlässigkeit, Präzision und Sicherheit. ",
         "image": "/images/content/about-us/blocks/2/value/image.jpeg",
         "icons": [],
         "links": []
@@ -44,10 +44,9 @@
     {
       "discriminant": "intro",
       "value": {
-        "headline": "Swiss Made Qualität",
-        "subheadline": "100% Schweizer Fertigung",
-        "text": "Swiss Made ist für uns kein Label, sondern ein gelebtes Versprechen. Unsere gesamte Fertigung erfolgt ausschliesslich an unserem Standort in der Schweiz.\n\nJede Schraube wird geprüft, jede Verbindung getestet. Wir verlassen uns nicht auf Stichproben, sondern auf lückenlose Prüfprotokolle. Das garantiert kurze Wege, schnelle Reaktionszeiten und kompromisslose Qualitätskontrolle.",
-        "image": "/images/content/about-us/blocks/3/value/image.jpeg",
+        "headline": "Innovation und Zukunft",
+        "text": "Innovation ist der Motor unserer Arbeit. Wir setzen auf zukunftsweisende Technologien und entwickeln Lösungen, die den heutigen und zukünftigen Anforderungen unserer Kunden gerecht werden. Dabei treiben wir kontinuierlich den Wandel in unserer Branche voran und schaffen so Mehrwert für unsere Partner und die Gesellschaft.",
+        "image": "/images/content/about-us/blocks/3/value/image.jpg",
         "icons": [],
         "links": []
       }
