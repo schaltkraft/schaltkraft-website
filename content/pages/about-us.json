@@ -63,9 +63,8 @@
     {
       "discriminant": "intro",
       "value": {
-        "headline": "Zukunft gestalten",
-        "subheadline": "Innovation & Nachhaltigkeit",
-        "text": "Als Unternehmen im Energiesektor tragen wir besondere Verantwortung. Wir investieren kontinuierlich in digitale Planungstools, CAE-Integration und energieeffiziente Produktionsprozesse.\n\nMit modernsten Systemen planen wir Anlagen als digitalen Zwilling, bevor der erste Handgriff in der Werkstatt erfolgt. Das minimiert Fehler und beschleunigt die Durchlaufzeiten erheblich.",
+        "headline": "Wertschätzung der Mitarbeiter",
+        "text": "Unsere Mitarbeiter sind das Herzstück unseres Unternehmens. Wir fördern eine Kultur der Offenheit und des gegenseitigen Respekts, in der jede Meinung zählt. Durch flache Hierarchien und eine unterstützende Arbeitsatmosphäre ermöglichen wir unseren Teams, ihr volles Potenzial zu entfalten – denn der Erfolg unseres Unternehmens ist der Erfolg jedes Einzelnen. ",
         "image": "/images/content/about-us/blocks/5/value/image.jpg",
         "icons": [],
         "links": []
@@ -115,6 +114,15 @@
             "url": "/dienstleistungen"
           }
         ]
+      }
+    },
+    {
+      "discriminant": "textText",
+      "value": {
+        "titleLeft": "Ausbildung und Weiterentwicklung",
+        "textLeft": "Wir investieren in die Zukunft und fördern junge Talente. Durch gezielte Ausbildung und kontinuierliche Weiterbildung schaffen wir die Grundlage für eine erfolgreiche berufliche Laufbahn und bieten unseren Mitarbeitern die Möglichkeit, sich in einem dynamischen Umfeld weiterzuentwickeln.",
+        "titleRight": "Unser Versprechen",
+        "textRight": "Wir handeln stets fair, transparent und verantwortungsbewusst. Unser Fokus liegt auf nachhaltigem Wachstum und der Zufriedenheit unserer Kunden, Lieferanten und Mitarbeiter. Mit einem klaren Bewusstsein für Qualität, Innovation und Verantwortung möchten wir aktiv die Zukunft der Schaltanlagen gestalten und unseren Beitrag zu einer sicheren und nachhaltigen Welt leisten."
       }
     }
   ]
