@@ -25,13 +25,9 @@
       "value": {
         "headline": "Unsere Vision",
         "text": "Die SchalKraft AG steht für innovative, zukunftsfähige Schaltanlagen, die höchste Ansprüche an Qualität und Sicherheit erfüllen. Wir sind davon überzeugt, dass nur durch nachhaltiges Handeln, gepaart mit innovativen Lösungen, langfristiger Erfolg möglich ist. Unser Ziel ist es, partnerschaftliche Beziehungen mit unseren Kunden, Lieferanten und Mitarbeitern zu etablieren, die auf Vertrauen, Transparenz und Fairness basieren.",
+        "image": "/images/content/about-us/blocks/1/value/image.jpeg",
         "icons": [],
-        "links": [
-          {
-            "label": "Unser Team kennenlernen",
-            "url": "/team"
-          }
-        ]
+        "links": []
       }
     },
     {
