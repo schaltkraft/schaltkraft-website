@@ -52,12 +52,21 @@
       }
     },
     {
+      "discriminant": "textText",
+      "value": {
+        "titleLeft": "Partnerschaftliche Zusammenarbeit",
+        "textLeft": "Eine vertrauensvolle und offene Kommunikation ist der Grundstein für jede erfolgreiche Partnerschaft. Wir sehen uns als fairen und verlässlichen Partner und streben danach, langfristige und wertschätzende Beziehungen aufzubauen, die auf gegenseitigem Respekt und transparentem Austausch beruhen.",
+        "titleRight": "Nachhaltigkeit und Verantwortung",
+        "textRight": "Nachhaltigkeit ist nicht nur ein Trend für uns – sie ist eine Verantwortung, die wir aktiv leben. Wir setzen auf ressourcenschonende Prozesse und umweltfreundliche Materialien, um unseren ökologischen Fußabdruck zu minimieren. So gestalten wir nicht nur die Zukunft unserer Branche, sondern auch eine lebenswerte Welt für kommende Generationen."
+      }
+    },
+    {
       "discriminant": "intro",
       "value": {
         "headline": "Zukunft gestalten",
         "subheadline": "Innovation & Nachhaltigkeit",
         "text": "Als Unternehmen im Energiesektor tragen wir besondere Verantwortung. Wir investieren kontinuierlich in digitale Planungstools, CAE-Integration und energieeffiziente Produktionsprozesse.\n\nMit modernsten Systemen planen wir Anlagen als digitalen Zwilling, bevor der erste Handgriff in der Werkstatt erfolgt. Das minimiert Fehler und beschleunigt die Durchlaufzeiten erheblich.",
-        "image": "/images/content/about-us/blocks/4/value/image.jpg",
+        "image": "/images/content/about-us/blocks/5/value/image.jpg",
         "icons": [],
         "links": []
       }
@@ -106,15 +115,6 @@
             "url": "/dienstleistungen"
           }
         ]
-      }
-    },
-    {
-      "discriminant": "textText",
-      "value": {
-        "titleLeft": "Partnerschaftliche Zusammenarbeit",
-        "textLeft": "Eine vertrauensvolle und offene Kommunikation ist der Grundstein für jede erfolgreiche Partnerschaft. Wir sehen uns als fairen und verlässlichen Partner und streben danach, langfristige und wertschätzende Beziehungen aufzubauen, die auf gegenseitigem Respekt und transparentem Austausch beruhen.",
-        "titleRight": "Nachhaltigkeit und Verantwortung",
-        "textRight": "Nachhaltigkeit ist nicht nur ein Trend für uns – sie ist eine Verantwortung, die wir aktiv leben. Wir setzen auf ressourcenschonende Prozesse und umweltfreundliche Materialien, um unseren ökologischen Fußabdruck zu minimieren. So gestalten wir nicht nur die Zukunft unserer Branche, sondern auch eine lebenswerte Welt für kommende Generationen."
       }
     }
   ]
