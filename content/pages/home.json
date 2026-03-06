@@ -25,7 +25,7 @@
       "discriminant": "trustBar",
       "value": {
         "items": [
-          "SWISS MADE QUALITÄT",
+          "QUALITÄT SEIT 2025",
           "20+ Jahre Berufserfahrung",
           "PERSÖNLICHE BETREUUNG"
         ]
@@ -51,11 +51,13 @@
           {
             "title": "Planung & Engineering",
             "items": [
-              "Elektroschemata-Erstellung",
+              "Technische Beratung",
+              "Erstellung Elektroschemata",
               "Dispositionsplanung",
-              "Technische Beratung"
+              "Normgerechte Dokumentationen "
             ],
-            "linkUrl": "/dienstleistungen/planung-engineering"
+            "linkUrl": "/dienstleistungen/planung-engineering",
+            "image": "/images/services/home/blocks/3/value/items/0/image.jpeg"
           },
           {
             "title": "Schaltanlagenbau",
