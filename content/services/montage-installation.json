@@ -2,6 +2,8 @@
   "title": "Lieferung inklusive Montage ",
   "subline": "Fachgerechte Installation durch erfahrene Elektrofachkräfte",
   "shortDescription": "Rundum sorglos: Lieferung inklusive fachgerechte Montage Ihrer Anlage durch unser eigenes Team.",
+  "icon": "/images/services/montage-installation/icon.JPG",
+  "heroImage": "/images/services/montage-installation/heroImage.JPG",
   "blocks": [
     {
       "discriminant": "featureGrid",
