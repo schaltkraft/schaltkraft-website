@@ -71,6 +71,15 @@
       }
     },
     {
+      "discriminant": "textText",
+      "value": {
+        "titleLeft": "Ausbildung und Weiterentwicklung",
+        "textLeft": "Wir investieren in die Zukunft und fördern junge Talente. Durch gezielte Ausbildung und kontinuierliche Weiterbildung schaffen wir die Grundlage für eine erfolgreiche berufliche Laufbahn und bieten unseren Mitarbeitern die Möglichkeit, sich in einem dynamischen Umfeld weiterzuentwickeln.",
+        "titleRight": "Unser Versprechen",
+        "textRight": "Wir handeln stets fair, transparent und verantwortungsbewusst. Unser Fokus liegt auf nachhaltigem Wachstum und der Zufriedenheit unserer Kunden, Lieferanten und Mitarbeiter. Mit einem klaren Bewusstsein für Qualität, Innovation und Verantwortung möchten wir aktiv die Zukunft der Schaltanlagen gestalten und unseren Beitrag zu einer sicheren und nachhaltigen Welt leisten."
+      }
+    },
+    {
       "discriminant": "values",
       "value": {
         "items": [
@@ -114,15 +123,6 @@
             "url": "/dienstleistungen"
           }
         ]
-      }
-    },
-    {
-      "discriminant": "textText",
-      "value": {
-        "titleLeft": "Ausbildung und Weiterentwicklung",
-        "textLeft": "Wir investieren in die Zukunft und fördern junge Talente. Durch gezielte Ausbildung und kontinuierliche Weiterbildung schaffen wir die Grundlage für eine erfolgreiche berufliche Laufbahn und bieten unseren Mitarbeitern die Möglichkeit, sich in einem dynamischen Umfeld weiterzuentwickeln.",
-        "titleRight": "Unser Versprechen",
-        "textRight": "Wir handeln stets fair, transparent und verantwortungsbewusst. Unser Fokus liegt auf nachhaltigem Wachstum und der Zufriedenheit unserer Kunden, Lieferanten und Mitarbeiter. Mit einem klaren Bewusstsein für Qualität, Innovation und Verantwortung möchten wir aktiv die Zukunft der Schaltanlagen gestalten und unseren Beitrag zu einer sicheren und nachhaltigen Welt leisten."
       }
     }
   ]
