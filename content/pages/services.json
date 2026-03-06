@@ -9,7 +9,7 @@
             "value": {
                 "headline": "Unsere Dienstleistungen",
                 "subheadline": "Komplettlösungen für Ihren Schaltanlagenbau",
-                "image": "/images/services/production.png",
+                "image": "/images/hero/services/blocks/0/value/image.png",
                 "ctaPrimary": {
                     "text": "Projekt anfragen",
                     "url": "/kontakt"
