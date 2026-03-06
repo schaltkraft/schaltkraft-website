@@ -7,8 +7,7 @@
     {
       "discriminant": "hero",
       "value": {
-        "headline": "Präzision aus Leidenschaft",
-        "subheadline": "Schaltkraft AG verbindet traditionelles Handwerk mit modernster Industrie 4.0 Technologie. Wir bauen das Herzstück Ihrer Energieversorgung.",
+        "headline": "Unser Leitbild",
         "ctaPrimary": {
           "text": "test",
           "url": "test url"
