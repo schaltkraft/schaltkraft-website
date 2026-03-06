@@ -456,6 +456,17 @@ export default config({
                   },
                 })
               })
+            },
+
+            // TEXT MIT TEXT (Zwei Spalten)
+            textText: {
+              label: 'Text mit Text (Zwei Spalten)',
+              schema: fields.object({
+                titleLeft: fields.text({ label: 'Überschrift Links' }),
+                textLeft: fields.text({ label: 'Text Links', multiline: true }),
+                titleRight: fields.text({ label: 'Überschrift Rechts' }),
+                textRight: fields.text({ label: 'Text Rechts', multiline: true })
+              })
             }
           },
           { label: 'Seiten-Abschnitte', description: 'Hier können Sie die einzelnen Abschnitte Ihrer Webseite bearbeiten, hinzufügen oder entfernen. Jeder Block repräsentiert einen eigenen Bereich auf der Seite (z.B. Hero, Dienstleistungen, Kontaktformular).' }

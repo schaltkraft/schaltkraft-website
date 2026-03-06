@@ -15,6 +15,7 @@ import { AccordionBlock } from './AccordionBlock';
 import { TimelineBlock } from './TimelineBlock';
 import { FeatureGridBlock } from './FeatureGridBlock';
 import { JobGridBlock } from './JobGridBlock';
+import { TextTextBlock } from './TextTextBlock';
 
 
 interface SectionRendererProps {
@@ -80,6 +81,8 @@ function getBlockComponent(type: string) {
             return FeatureGridBlock;
         case 'jobList':
             return JobGridBlock;
+        case 'textText':
+            return TextTextBlock;
 
         default:
             return null;

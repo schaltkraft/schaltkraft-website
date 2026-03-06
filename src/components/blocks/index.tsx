@@ -15,4 +15,5 @@ export * from './AccordionBlock';
 export * from './TimelineBlock';
 export * from './FeatureGridBlock';
 export * from './JobGridBlock';
+export * from './TextTextBlock';
 export * from './SectionRenderer';
