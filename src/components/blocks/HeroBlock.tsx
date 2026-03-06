@@ -33,7 +33,7 @@ export function HeroBlock({ data }: HeroBlockProps) {
           >
             <motion.div variants={fadeInUp}>
               <div className="inline-block px-3 py-1 border border-brand-orange/50 text-brand-orange text-xs md:text-sm font-bold uppercase tracking-[0.15em] md:tracking-[0.2em] mb-4 md:mb-6 bg-brand-orange/5">
-                Schaltanlagenbau & Automation
+                Schaltanlagen von A bis Z
               </div>
               <h1 className="hero-h1 whitespace-pre-line tracking-tighter text-white drop-shadow-xl py-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-heading uppercase leading-[0.95]">
                 {headline}
