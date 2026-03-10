@@ -17,12 +17,12 @@
           "description": "Individuelle Konzepte für Ihre Anforderungen."
         },
         {
-          "label": "Schaltanlagenbau",
-          "url": "/dienstleistungen/schaltanlagenbau",
+          "label": "Schaltanlagen",
+          "url": "/dienstleistungen/schaltanlagen",
           "description": "Niederspannungsverteilungen höchster Qualität."
         },
         {
-          "label": "Montage & Installation",
+          "label": "Lieferung inklusive Montage",
           "url": "/dienstleistungen/montage-installation",
           "description": "Fachgerechte Installation vor Ort."
         },
