@@ -60,10 +60,10 @@
             "image": "/images/services/home/blocks/3/value/items/0/image.jpeg"
           },
           {
-            "title": "Schaltanlagenbau",
+            "title": "Schaltanlagen",
             "items": [
               "Niederspannungsverteilungen",
-              "Spezialanlagen",
+              "Grobverteilungen",
               "Steuerungsanlagen"
             ],
             "linkUrl": "/dienstleistungen/schaltanlagenbau"
