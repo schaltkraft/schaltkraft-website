@@ -13,6 +13,36 @@
             }
         },
         {
+            "discriminant": "jobPerksGallery",
+            "value": {
+                "headline": "Das erwartet Sie bei uns",
+                "images": [
+                    {
+                        "image": "/images/jobs/jobs-01.webp",
+                        "alt": "Mitarbeiter bei der Arbeit im Schaltschrankbau"
+                    },
+                    {
+                        "image": "/images/jobs/jobs-02.webp",
+                        "alt": "Detailarbeit an einer Elektroverteilung"
+                    },
+                    {
+                        "image": "/images/jobs/jobs-03.webp",
+                        "alt": "Teamwork in der Werkstatt der Schaltkraft AG"
+                    }
+                ],
+                "perks": [
+                    {
+                        "title": "40",
+                        "subtitle": "Stunden Woche"
+                    },
+                    {
+                        "title": "5",
+                        "subtitle": "Wochen Ferien"
+                    }
+                ]
+            }
+        },
+        {
             "discriminant": "jobList",
             "value": {
                 "headline": "Offene Stellen",

@@ -467,6 +467,31 @@ export default config({
                 titleRight: fields.text({ label: 'Überschrift Rechts' }),
                 textRight: fields.text({ label: 'Text Rechts', multiline: true })
               })
+            },
+            // JOB PERKS GALERIE
+            jobPerksGallery: {
+              label: 'Jobs & Perks Galerie',
+              schema: fields.object({
+                headline: fields.text({ label: 'Optionale Überschrift', description: 'Wird über der Galerie angezeigt (z.B. "Ihre Vorteile bei uns")' }),
+                images: fields.array(
+                  fields.object({
+                    image: fields.image({
+                      label: 'Bild',
+                      directory: 'public/images/jobs',
+                      publicPath: '/images/jobs/'
+                    }),
+                    alt: fields.text({ label: 'Alt-Text (SEO)', description: 'Kurze Beschreibung des Bildes für Suchmaschinen' })
+                  }),
+                  { label: 'Bilder (Genau 3)', validation: { length: { min: 3, max: 3 } } }
+                ),
+                perks: fields.array(
+                  fields.object({
+                    title: fields.text({ label: 'Titel (z.B. 40)', description: 'Die grosse Hervorhebung' }),
+                    subtitle: fields.text({ label: 'Untertitel (z.B. Stunden Woche)', description: 'Die kleinere Beschreibung' })
+                  }),
+                  { label: 'Highlights (Genau 2)', validation: { length: { min: 2, max: 2 } } }
+                )
+              })
             }
           },
           { label: 'Seiten-Abschnitte', description: 'Hier können Sie die einzelnen Abschnitte Ihrer Webseite bearbeiten, hinzufügen oder entfernen. Jeder Block repräsentiert einen eigenen Bereich auf der Seite (z.B. Hero, Dienstleistungen, Kontaktformular).' }

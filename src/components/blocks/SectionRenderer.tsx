@@ -16,6 +16,7 @@ import { TimelineBlock } from './TimelineBlock';
 import { FeatureGridBlock } from './FeatureGridBlock';
 import { JobGridBlock } from './JobGridBlock';
 import { TextTextBlock } from './TextTextBlock';
+import { JobPerksGalleryBlock } from './JobPerksGalleryBlock';
 
 
 interface SectionRendererProps {
@@ -83,6 +84,8 @@ function getBlockComponent(type: string) {
             return JobGridBlock;
         case 'textText':
             return TextTextBlock;
+        case 'jobPerksGallery':
+            return JobPerksGalleryBlock;
 
         default:
             return null;
