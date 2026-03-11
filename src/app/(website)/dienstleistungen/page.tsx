@@ -23,6 +23,33 @@ export default async function ServicesPage() {
 
     return (
         <main className="min-h-screen bg-black">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "CollectionPage",
+                        "@id": "https://schaltkraft.ch/dienstleistungen",
+                        "url": "https://schaltkraft.ch/dienstleistungen",
+                        "name": "Dienstleistungen – Schaltkraft AG",
+                        "description": "Planung, Schaltanlagenbau, Montage und Service aus einer Hand.",
+                        "publisher": { "@id": "https://schaltkraft.ch/#organization" },
+                        "hasPart": [
+                            { "@type": "Service", "name": "Planung & Engineering", "url": "https://schaltkraft.ch/dienstleistungen/planung-engineering" },
+                            { "@type": "Service", "name": "Schaltanlagen", "url": "https://schaltkraft.ch/dienstleistungen/schaltanlagen" },
+                            { "@type": "Service", "name": "Montage & Installation", "url": "https://schaltkraft.ch/dienstleistungen/montage-installation" },
+                            { "@type": "Service", "name": "Service & Modernisierung", "url": "https://schaltkraft.ch/dienstleistungen/service-modernisierung" }
+                        ],
+                        "breadcrumb": {
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [
+                                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://schaltkraft.ch" },
+                                { "@type": "ListItem", "position": 2, "name": "Dienstleistungen", "item": "https://schaltkraft.ch/dienstleistungen" }
+                            ]
+                        }
+                    })
+                }}
+            />
             {/* 1. Hero Section (from CMS or Fallback) */}
             {heroBlock ? (
                 <HeroBlock data={heroBlock.value} />

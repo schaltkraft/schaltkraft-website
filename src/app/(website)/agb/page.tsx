@@ -21,6 +21,18 @@ export default async function AgbPage() {
 
     return (
         <main className="pt-32 lg:pt-40">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "WebPage",
+                        "url": "https://schaltkraft.ch/agb",
+                        "name": "AGB – Schaltkraft AG",
+                        "publisher": { "@id": "https://schaltkraft.ch/#organization" }
+                    })
+                }}
+            />
             <SectionRenderer blocks={page.blocks} />
         </main>
     );

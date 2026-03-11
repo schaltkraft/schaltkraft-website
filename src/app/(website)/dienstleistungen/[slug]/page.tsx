@@ -41,7 +41,7 @@ export default async function ServiceDetailPage({ params }: Props) {
     if (!service) return notFound();
 
     // Service Structured Data
-    const serviceSchema = {
+    let serviceSchema: any = {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": service.title,
@@ -55,6 +55,88 @@ export default async function ServiceDetailPage({ params }: Props) {
             "name": "Switzerland"
         }
     };
+
+    if (slug === 'schaltanlagen') {
+        serviceSchema = {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://schaltkraft.ch/dienstleistungen/schaltanlagen",
+            "url": "https://schaltkraft.ch/dienstleistungen/schaltanlagen",
+            "name": "Schaltanlagen & Niederspannungsverteilungen",
+            "description": "Fertigung von Schaltanlagen, Niederspannungsverteilungen und Steuerungsanlagen für Industrie und Gewerbe.",
+            "serviceType": "Schaltanlagenbau",
+            "areaServed": { "@type": "Country", "name": "Schweiz" },
+            "provider": { "@id": "https://schaltkraft.ch/#organization" },
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://schaltkraft.ch" },
+                    { "@type": "ListItem", "position": 2, "name": "Dienstleistungen", "item": "https://schaltkraft.ch/dienstleistungen" },
+                    { "@type": "ListItem", "position": 3, "name": "Schaltanlagen", "item": "https://schaltkraft.ch/dienstleistungen/schaltanlagen" }
+                ]
+            }
+        };
+    } else if (slug === 'planung-engineering') {
+        serviceSchema = {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://schaltkraft.ch/dienstleistungen/planung-engineering",
+            "url": "https://schaltkraft.ch/dienstleistungen/planung-engineering",
+            "name": "Planung & Engineering",
+            "description": "Technische Beratung, Elektroschemata, Dispositionsplanung und normgerechte Dokumentationen.",
+            "serviceType": "Elektroplanung & Engineering",
+            "areaServed": { "@type": "Country", "name": "Schweiz" },
+            "provider": { "@id": "https://schaltkraft.ch/#organization" },
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://schaltkraft.ch" },
+                    { "@type": "ListItem", "position": 2, "name": "Dienstleistungen", "item": "https://schaltkraft.ch/dienstleistungen" },
+                    { "@type": "ListItem", "position": 3, "name": "Planung & Engineering", "item": "https://schaltkraft.ch/dienstleistungen/planung-engineering" }
+                ]
+            }
+        };
+    } else if (slug === 'montage-installation') {
+        serviceSchema = {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://schaltkraft.ch/dienstleistungen/montage-installation",
+            "url": "https://schaltkraft.ch/dienstleistungen/montage-installation",
+            "name": "Montage & Installation von Schaltanlagen",
+            "description": "Vor-Ort-Montage, Inbetriebnahme und Verkabelung von Schaltanlagen durch qualifizierte Fachkräfte.",
+            "serviceType": "Elektromontage",
+            "areaServed": { "@type": "Country", "name": "Schweiz" },
+            "provider": { "@id": "https://schaltkraft.ch/#organization" },
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://schaltkraft.ch" },
+                    { "@type": "ListItem", "position": 2, "name": "Dienstleistungen", "item": "https://schaltkraft.ch/dienstleistungen" },
+                    { "@type": "ListItem", "position": 3, "name": "Montage & Installation", "item": "https://schaltkraft.ch/dienstleistungen/montage-installation" }
+                ]
+            }
+        };
+    } else if (slug === 'service-modernisierung') {
+        serviceSchema = {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://schaltkraft.ch/dienstleistungen/service-modernisierung",
+            "url": "https://schaltkraft.ch/dienstleistungen/service-modernisierung",
+            "name": "Service & Modernisierung – Retrofit",
+            "description": "Wartung, Retrofit und Anlagenerweiterungen für bestehende Schaltanlagen – normgerecht und effizient.",
+            "serviceType": "Retrofit & Anlagenservice",
+            "areaServed": { "@type": "Country", "name": "Schweiz" },
+            "provider": { "@id": "https://schaltkraft.ch/#organization" },
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://schaltkraft.ch" },
+                    { "@type": "ListItem", "position": 2, "name": "Dienstleistungen", "item": "https://schaltkraft.ch/dienstleistungen" },
+                    { "@type": "ListItem", "position": 3, "name": "Service & Modernisierung", "item": "https://schaltkraft.ch/dienstleistungen/service-modernisierung" }
+                ]
+            }
+        };
+    }
 
     return (
         <article className="min-h-screen bg-black text-white relative selection:bg-brand-orange selection:text-white">

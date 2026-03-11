@@ -21,6 +21,18 @@ export default async function DatenschutzPage() {
 
     return (
         <main className="pt-32 lg:pt-40">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "WebPage",
+                        "url": "https://schaltkraft.ch/datenschutz",
+                        "name": "Datenschutzerklärung – Schaltkraft AG",
+                        "publisher": { "@id": "https://schaltkraft.ch/#organization" }
+                    })
+                }}
+            />
             <SectionRenderer blocks={page.blocks} />
         </main>
     );

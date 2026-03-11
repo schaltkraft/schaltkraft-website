@@ -26,11 +26,6 @@ export default async function HomePage() {
   return (
     <>
       <StructuredData />
-      <WebPageSchema
-        title={page.seoTitle || 'Schaltkraft AG'}
-        description={page.seoDescription || 'Ihr Schweizer Partner für Elektro-Schaltanlagenbau'}
-        url="https://schaltkraft.ch"
-      />
       <SectionRenderer blocks={page.blocks} />
     </>
   );

@@ -27,6 +27,27 @@ function InstagramIcon({ className }: { className?: string }) {
 export default function ContactPage() {
     return (
         <main className="min-h-screen pt-24 pb-16 md:pt-32 md:pb-20 lg:pt-48 bg-zinc-950 text-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "ContactPage",
+                        "@id": "https://schaltkraft.ch/contact",
+                        "url": "https://schaltkraft.ch/contact",
+                        "name": "Kontakt – Schaltkraft AG",
+                        "description": "Kontaktieren Sie Schaltkraft AG in Romanshorn für Offertanfragen, Projektberatung und technischen Support.",
+                        "publisher": { "@id": "https://schaltkraft.ch/#organization" },
+                        "breadcrumb": {
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [
+                                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://schaltkraft.ch" },
+                                { "@type": "ListItem", "position": 2, "name": "Kontakt", "item": "https://schaltkraft.ch/contact" }
+                            ]
+                        }
+                    })
+                }}
+            />
             <PageContainer>
                 <div className="grid lg:grid-cols-2 gap-12 md:gap-16 lg:gap-24">
                     {/* Left: Info */}

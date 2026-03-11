@@ -38,52 +38,178 @@ export default async function JobDetailPage({ params }: { params: Promise<{ slug
     }
 
     // JSON-LD Structured Data for Google Jobs
-    const jobDescription = job.description?.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim() || '';
-    const validThrough = new Date(new Date(job.datePosted).setMonth(new Date(job.datePosted).getMonth() + 3)).toISOString().split('T')[0];
+    let jsonLd: any = {};
 
-    const jsonLd = {
-        '@context': 'https://schema.org',
-        '@type': 'JobPosting',
-        title: job.title,
-        description: jobDescription,
-        datePosted: job.datePosted,
-        validThrough: validThrough,
-        employmentType: job.employmentType === 'Vollzeit' ? 'FULL_TIME' : 'PART_TIME',
-        directApply: true,
-        hiringOrganization: {
-            '@type': 'Organization',
-            name: 'Schaltkraft AG',
-            sameAs: 'https://schaltkraft.ch',
-            logo: 'https://schaltkraft.ch/images/global/logo.svg',
-            url: 'https://schaltkraft.ch'
-        },
-        jobLocation: {
-            '@type': 'Place',
-            address: {
-                '@type': 'PostalAddress',
-                streetAddress: 'Mühlegartenstrasse 5',
-                addressLocality: job.location,
-                postalCode: '8590',
-                addressRegion: 'Thurgau',
-                addressCountry: 'CH'
+    if (slug === 'automatiker-automatikmonteur-elektroinstallateur-efz') {
+        jsonLd = {
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            "url": "https://schaltkraft.ch/jobs/automatiker-automatikmonteur-elektroinstallateur-efz",
+            "title": "Automatiker / Automatikmonteur / Elektroinstallateur EFZ 100%",
+            "description": "Wir suchen einen erfahrenen Automatiker oder Elektroinstallateur EFZ für die Fertigung hochwertiger Schaltanlagen in Romanshorn.",
+            "datePosted": "2026-01-01",
+            "employmentType": "FULL_TIME",
+            "jobLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Mittliszelgstrasse 5",
+                    "addressLocality": "Romanshorn",
+                    "postalCode": "8590",
+                    "addressCountry": "CH"
+                }
+            },
+            "hiringOrganization": {
+                "@type": "Organization",
+                "name": "Schaltkraft AG",
+                "sameAs": "https://schaltkraft.ch",
+                "logo": "https://schaltkraft.ch/logo_Schaltkraft_800x480.jpg"
+            },
+            "workHours": "40 Stunden/Woche",
+            "baseSalary": {
+                "@type": "MonetaryAmount",
+                "currency": "CHF",
+                "value": { "@type": "QuantitativeValue", "unitText": "YEAR" }
             }
-        },
-        baseSalary: {
-            '@type': 'MonetaryAmount',
-            currency: 'CHF',
-            value: {
-                '@type': 'QuantitativeValue',
-                minValue: 60000,
-                maxValue: 85000,
-                unitText: 'YEAR'
+        };
+    } else if (slug === 'produktionsmitarbeiter-schaltschrankbau') {
+        jsonLd = {
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            "url": "https://schaltkraft.ch/jobs/produktionsmitarbeiter-schaltschrankbau",
+            "title": "Produktionsmitarbeiter Schaltschrankbau 100%",
+            "description": "Für unsere Produktion in Romanshorn suchen wir einen zuverlässigen Produktionsmitarbeiter im Schaltschrankbau.",
+            "datePosted": "2026-01-01",
+            "employmentType": "FULL_TIME",
+            "jobLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Mittliszelgstrasse 5",
+                    "addressLocality": "Romanshorn",
+                    "postalCode": "8590",
+                    "addressCountry": "CH"
+                }
+            },
+            "hiringOrganization": {
+                "@type": "Organization",
+                "name": "Schaltkraft AG",
+                "sameAs": "https://schaltkraft.ch",
+                "logo": "https://schaltkraft.ch/logo_Schaltkraft_800x480.jpg"
+            },
+            "workHours": "40 Stunden/Woche"
+        };
+    } else if (slug === 'servicetechniker-retrofit-anlagen') {
+        jsonLd = {
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            "url": "https://schaltkraft.ch/jobs/servicetechniker-retrofit-anlagen",
+            "title": "Servicetechniker Retrofit & Anlagen 100%",
+            "description": "Wir suchen einen Servicetechniker für Wartung, Retrofit und Modernisierung von Schaltanlagen in der Ost- und Zentralschweiz.",
+            "datePosted": "2026-01-01",
+            "employmentType": "FULL_TIME",
+            "jobLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Romanshorn",
+                    "postalCode": "8590",
+                    "addressCountry": "CH"
+                }
+            },
+            "hiringOrganization": {
+                "@type": "Organization",
+                "name": "Schaltkraft AG",
+                "sameAs": "https://schaltkraft.ch",
+                "logo": "https://schaltkraft.ch/logo_Schaltkraft_800x480.jpg"
+            },
+            "workHours": "40 Stunden/Woche"
+        };
+    } else if (slug === 'praktikum-schaltschrankbau') {
+        jsonLd = {
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            "url": "https://schaltkraft.ch/jobs/praktikum-schaltschrankbau",
+            "title": "Praktikum Schaltschrankbau 100%",
+            "description": "Praktikum im Schaltschrankbau bei Schaltkraft AG in Romanshorn – praxisnah und lehrreich.",
+            "datePosted": "2026-01-01",
+            "employmentType": "INTERN",
+            "jobLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Mittliszelgstrasse 5",
+                    "addressLocality": "Romanshorn",
+                    "postalCode": "8590",
+                    "addressCountry": "CH"
+                }
+            },
+            "hiringOrganization": {
+                "@type": "Organization",
+                "name": "Schaltkraft AG",
+                "sameAs": "https://schaltkraft.ch",
+                "logo": "https://schaltkraft.ch/logo_Schaltkraft_800x480.jpg"
             }
-        },
-        applicantLocationRequirements: {
-            '@type': 'Country',
-            name: 'Schweiz'
-        },
-        jobLocationType: 'ONSITE'
-    };
+        };
+    } else if (slug === 'ausbildung-automatiker-automatikmonteur-efz') {
+        jsonLd = {
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            "url": "https://schaltkraft.ch/jobs/ausbildung-automatiker-automatikmonteur-efz",
+            "title": "Ausbildung Automatiker / Automatikmonteur EFZ",
+            "description": "Starte deine Berufsausbildung als Automatiker EFZ bei Schaltkraft AG in Romanshorn – fundierte Ausbildung mit Zukunft.",
+            "datePosted": "2026-01-01",
+            "employmentType": "FULL_TIME",
+            "jobLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Mittliszelgstrasse 5",
+                    "addressLocality": "Romanshorn",
+                    "postalCode": "8590",
+                    "addressCountry": "CH"
+                }
+            },
+            "hiringOrganization": {
+                "@type": "Organization",
+                "name": "Schaltkraft AG",
+                "sameAs": "https://schaltkraft.ch",
+                "logo": "https://schaltkraft.ch/logo_Schaltkraft_800x480.jpg"
+            }
+        };
+    } else {
+        const jobDescription = job.description?.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim() || '';
+        const validThrough = new Date(new Date(job.datePosted).setMonth(new Date(job.datePosted).getMonth() + 3)).toISOString().split('T')[0];
+
+        jsonLd = {
+            '@context': 'https://schema.org',
+            '@type': 'JobPosting',
+            title: job.title,
+            description: jobDescription,
+            datePosted: job.datePosted,
+            validThrough: validThrough,
+            employmentType: job.employmentType === 'Vollzeit' ? 'FULL_TIME' : 'PART_TIME',
+            directApply: true,
+            hiringOrganization: {
+                '@type': 'Organization',
+                name: 'Schaltkraft AG',
+                sameAs: 'https://schaltkraft.ch',
+                logo: 'https://schaltkraft.ch/logo_Schaltkraft_800x480.jpg',
+                url: 'https://schaltkraft.ch'
+            },
+            jobLocation: {
+                '@type': 'Place',
+                address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: 'Mittliszelgstrasse 5',
+                    addressLocality: job.location,
+                    postalCode: '8590',
+                    addressRegion: 'Thurgau',
+                    addressCountry: 'CH'
+                }
+            }
+        };
+    }
 
     return (
         <main className="bg-black min-h-screen pt-32 pb-20">

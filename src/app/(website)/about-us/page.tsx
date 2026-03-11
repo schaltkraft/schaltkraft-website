@@ -4,8 +4,7 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { PageContainer } from '@/components/layout/PageContainer';
 import Link from 'next/link';
-import { WebPageSchema } from '@/components/seo/WebPageSchema';
-import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
+// Using inline JSON-LD for exact Schema control
 
 export const metadata: Metadata = {
     title: 'Über Uns | Schaltkraft AG',
@@ -40,16 +39,26 @@ export default async function AboutPage() {
 
     return (
         <>
-            <WebPageSchema
-                title={page.seoTitle || 'Über Uns | Schaltkraft AG'}
-                description={page.seoDescription || 'Erfahren Sie mehr über Schaltkraft AG.'}
-                url="https://schaltkraft.ch/about-us"
-            />
-            <BreadcrumbSchema
-                items={[
-                    { name: 'Home', url: 'https://schaltkraft.ch' },
-                    { name: 'Über Uns', url: 'https://schaltkraft.ch/about-us' }
-                ]}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "AboutPage",
+                        "@id": "https://schaltkraft.ch/about-us",
+                        "url": "https://schaltkraft.ch/about-us",
+                        "name": "Über uns – Schaltkraft AG",
+                        "description": "Vision, Werte und Unternehmensphilosophie der Schaltkraft AG – Qualität, Innovation und Nachhaltigkeit im Schaltanlagenbau.",
+                        "publisher": { "@id": "https://schaltkraft.ch/#organization" },
+                        "breadcrumb": {
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [
+                                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://schaltkraft.ch" },
+                                { "@type": "ListItem", "position": 2, "name": "Über uns", "item": "https://schaltkraft.ch/about-us" }
+                            ]
+                        }
+                    })
+                }}
             />
             <SectionRenderer blocks={page.blocks} />
         </>

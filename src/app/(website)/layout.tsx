@@ -49,9 +49,9 @@ export const metadata: Metadata = {
         description: 'Schaltanlagenbau, Steuerungsbau und Elektroplanung aus der Schweiz. Ihr Partner für individuelle Niederspannungsverteilungen und Automation.',
         images: [
             {
-                url: '/images/og-image.jpg',
-                width: 1200,
-                height: 630,
+                url: '/logo_Schaltkraft_800x480.jpg',
+                width: 800,
+                height: 480,
                 alt: 'Schaltkraft AG - Schaltanlagenbau Schweiz',
             },
         ],
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Schaltkraft AG | Schaltanlagenbau Schweiz',
         description: 'Schaltanlagenbau, Steuerungsbau und Elektroplanung aus Romanshorn.',
-        images: ['/images/og-image.jpg'],
+        images: ['/logo_Schaltkraft_800x480.jpg'],
     },
     alternates: {
         canonical: 'https://schaltkraft.ch',

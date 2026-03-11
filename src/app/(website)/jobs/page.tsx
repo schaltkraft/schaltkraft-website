@@ -25,5 +25,30 @@ export default async function JobsPage() {
         )
     }
 
-    return <SectionRenderer blocks={page.blocks} />;
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "CollectionPage",
+                        "@id": "https://schaltkraft.ch/jobs",
+                        "url": "https://schaltkraft.ch/jobs",
+                        "name": "Jobs & Karriere – Schaltkraft AG",
+                        "description": "Offene Stellen bei Schaltkraft AG in Romanshorn – Elektrofachkräfte, Automatiker und Produktionsmitarbeiter gesucht.",
+                        "publisher": { "@id": "https://schaltkraft.ch/#organization" },
+                        "breadcrumb": {
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [
+                                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://schaltkraft.ch" },
+                                { "@type": "ListItem", "position": 2, "name": "Jobs & Karriere", "item": "https://schaltkraft.ch/jobs" }
+                            ]
+                        }
+                    })
+                }}
+            />
+            <SectionRenderer blocks={page.blocks} />
+        </>
+    );
 }
