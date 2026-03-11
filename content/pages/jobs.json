@@ -18,15 +18,15 @@
                 "headline": "Das erwartet Sie bei uns",
                 "images": [
                     {
-                        "image": "/images/jobs/jobs/blocks/1/value/images/0/image/jobs-01.webp",
+                        "image": "/images/jobs/jobs-01.webp",
                         "alt": "Mitarbeiter bei der Arbeit im Schaltschrankbau"
                     },
                     {
-                        "image": "/images/jobs/jobs/blocks/1/value/images/1/image/jobs-02.webp",
+                        "image": "/images/jobs/jobs-02.webp",
                         "alt": "Detailarbeit an einer Elektroverteilung"
                     },
                     {
-                        "image": "/images/jobs/jobs/blocks/1/value/images/2/image/jobs-03.webp",
+                        "image": "/images/jobs/jobs-03.webp",
                         "alt": "Teamwork in der Werkstatt der Schaltkraft AG"
                     }
                 ],
