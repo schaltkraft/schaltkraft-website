@@ -16,12 +16,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/agb',
         '/impressum',
         '/datenschutz',
-    ].map((route) => ({
-        url: `${baseUrl}${route}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: route === '' ? 1 : 0.8,
-    }));
+    ].map((route) => {
+        let priority = 0.8;
+        if (route === '') priority = 1.0;
+        if (['/agb', '/impressum', '/datenschutz'].includes(route)) priority = 0.3;
+
+        return {
+            url: `${baseUrl}${route}`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority,
+        };
+    });
 
     // Services
     const services = await getAllServices();

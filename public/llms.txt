@@ -1,51 +1,46 @@
-# Schaltkraft AG
+# Schaltkraft AG – llms.txt
+# Standard: https://llmstxt.org
+# Letzte Aktualisierung: 2026-03-11
 
-> Ihr Schweizer Partner für Schaltanlagenbau, Steuerungsbau und Elektro-Engineering
+> Schaltkraft AG ist ein Schweizer Unternehmen mit Sitz in Romanshorn (8590 TG),
+> spezialisiert auf Schaltanlagenbau, Elektro-Engineering und Niederspannungsverteilungen.
+> Das Unternehmen fertigt massgeschneiderte Schaltanlagen für Industrie, Infrastruktur
+> und Gewerbe – mit über 20 Jahren Berufserfahrung und Swiss Made Qualität.
+> Mitglied beim VSAS und Gewerbeverband Romanshorn.
 
-## Über Uns
+## Unternehmen
 
-Schaltkraft AG ist ein Schweizer Unternehmen mit Sitz in Romanshorn am Bodensee. Wir sind spezialisiert auf den Bau von Schaltanlagen, Steuerungsanlagen und Niederspannungsverteilungen für Industrie und Infrastruktur.
+- [Home](https://schaltkraft.ch): Startseite, Unternehmensübersicht, Kontaktformular, Kundenstimmen
+- [Über uns](https://schaltkraft.ch/about-us): Vision, Werte, Leitbild, Nachhaltigkeit, Mitarbeiterkultur
+- [Team](https://schaltkraft.ch/team): Fachkräfte und Mitarbeitende der Schaltkraft AG
+- [Kontakt](https://schaltkraft.ch/contact): Adresse, Telefon, E-Mail, Öffnungszeiten, Kontaktformular
 
-## Unser Angebot
+## Dienstleistungen
 
-### Planung & Engineering
-- Elektroschemata und CAD-Planung
-- Technische Beratung
-- Dispositionsplanung
+- [Dienstleistungen (Übersicht)](https://schaltkraft.ch/dienstleistungen): Alle Leistungen im Überblick
+- [Planung & Engineering](https://schaltkraft.ch/dienstleistungen/planung-engineering): Technische Beratung, Elektroschemata, Dispositionsplanung, normgerechte Dokumentation
+- [Schaltanlagen](https://schaltkraft.ch/dienstleistungen/schaltanlagen): Niederspannungsverteilungen, Grobverteilungen, Steuerungsanlagen
+- [Montage & Installation](https://schaltkraft.ch/dienstleistungen/montage-installation): Vor-Ort-Montage, Inbetriebnahme, Verkabelung
+- [Service & Modernisierung](https://schaltkraft.ch/dienstleistungen/service-modernisierung): Retrofit, Anlagenerweiterungen, Wartung & Unterhalt
 
-### Schaltanlagenbau
-- Niederspannungsverteilungen (NV)
-- Steuerungsanlagen
-- Spezialanlagen nach Kundenwunsch
+## Jobs & Karriere
 
-### Montage & Installation
-- Vor-Ort-Montage
-- Inbetriebnahme
-- Verkabelung und Anschluss
-
-### Service & Modernisierung
-- Retrofit-Lösungen
-- Anlagenerweiterungen
-- Wartung und Support
+- [Jobs Übersicht](https://schaltkraft.ch/jobs): Alle offenen Stellen, Arbeitgebervorteile (40h-Woche, 5 Wochen Ferien)
+- [Automatiker / Elektroinstallateur EFZ 100%](https://schaltkraft.ch/jobs/automatiker-automatikmonteur-elektroinstallateur-efz): Vollzeit, Romanshorn
+- [Produktionsmitarbeiter Schaltschrankbau 100%](https://schaltkraft.ch/jobs/produktionsmitarbeiter-schaltschrankbau): Vollzeit, Romanshorn
+- [Servicetechniker Retrofit & Anlagen 100%](https://schaltkraft.ch/jobs/servicetechniker-retrofit-anlagen): Vollzeit, Ost- und Zentralschweiz
+- [Praktikum Schaltschrankbau](https://schaltkraft.ch/jobs/praktikum-schaltschrankbau): Vollzeit, Romanshorn
+- [Ausbildung Automatiker / Automatikmonteur EFZ](https://schaltkraft.ch/jobs/ausbildung-automatiker-automatikmonteur-efz): Berufslehre, Romanshorn
 
 ## Kontakt
 
-- **Adresse**: Mittliszelgstrasse 5, 8590 Romanshorn, Schweiz
-- **Telefon**: +41 71 521 77 77
-- **E-Mail**: info@schaltkraft.ch
-- **Website**: https://schaltkraft.ch
+- Firma: Schaltkraft AG
+- Adresse: Mittliszelgstrasse 5, 8590 Romanshorn, Schweiz
+- Telefon: +41 71 521 77 77
+- E-Mail: info@schaltkraft.ch
+- Öffnungszeiten: Mo–Do 07:30–17:00 Uhr, Fr 07:30–16:00 Uhr
+- Website: https://schaltkraft.ch
 
-## Unsere Werte
+## Vollständige Inhaltsdokumentation
 
-- Swiss Made Qualität
-- ISO 9001 zertifiziert
-- Persönliche Betreuung
-- Termintreue und Präzision
-
-## Links
-
-- [Dienstleistungen](https://schaltkraft.ch/dienstleistungen)
-- [Über Uns](https://schaltkraft.ch/about-us)
-- [Team](https://schaltkraft.ch/team)
-- [Kontakt](https://schaltkraft.ch/contact)
-- [Jobs](https://schaltkraft.ch/jobs)
+- [llms-full.txt](https://schaltkraft.ch/llms-full.txt): Detaillierter Seiteninhalt für KI-Systeme

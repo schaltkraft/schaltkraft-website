@@ -1,0 +1,120 @@
+# Schaltkraft AG – Vollständige Inhaltsdokumentation für KI-Systeme
+# https://schaltkraft.ch/llms-full.txt
+# Standard: https://llmstxt.org
+# Letzte Aktualisierung: 2026-03-11
+
+---
+
+## Unternehmen
+
+**Name:** Schaltkraft AG
+**Rechtsform:** Aktiengesellschaft (AG)
+**Sitz:** Mittliszelgstrasse 5, 8590 Romanshorn, Kanton Thurgau, Schweiz
+**Telefon:** +41 71 521 77 77
+**E-Mail:** info@schaltkraft.ch
+**Website:** https://schaltkraft.ch
+**Öffnungszeiten:** Montag–Donnerstag 07:30–17:00, Freitag 07:30–16:00
+**Branche:** Elektrotechnik, Schaltanlagenbau, Elektro-Engineering
+**Qualitätsmerkmal:** Swiss Made – Fertigung und Engineering vollständig in der Schweiz
+**Verbände:** VSAS (Verband Schweizerischer Anbieter von Schaltanlagen-Systemen), Gewerbeverband Romanshorn
+**Erfahrung:** Über 20 Jahre Berufserfahrung im Schaltanlagenbau
+
+---
+
+## Leistungen im Detail
+
+### Planung & Engineering
+- Technische Beratung und Konzeptentwicklung
+- Erstellung von Elektroschemata
+- Dispositionsplanung
+- Normgerechte Dokumentationen
+- Integration moderner Technologien (IoT, Smart Metering)
+URL: https://schaltkraft.ch/dienstleistungen/planung-engineering
+
+### Schaltanlagen
+- Niederspannungsverteilungen höchster Qualität
+- Grobverteilungen
+- Steuerungsanlagen
+- Massgeschneiderte Lösungen für Industrie und Gewerbe
+URL: https://schaltkraft.ch/dienstleistungen/schaltanlagen
+
+### Montage & Installation
+- Fachgerechte Vor-Ort-Montage
+- Inbetriebnahme
+- Professionelle Verkabelung
+URL: https://schaltkraft.ch/dienstleistungen/montage-installation
+
+### Service & Modernisierung
+- Retrofit bestehender Anlagen
+- Anlagenerweiterungen
+- Wartung & Unterhalt
+- Normgerechte Modernisierung
+URL: https://schaltkraft.ch/dienstleistungen/service-modernisierung
+
+---
+
+## Offene Stellen (Stand: März 2026)
+
+### Automatiker / Automatikmonteur / Elektroinstallateur EFZ 100%
+- Pensum: 100% / Vollzeit
+- Standort: Romanshorn, Kanton Thurgau
+- URL: https://schaltkraft.ch/jobs/automatiker-automatikmonteur-elektroinstallateur-efz
+
+### Produktionsmitarbeiter Schaltschrankbau 100%
+- Pensum: 100% / Vollzeit
+- Standort: Romanshorn, Kanton Thurgau
+- URL: https://schaltkraft.ch/jobs/produktionsmitarbeiter-schaltschrankbau
+
+### Servicetechniker Retrofit & Anlagen 100%
+- Pensum: 100% / Vollzeit
+- Einsatzgebiet: Ost- und Zentralschweiz
+- URL: https://schaltkraft.ch/jobs/servicetechniker-retrofit-anlagen
+
+### Praktikum Schaltschrankbau
+- Pensum: 100%
+- Standort: Romanshorn, Kanton Thurgau
+- URL: https://schaltkraft.ch/jobs/praktikum-schaltschrankbau
+
+### Ausbildung Automatiker / Automatikmonteur EFZ
+- Art: Berufslehre (EFZ)
+- Standort: Romanshorn, Kanton Thurgau
+- URL: https://schaltkraft.ch/jobs/ausbildung-automatiker-automatikmonteur-efz
+
+---
+
+## Arbeitgebervorteile
+
+- 40-Stunden-Woche
+- 5 Wochen Ferien
+- Weiterbildung und Zertifizierungen
+- Moderne Ausrüstung und Werkzeuge
+- Flache Hierarchien, kollegiales Umfeld
+- Faire Löhne und attraktive Sozialleistungen
+- Zukunftssichere Branche
+
+---
+
+## Kundenstimmen (Auszug)
+
+- Giovanni Pentrelli, Projektleiter Elektro Tel AG: Empfiehlt Schaltkraft AG als zuverlässigen Partner im Schaltanlagenbau mit technischem Know-how und moderner Technologie.
+- Fitim Malici, Geschäftsführer Elektra Zürich: Lobt professionelle Umsetzung, termingerechte Lieferung und kompetente Beratung.
+- Gerry Pedroncelli, Inhaber E Tec-Elektro: Schätzt strukturierte Vorgehensweise, klare Kommunikation und pragmatische Lösungsfindung.
+- Milos Stamatovic, Elektro Appenzeller AG: Hebt Qualität, Termintreue und vorausdenkendes Team hervor.
+
+---
+
+## Unternehmenswerte
+
+- **Qualität:** Interne Standards übertreffen häufig gesetzliche Normen
+- **Innovation:** Integration von IoT und Smart Metering in Anlagenkonzepte
+- **Partnerschaft:** Begleitung von der Idee bis zur Inbetriebnahme und darüber hinaus
+- **Verlässlichkeit:** Termintreue und Kostentransparenz als Grundlage jeder Zusammenarbeit
+- **Nachhaltigkeit:** Ressourcenschonende Prozesse und umweltfreundliche Materialien
+- **Mitarbeiterentwicklung:** Gezielte Ausbildung, Weiterbildung und flache Hierarchien
+
+---
+
+## Sitemap-Referenz
+
+Vollständige Sitemap: https://schaltkraft.ch/sitemap.xml
+Alle 18 Seiten indexiert (Stand: März 2026)

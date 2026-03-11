@@ -5,8 +5,11 @@ export default function robots(): MetadataRoute.Robots {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: '/keystatic/', // Hide CMS
+            disallow: ['/keystatic/', '/impressum', '/datenschutz', '/agb'],
         },
-        sitemap: 'https://schaltkraft.ch/sitemap.xml',
+        sitemap: [
+            'https://schaltkraft.ch/sitemap.xml',
+            'https://schaltkraft.ch/llms.txt'
+        ],
     };
 }
