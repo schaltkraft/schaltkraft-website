@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -55,7 +56,7 @@ export function Footer({ data }: FooterProps) {
           {/* COL 1: Logo & Claim */}
           <motion.div variants={fadeInUp} className="space-y-6">
             <Link href="/" className="block">
-              <img src="/images/schaltkraft-logo.png" alt="Schaltkraft AG" className="h-14 w-auto" />
+              <Image src="/images/schaltkraft-logo.png" alt="Schaltkraft AG" width={200} height={80} className="h-14 w-auto" />
             </Link>
             <p className="text-zinc-400 leading-relaxed max-w-xs">
               {claim}
@@ -86,10 +87,10 @@ export function Footer({ data }: FooterProps) {
             {/* Association Logos */}
             <div className="flex gap-4 pt-4 flex-wrap">
               <div className="bg-white/5 p-2 rounded-sm h-16 md:h-20 flex items-center justify-center">
-                <img src="/images/verband_vsas.png" alt="VSAS" className="h-full w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
+                <Image src="/images/verband_vsas.png" alt="VSAS" width={120} height={80} className="h-full w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
               </div>
               <div className="bg-white/5 p-2 rounded-sm h-16 md:h-20 flex items-center justify-center">
-                <img src="/images/verband-romanshorn.png" alt="Gewerbe Romanshorn" className="h-full w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
+                <Image src="/images/verband-romanshorn.png" alt="Gewerbe Romanshorn" width={120} height={80} className="h-full w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
               </div>
             </div>
           </motion.div>

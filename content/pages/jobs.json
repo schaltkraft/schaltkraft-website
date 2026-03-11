@@ -1,7 +1,7 @@
 {
     "title": "jobs",
-    "seoTitle": "Jobs & Karriere | Schaltkraft AG",
-    "seoDescription": "Werden Sie Teil unseres Teams. Offene Stellen als Elektriker und im Anlagenbau bei Schaltkraft AG.",
+    "seoTitle": "Jobs & Karriere – Schaltkraft AG | Romanshorn",
+    "seoDescription": "Starten Sie Ihre Karriere bei Schaltkraft AG in Romanshorn. Offene Stellen für Automatiker, Elektroinstallateure und Fachkräfte im Schaltanlagenbau.",
     "isHomepage": false,
     "blocks": [
         {
@@ -9,7 +9,7 @@
             "value": {
                 "headline": "Karriere bei Schaltkraft",
                 "subheadline": "Gestalten Sie mit uns die Energiezukunft. Wir suchen Talente, die anpacken und Präzision lieben.",
-                "image": "/images/hero/jobs/blocks/0/value/jobs-hero.jpg"
+                "image": "/images/hero/jobs/blocks/0/value/schaltkraft-ag-mitarbeiter-event-schaltanlagenbau-schweiz.webp"
             }
         },
         {

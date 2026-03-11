@@ -1,6 +1,7 @@
 'use client';
 import Marquee from 'react-fast-marquee';
 import { PageContainer } from '@/components/layout/PageContainer';
+import Image from 'next/image';
 
 interface PartnerMarqueeBlockProps {
   data: any;
@@ -28,9 +29,11 @@ export function PartnerMarqueeBlock({ data }: PartnerMarqueeBlockProps) {
               className="mx-12 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 mix-blend-multiply"
             >
               {partner.logo ? (
-                <img
+                <Image
                   src={partner.logo}
                   alt={partner.name}
+                  width={200}
+                  height={64}
                   className="h-12 md:h-16 w-auto object-contain"
                 />
               ) : (

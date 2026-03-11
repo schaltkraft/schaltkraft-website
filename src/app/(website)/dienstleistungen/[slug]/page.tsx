@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { SectionRenderer } from '@/components/blocks/SectionRenderer';
 import { ServiceHeroClient, ServiceContentClient, ServiceSidebarClient } from './ServiceDetailClient';
@@ -82,7 +83,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <div className="absolute inset-0 z-0">
                     {service.heroImage ? (
                         <>
-                            <img src={service.heroImage} alt={service.title} className="w-full h-full object-cover opacity-40" />
+                            <Image src={service.heroImage} alt={service.title} fill sizes="100vw" priority className="object-cover opacity-40" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40" />
                         </>
                     ) : (

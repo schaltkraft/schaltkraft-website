@@ -1,6 +1,7 @@
 import { getAllServices, getPage } from '@/lib/cms-server';
 import { PageContainer } from '@/components/layout/PageContainer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { Metadata } from 'next';
 import { SectionRenderer } from '@/components/blocks/SectionRenderer';
@@ -50,7 +51,7 @@ export default async function ServicesPage() {
                             >
                                 {service.icon && (
                                     <div className="absolute inset-0 z-0">
-                                        <img src={service.icon} alt={service.title} className="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500 grayscale group-hover:grayscale-0" />
+                                        <Image src={service.icon} alt={service.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500 grayscale group-hover:grayscale-0" />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                                     </div>
                                 )}

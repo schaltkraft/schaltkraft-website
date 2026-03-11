@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { Menu, X, ChevronDown, Phone } from 'lucide-react';
@@ -46,10 +47,13 @@ export function Header({ data }: HeaderProps) {
           {/* LOGO */}
           <Link href="/" className="relative z-50 flex items-center gap-2 group shrink-0">
             {data?.logo ? (
-              <img
+              <Image
                 src={logoUrl}
                 alt={data?.logoAlt || 'Schaltkraft'}
+                width={200}
+                height={80}
                 className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-20 w-auto max-w-[180px] sm:max-w-none object-contain transition-transform duration-300 group-hover:scale-105"
+                priority
               />
             ) : (
               <span className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold font-heading uppercase text-white tracking-widest">

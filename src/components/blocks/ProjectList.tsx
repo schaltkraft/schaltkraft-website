@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export function ProjectList({ initialProjects, categories }: { initialProjects: any[], categories: any[] }) {
     const [filter, setFilter] = useState<string | null>(null);
@@ -16,8 +17,8 @@ export function ProjectList({ initialProjects, categories }: { initialProjects: 
                 <button
                     onClick={() => setFilter(null)}
                     className={`px-6 py-2 rounded-lg font-semibold transition-colors ${filter === null
-                            ? 'bg-brand-red text-white'
-                            : 'bg-muted text-foreground hover:bg-neutral-200'
+                        ? 'bg-brand-red text-white'
+                        : 'bg-muted text-foreground hover:bg-neutral-200'
                         }`}
                 >
                     Alle
@@ -27,8 +28,8 @@ export function ProjectList({ initialProjects, categories }: { initialProjects: 
                         key={cat.value}
                         onClick={() => setFilter(cat.value)}
                         className={`px-6 py-2 rounded-lg font-semibold transition-colors ${filter === cat.value
-                                ? 'bg-brand-red text-white'
-                                : 'bg-muted text-foreground hover:bg-neutral-200'
+                            ? 'bg-brand-red text-white'
+                            : 'bg-muted text-foreground hover:bg-neutral-200'
                             }`}
                     >
                         {cat.label}
@@ -45,11 +46,13 @@ export function ProjectList({ initialProjects, categories }: { initialProjects: 
                         className="group block"
                     >
                         {project.heroImage && (
-                            <div className="overflow-hidden rounded-lg mb-4">
-                                <img
+                            <div className="overflow-hidden rounded-lg mb-4 relative h-64">
+                                <Image
                                     src={project.heroImage}
                                     alt={project.title}
-                                    className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 33vw"
+                                    className="object-cover transform group-hover:scale-105 transition-transform duration-500"
                                 />
                             </div>
                         )}

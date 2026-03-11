@@ -3,6 +3,7 @@
 import { PageContainer } from '@/components/layout/PageContainer';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Shield, Zap, Target, Flag, Users, Leaf, Award, Lightbulb } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer, viewportOnce } from '@/lib/animations';
@@ -37,11 +38,14 @@ export function IntroBlock({ data, isNested, index = 0 }: IntroBlockProps) {
         >
             {data.image ? (
                 <>
-                    <div className="absolute inset-0 border-2 border-white/10 z-10 rounded-xl md:rounded-[2rem] group-hover:border-brand-orange/50 transition-colors duration-500" />
-                    <img
+                    <div className="absolute inset-0 border-2 border-white/10 z-10 rounded-xl md:rounded-[2rem] group-hover:border-brand-orange/50 transition-colors duration-500 pointer-events-none" />
+                    <Image
                         src={data.image}
                         alt={data.headline || "Intro"}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 saturate-0 group-hover:saturate-100"
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-105 saturate-0 group-hover:saturate-100"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        priority={index === 0}
                     />
                 </>
             ) : (data.icons && data.icons.length > 0) ? (

@@ -1,406 +1,406 @@
 {
-  "title": "datenschutz",
-  "seoTitle": "Datenschutzerklärung (Stand 2026) | SchaltKraft AG",
-  "seoDescription": "Datenschutzerklärung der SchaltKraft AG gemäss aktuellem Schweizer Datenschutzgesetz (nDSG) und EU-DSGVO.",
-  "isHomepage": false,
-  "blocks": [
-    {
-      "discriminant": "richText",
-      "value": {
-        "content": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "heading",
-              "attrs": {
-                "level": 1
-              },
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Datenschutzerklärung"
-                }
-              ]
-            },
-            {
-              "type": "heading",
-              "attrs": {
-                "level": 2
-              },
-              "content": [
-                {
-                  "type": "text",
-                  "text": "1. Allgemeines"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Die SchaltKraft AG nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung."
-                }
-              ]
-            },
-            {
-              "type": "horizontal_rule"
-            },
-            {
-              "type": "heading",
-              "attrs": {
-                "level": 2
-              },
-              "content": [
-                {
-                  "type": "text",
-                  "text": "2. Verantwortliche Stelle"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Verantwortlich für die Datenbearbeitung auf dieser Website ist:"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "SchaltKraft AG",
-                  "marks": [
-                    {
-                      "type": "bold"
-                    }
-                  ]
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "text",
-                  "text": "Mittliszelgstrasse 5"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "text",
-                  "text": "CH-8590 Romanshorn"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "text",
-                  "text": "E-Mail: info@schaltkraft.ch"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "text",
-                  "text": "Telefon: +41 71 521 77 77"
-                }
-              ]
-            },
-            {
-              "type": "horizontal_rule"
-            },
-            {
-              "type": "heading",
-              "attrs": {
-                "level": 2
-              },
-              "content": [
-                {
-                  "type": "text",
-                  "text": "3. Erhebung und Bearbeitung von Daten"
-                }
-              ]
-            },
-            {
-              "type": "heading",
-              "attrs": {
-                "level": 3
-              },
-              "content": [
-                {
-                  "type": "text",
-                  "text": "3.1 Zugriffsdaten (Server-Logfiles)"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Beim Besuch unserer Website erheben und speichern unsere Server automatisch Informationen in sogenannten Server-Log-Files, die Ihr Browser automatisch an uns übermittelt. Dies sind:"
-                }
-              ]
-            },
-            {
-              "type": "list",
-              "attrs": {
-                "ordered": false
-              },
-              "content": [
-                {
-                  "type": "item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
+    "title": "datenschutz",
+    "seoTitle": "Datenschutzerklärung – Schaltkraft AG",
+    "seoDescription": "Informationen zur Verarbeitung personenbezogener Daten auf der Website der Schaltkraft AG gemäss Schweizer Datenschutzgesetz (DSG).",
+    "isHomepage": false,
+    "blocks": [
+        {
+            "discriminant": "richText",
+            "value": {
+                "content": {
+                    "type": "doc",
+                    "content": [
                         {
-                          "type": "text",
-                          "text": "IP-Adresse"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
+                            "type": "heading",
+                            "attrs": {
+                                "level": 1
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Datenschutzerklärung"
+                                }
+                            ]
+                        },
                         {
-                          "type": "text",
-                          "text": "Datum und Uhrzeit der Anfrage"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Allgemeines"
+                                }
+                            ]
+                        },
                         {
-                          "type": "text",
-                          "text": "Zeitzonendifferenz zur Greenwich Mean Time (GMT)"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten."
+                                }
+                            ]
+                        },
                         {
-                          "type": "text",
-                          "text": "Inhalt der Anforderung (konkrete Seite)"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Die SchaltKraft AG nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung."
+                                }
+                            ]
+                        },
                         {
-                          "type": "text",
-                          "text": "Zugriffsstatus/HTTP-Statuscode"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
+                            "type": "horizontal_rule"
+                        },
                         {
-                          "type": "text",
-                          "text": "Jeweils übertragene Datenmenge"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "2. Verantwortliche Stelle"
+                                }
+                            ]
+                        },
                         {
-                          "type": "text",
-                          "text": "Website, von der die Anforderung kommt"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Verantwortlich für die Datenbearbeitung auf dieser Website ist:"
+                                }
+                            ]
+                        },
                         {
-                          "type": "text",
-                          "text": "Browser, Betriebssystem und dessen Oberfläche"
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "SchaltKraft AG",
+                                    "marks": [
+                                        {
+                                            "type": "bold"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "hard_break"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "Mittliszelgstrasse 5"
+                                },
+                                {
+                                    "type": "hard_break"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "CH-8590 Romanshorn"
+                                },
+                                {
+                                    "type": "hard_break"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "E-Mail: info@schaltkraft.ch"
+                                },
+                                {
+                                    "type": "hard_break"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "Telefon: +41 71 521 77 77"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "horizontal_rule"
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "3. Erhebung und Bearbeitung von Daten"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 3
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "3.1 Zugriffsdaten (Server-Logfiles)"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Beim Besuch unserer Website erheben und speichern unsere Server automatisch Informationen in sogenannten Server-Log-Files, die Ihr Browser automatisch an uns übermittelt. Dies sind:"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "list",
+                            "attrs": {
+                                "ordered": false
+                            },
+                            "content": [
+                                {
+                                    "type": "item",
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "IP-Adresse"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Datum und Uhrzeit der Anfrage"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Zeitzonendifferenz zur Greenwich Mean Time (GMT)"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Inhalt der Anforderung (konkrete Seite)"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Zugriffsstatus/HTTP-Statuscode"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Jeweils übertragene Datenmenge"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Website, von der die Anforderung kommt"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Browser, Betriebssystem und dessen Oberfläche"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 3
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "3.2 Kontaktformular"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "horizontal_rule"
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "4. Cookies"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Diese Website verwendet Cookies. Cookies sind kleine Textdateien, die beim Besuch dieser Website in Ihrem Computer dauerhaft oder temporär gespeichert werden. Zweck der Cookies ist insbesondere die Analyse der Nutzung dieser Website zur statistischen Auswertung sowie für kontinuierliche Verbesserungen."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "In Ihrem Browser können Sie Cookies in den Einstellungen jederzeit ganz oder teilweise deaktivieren. Bei deaktivierten Cookies stehen Ihnen allenfalls nicht mehr alle Funktionen dieser Website zur Verfügung."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "horizontal_rule"
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "5. Rechte der betroffenen Person"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "horizontal_rule"
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "6. Aktualität und Änderung dieser Datenschutzerklärung"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Diese Datenschutzerklärung ist aktuell gültig und hat den Stand "
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "Januar 2026",
+                                    "marks": [
+                                        {
+                                            "type": "bold"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern."
+                                }
+                            ]
                         }
-                      ]
-                    }
-                  ]
+                    ]
                 }
-              ]
-            },
-            {
-              "type": "heading",
-              "attrs": {
-                "level": 3
-              },
-              "content": [
-                {
-                  "type": "text",
-                  "text": "3.2 Kontaktformular"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
-                }
-              ]
-            },
-            {
-              "type": "horizontal_rule"
-            },
-            {
-              "type": "heading",
-              "attrs": {
-                "level": 2
-              },
-              "content": [
-                {
-                  "type": "text",
-                  "text": "4. Cookies"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Diese Website verwendet Cookies. Cookies sind kleine Textdateien, die beim Besuch dieser Website in Ihrem Computer dauerhaft oder temporär gespeichert werden. Zweck der Cookies ist insbesondere die Analyse der Nutzung dieser Website zur statistischen Auswertung sowie für kontinuierliche Verbesserungen."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "In Ihrem Browser können Sie Cookies in den Einstellungen jederzeit ganz oder teilweise deaktivieren. Bei deaktivierten Cookies stehen Ihnen allenfalls nicht mehr alle Funktionen dieser Website zur Verfügung."
-                }
-              ]
-            },
-            {
-              "type": "horizontal_rule"
-            },
-            {
-              "type": "heading",
-              "attrs": {
-                "level": 2
-              },
-              "content": [
-                {
-                  "type": "text",
-                  "text": "5. Rechte der betroffenen Person"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten."
-                }
-              ]
-            },
-            {
-              "type": "horizontal_rule"
-            },
-            {
-              "type": "heading",
-              "attrs": {
-                "level": 2
-              },
-              "content": [
-                {
-                  "type": "text",
-                  "text": "6. Aktualität und Änderung dieser Datenschutzerklärung"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Diese Datenschutzerklärung ist aktuell gültig und hat den Stand "
-                },
-                {
-                  "type": "text",
-                  "text": "Januar 2026",
-                  "marks": [
-                    {
-                      "type": "bold"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "text": "."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern."
-                }
-              ]
             }
-          ]
         }
-      }
-    }
-  ]
+    ]
 }

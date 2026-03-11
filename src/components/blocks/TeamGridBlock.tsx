@@ -1,6 +1,7 @@
 import { PageContainer } from '@/components/layout/PageContainer';
 import { getTeamMembers } from '@/lib/cms-server';
 import { TeamGridClient } from './TeamGridClient';
+import Image from 'next/image';
 
 interface TeamGridBlockProps {
     data: any;
@@ -25,7 +26,7 @@ export async function TeamGridBlock({ data }: TeamGridBlockProps) {
                 {/* Group Image */}
                 {data.groupImage && (
                     <div className="mb-16 md:mb-24 rounded-xl md:rounded-[3rem] overflow-hidden grayscale contrast-110">
-                        <img src={data.groupImage} alt="Team Group" className="w-full h-auto" />
+                        <Image src={data.groupImage} alt="Team Group" width={1200} height={600} className="w-full h-auto" />
                     </div>
                 )}
 

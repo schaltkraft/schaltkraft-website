@@ -1,5 +1,6 @@
 import { PageContainer } from '@/components/layout/PageContainer';
 import Marquee from 'react-fast-marquee';
+import Image from 'next/image';
 
 interface LogoCloudBlockProps {
     data: any;
@@ -16,9 +17,11 @@ export function LogoCloudBlock({ data }: LogoCloudBlockProps) {
                     <Marquee gradient={false} speed={40}>
                         {logos.map((item: any, idx: number) => (
                             <div key={idx} className="mx-12 lg:mx-20 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
-                                <img
+                                <Image
                                     src={item.image}
                                     alt={item.name}
+                                    width={150}
+                                    height={48}
                                     className="h-8 lg:h-12 w-auto object-contain max-w-[150px]"
                                 />
                             </div>

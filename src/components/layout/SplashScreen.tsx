@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
+import Image from 'next/image';
 
 export function SplashScreen() {
     const [showSplash, setShowSplash] = useState(false);
@@ -368,10 +369,13 @@ export function SplashScreen() {
                             transition={{ duration: 1.2, ease: "easeOut" }}
                         >
                             <div className="w-28 h-28 sm:w-40 sm:h-40 md:w-56 md:h-56 mb-4 sm:mb-8 relative">
-                                <img
+                                <Image
                                     src="/images/splashscreen/schaltkraft_icon_transparent.svg"
                                     alt="Schaltkraft Icon"
+                                    width={224}
+                                    height={224}
                                     className="w-full h-full object-contain drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]"
+                                    priority
                                 />
                             </div>
                             <h1 className="text-3xl sm:text-5xl md:text-8xl font-black font-heading tracking-widest text-white uppercase mb-4 sm:mb-6 text-center">

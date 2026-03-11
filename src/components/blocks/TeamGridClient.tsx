@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer, viewportOnce } from '@/lib/animations';
+import Image from 'next/image';
 
 interface TeamGridClientProps {
     groupedMembers: readonly {
@@ -40,12 +41,12 @@ export function TeamGridClient({ groupedMembers }: TeamGridClientProps) {
                                     variants={fadeInUp}
                                 >
                                     <motion.div
-                                        className="aspect-[3/4] rounded-lg md:rounded-[2rem] overflow-hidden bg-white/5 mb-4 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
+                                        className="aspect-[3/4] rounded-lg md:rounded-[2rem] overflow-hidden bg-white/5 mb-4 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500 relative"
                                         whileHover={{ scale: 1.03 }}
                                         transition={{ duration: 0.3 }}
                                     >
                                         {member.image && (
-                                            <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                                            <Image src={member.image} alt={member.name} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
                                         )}
                                     </motion.div>
                                     <div className="text-center">

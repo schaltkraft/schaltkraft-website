@@ -1,129 +1,129 @@
 {
-  "title": "about-us",
-  "seoTitle": "Über Uns - Schaltkraft AG | Präzision, Tradition, Zukunft",
-  "seoDescription": "Schaltkraft AG – Ihr Schweizer Partner für Schaltanlagenbau in Romanshorn. Qualität, Präzision und Innovation für Industrie und Infrastruktur.",
-  "isHomepage": false,
-  "blocks": [
-    {
-      "discriminant": "hero",
-      "value": {
-        "headline": "Unser Leitbild",
-        "ctaPrimary": {
-          "text": "test",
-          "url": "test url"
+    "title": "about-us",
+    "seoTitle": "Über uns – Schaltkraft AG | Schaltanlagenbau Romanshorn",
+    "seoDescription": "Erfahren Sie mehr über Schaltkraft AG – unsere Vision, Werte und Engagement für Qualität, Innovation und nachhaltige Lösungen im Schaltanlagenbau.",
+    "isHomepage": false,
+    "blocks": [
+        {
+            "discriminant": "hero",
+            "value": {
+                "headline": "Unser Leitbild",
+                "ctaPrimary": {
+                    "text": "test",
+                    "url": "test url"
+                },
+                "ctaSecondary": {
+                    "text": "button link text",
+                    "url": "url"
+                },
+                "image": "/images/hero/about-us/blocks/0/value/image.png",
+                "ctaPhone": "phone "
+            }
         },
-        "ctaSecondary": {
-          "text": "button link text",
-          "url": "url"
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Unsere Vision",
+                "text": "Die SchalKraft AG steht für innovative, zukunftsfähige Schaltanlagen, die höchste Ansprüche an Qualität und Sicherheit erfüllen. Wir sind davon überzeugt, dass nur durch nachhaltiges Handeln, gepaart mit innovativen Lösungen, langfristiger Erfolg möglich ist. Unser Ziel ist es, partnerschaftliche Beziehungen mit unseren Kunden, Lieferanten und Mitarbeitern zu etablieren, die auf Vertrauen, Transparenz und Fairness basieren.",
+                "image": "/images/content/about-us/blocks/1/value/image.jpeg",
+                "icons": [],
+                "links": []
+            }
         },
-        "image": "/images/hero/about-us/blocks/0/value/image.png",
-        "ctaPhone": "phone "
-      }
-    },
-    {
-      "discriminant": "intro",
-      "value": {
-        "headline": "Unsere Vision",
-        "text": "Die SchalKraft AG steht für innovative, zukunftsfähige Schaltanlagen, die höchste Ansprüche an Qualität und Sicherheit erfüllen. Wir sind davon überzeugt, dass nur durch nachhaltiges Handeln, gepaart mit innovativen Lösungen, langfristiger Erfolg möglich ist. Unser Ziel ist es, partnerschaftliche Beziehungen mit unseren Kunden, Lieferanten und Mitarbeitern zu etablieren, die auf Vertrauen, Transparenz und Fairness basieren.",
-        "image": "/images/content/about-us/blocks/1/value/image.jpeg",
-        "icons": [],
-        "links": []
-      }
-    },
-    {
-      "discriminant": "intro",
-      "value": {
-        "headline": "Qualität und Sicherheit",
-        "subheadline": "Unsere Werte",
-        "text": "Die Sicherheit und Zufriedenheit unserer Kunden stehen für uns an erster Stelle. Wir garantieren höchste Qualität in allen Bereichen – von der Planung bis hin zur Ausführung. Jede Schaltanlage, die wir liefern, ist ein Versprechen für Zuverlässigkeit, Präzision und Sicherheit. ",
-        "image": "/images/content/about-us/blocks/2/value/image.jpeg",
-        "icons": [],
-        "links": []
-      }
-    },
-    {
-      "discriminant": "intro",
-      "value": {
-        "headline": "Innovation und Zukunft",
-        "text": "Innovation ist der Motor unserer Arbeit. Wir setzen auf zukunftsweisende Technologien und entwickeln Lösungen, die den heutigen und zukünftigen Anforderungen unserer Kunden gerecht werden. Dabei treiben wir kontinuierlich den Wandel in unserer Branche voran und schaffen so Mehrwert für unsere Partner und die Gesellschaft.",
-        "image": "/images/content/about-us/blocks/3/value/image.jpg",
-        "icons": [],
-        "links": []
-      }
-    },
-    {
-      "discriminant": "textText",
-      "value": {
-        "titleLeft": "Partnerschaftliche Zusammenarbeit",
-        "textLeft": "Eine vertrauensvolle und offene Kommunikation ist der Grundstein für jede erfolgreiche Partnerschaft. Wir sehen uns als fairen und verlässlichen Partner und streben danach, langfristige und wertschätzende Beziehungen aufzubauen, die auf gegenseitigem Respekt und transparentem Austausch beruhen.",
-        "titleRight": "Nachhaltigkeit und Verantwortung",
-        "textRight": "Nachhaltigkeit ist nicht nur ein Trend für uns – sie ist eine Verantwortung, die wir aktiv leben. Wir setzen auf ressourcenschonende Prozesse und umweltfreundliche Materialien, um unseren ökologischen Fußabdruck zu minimieren. So gestalten wir nicht nur die Zukunft unserer Branche, sondern auch eine lebenswerte Welt für kommende Generationen."
-      }
-    },
-    {
-      "discriminant": "intro",
-      "value": {
-        "headline": "Wertschätzung der Mitarbeiter",
-        "text": "Unsere Mitarbeiter sind das Herzstück unseres Unternehmens. Wir fördern eine Kultur der Offenheit und des gegenseitigen Respekts, in der jede Meinung zählt. Durch flache Hierarchien und eine unterstützende Arbeitsatmosphäre ermöglichen wir unseren Teams, ihr volles Potenzial zu entfalten – denn der Erfolg unseres Unternehmens ist der Erfolg jedes Einzelnen. ",
-        "image": "/images/content/about-us/blocks/5/value/image.jpg",
-        "icons": [],
-        "links": []
-      }
-    },
-    {
-      "discriminant": "textText",
-      "value": {
-        "titleLeft": "Ausbildung und Weiterentwicklung",
-        "textLeft": "Wir investieren in die Zukunft und fördern junge Talente. Durch gezielte Ausbildung und kontinuierliche Weiterbildung schaffen wir die Grundlage für eine erfolgreiche berufliche Laufbahn und bieten unseren Mitarbeitern die Möglichkeit, sich in einem dynamischen Umfeld weiterzuentwickeln.",
-        "titleRight": "Unser Versprechen",
-        "textRight": "Wir handeln stets fair, transparent und verantwortungsbewusst. Unser Fokus liegt auf nachhaltigem Wachstum und der Zufriedenheit unserer Kunden, Lieferanten und Mitarbeiter. Mit einem klaren Bewusstsein für Qualität, Innovation und Verantwortung möchten wir aktiv die Zukunft der Schaltanlagen gestalten und unseren Beitrag zu einer sicheren und nachhaltigen Welt leisten."
-      }
-    },
-    {
-      "discriminant": "values",
-      "value": {
-        "items": [
-          {
-            "title": "Qualität",
-            "description": "Unsere internen Standards übertreffen oft die gesetzlichen Normen. Jede Anlage wird auf Herz und Nieren geprüft.",
-            "icon": "shield"
-          },
-          {
-            "title": "Innovation",
-            "description": "Wir integrieren neuste Technologien wie IoT und Smart Metering direkt in unsere Anlagenkonzepte.",
-            "icon": "zap"
-          },
-          {
-            "title": "Partnerschaft",
-            "description": "Wir begleiten Sie von der ersten Idee über die Planung bis zur Inbetriebnahme und darüber hinaus.",
-            "icon": "users"
-          },
-          {
-            "title": "Verlässlichkeit",
-            "description": "Termintreue und Kostentransparenz sind die Basis einer vertrauensvollen Zusammenarbeit.",
-            "icon": "flag"
-          }
-        ]
-      }
-    },
-    {
-      "discriminant": "intro",
-      "value": {
-        "headline": "Bereit für Ihr Projekt?",
-        "subheadline": "Kontaktieren Sie uns",
-        "text": "Ob komplexe Industriesteuerung oder massgeschneiderte Energieverteilung – unser erfahrenes Team steht Ihnen mit Rat und Tat zur Seite. Wir freuen uns auf Ihre Anfrage.",
-        "icons": [],
-        "links": [
-          {
-            "label": "Kontakt aufnehmen",
-            "url": "/contact"
-          },
-          {
-            "label": "Unsere Dienstleistungen",
-            "url": "/dienstleistungen"
-          }
-        ]
-      }
-    }
-  ]
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Qualität und Sicherheit",
+                "subheadline": "Unsere Werte",
+                "text": "Die Sicherheit und Zufriedenheit unserer Kunden stehen für uns an erster Stelle. Wir garantieren höchste Qualität in allen Bereichen – von der Planung bis hin zur Ausführung. Jede Schaltanlage, die wir liefern, ist ein Versprechen für Zuverlässigkeit, Präzision und Sicherheit. ",
+                "image": "/images/content/about-us/blocks/2/value/image.jpeg",
+                "icons": [],
+                "links": []
+            }
+        },
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Innovation und Zukunft",
+                "text": "Innovation ist der Motor unserer Arbeit. Wir setzen auf zukunftsweisende Technologien und entwickeln Lösungen, die den heutigen und zukünftigen Anforderungen unserer Kunden gerecht werden. Dabei treiben wir kontinuierlich den Wandel in unserer Branche voran und schaffen so Mehrwert für unsere Partner und die Gesellschaft.",
+                "image": "/images/content/about-us/blocks/3/value/image.jpg",
+                "icons": [],
+                "links": []
+            }
+        },
+        {
+            "discriminant": "textText",
+            "value": {
+                "titleLeft": "Partnerschaftliche Zusammenarbeit",
+                "textLeft": "Eine vertrauensvolle und offene Kommunikation ist der Grundstein für jede erfolgreiche Partnerschaft. Wir sehen uns als fairen und verlässlichen Partner und streben danach, langfristige und wertschätzende Beziehungen aufzubauen, die auf gegenseitigem Respekt und transparentem Austausch beruhen.",
+                "titleRight": "Nachhaltigkeit und Verantwortung",
+                "textRight": "Nachhaltigkeit ist nicht nur ein Trend für uns – sie ist eine Verantwortung, die wir aktiv leben. Wir setzen auf ressourcenschonende Prozesse und umweltfreundliche Materialien, um unseren ökologischen Fußabdruck zu minimieren. So gestalten wir nicht nur die Zukunft unserer Branche, sondern auch eine lebenswerte Welt für kommende Generationen."
+            }
+        },
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Wertschätzung der Mitarbeiter",
+                "text": "Unsere Mitarbeiter sind das Herzstück unseres Unternehmens. Wir fördern eine Kultur der Offenheit und des gegenseitigen Respekts, in der jede Meinung zählt. Durch flache Hierarchien und eine unterstützende Arbeitsatmosphäre ermöglichen wir unseren Teams, ihr volles Potenzial zu entfalten – denn der Erfolg unseres Unternehmens ist der Erfolg jedes Einzelnen. ",
+                "image": "/images/content/about-us/blocks/5/value/image.jpg",
+                "icons": [],
+                "links": []
+            }
+        },
+        {
+            "discriminant": "textText",
+            "value": {
+                "titleLeft": "Ausbildung und Weiterentwicklung",
+                "textLeft": "Wir investieren in die Zukunft und fördern junge Talente. Durch gezielte Ausbildung und kontinuierliche Weiterbildung schaffen wir die Grundlage für eine erfolgreiche berufliche Laufbahn und bieten unseren Mitarbeitern die Möglichkeit, sich in einem dynamischen Umfeld weiterzuentwickeln.",
+                "titleRight": "Unser Versprechen",
+                "textRight": "Wir handeln stets fair, transparent und verantwortungsbewusst. Unser Fokus liegt auf nachhaltigem Wachstum und der Zufriedenheit unserer Kunden, Lieferanten und Mitarbeiter. Mit einem klaren Bewusstsein für Qualität, Innovation und Verantwortung möchten wir aktiv die Zukunft der Schaltanlagen gestalten und unseren Beitrag zu einer sicheren und nachhaltigen Welt leisten."
+            }
+        },
+        {
+            "discriminant": "values",
+            "value": {
+                "items": [
+                    {
+                        "title": "Qualität",
+                        "description": "Unsere internen Standards übertreffen oft die gesetzlichen Normen. Jede Anlage wird auf Herz und Nieren geprüft.",
+                        "icon": "shield"
+                    },
+                    {
+                        "title": "Innovation",
+                        "description": "Wir integrieren neuste Technologien wie IoT und Smart Metering direkt in unsere Anlagenkonzepte.",
+                        "icon": "zap"
+                    },
+                    {
+                        "title": "Partnerschaft",
+                        "description": "Wir begleiten Sie von der ersten Idee über die Planung bis zur Inbetriebnahme und darüber hinaus.",
+                        "icon": "users"
+                    },
+                    {
+                        "title": "Verlässlichkeit",
+                        "description": "Termintreue und Kostentransparenz sind die Basis einer vertrauensvollen Zusammenarbeit.",
+                        "icon": "flag"
+                    }
+                ]
+            }
+        },
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Bereit für Ihr Projekt?",
+                "subheadline": "Kontaktieren Sie uns",
+                "text": "Ob komplexe Industriesteuerung oder massgeschneiderte Energieverteilung – unser erfahrenes Team steht Ihnen mit Rat und Tat zur Seite. Wir freuen uns auf Ihre Anfrage.",
+                "icons": [],
+                "links": [
+                    {
+                        "label": "Kontakt aufnehmen",
+                        "url": "/contact"
+                    },
+                    {
+                        "label": "Unsere Dienstleistungen",
+                        "url": "/dienstleistungen"
+                    }
+                ]
+            }
+        }
+    ]
 }

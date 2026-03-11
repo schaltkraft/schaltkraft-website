@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function TextImageBlock({ title, text, image, imagePosition }: any) {
   const isLeft = imagePosition === 'left';
 
@@ -19,9 +21,11 @@ export function TextImageBlock({ title, text, image, imagePosition }: any) {
 
           <div className={isLeft ? 'md:order-1' : ''}>
             {image && (
-              <img
+              <Image
                 src={image}
                 alt={title || 'Bild'}
+                width={800}
+                height={600}
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             )}

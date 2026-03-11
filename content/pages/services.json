@@ -1,61 +1,61 @@
 {
-  "title": "services",
-  "seoTitle": "Dienstleistungen - Schaltkraft AG | Komplettlösungen für Schaltanlagen",
-  "seoDescription": "Von der Planung bis zum Service: Wir bieten umfassende Dienstleistungen im Bereich Schaltanlagenbau, Engineering und Automation.",
-  "isHomepage": false,
-  "blocks": [
-    {
-      "discriminant": "hero",
-      "value": {
-        "headline": "Unsere Dienstleistungen",
-        "subheadline": "Komplettlösungen für Ihre Schaltanlage.",
-        "ctaPrimary": {
-          "text": "Projekt anfragen",
-          "url": "/kontakt"
+    "title": "services",
+    "seoTitle": "Dienstleistungen – Schaltkraft AG | Schaltanlagen Schweiz",
+    "seoDescription": "Von Planung über Schaltanlagenbau bis zu Montage und Wartung – Schaltkraft AG bietet massgeschneiderte Komplettlösungen aus einer Hand.",
+    "isHomepage": false,
+    "blocks": [
+        {
+            "discriminant": "hero",
+            "value": {
+                "headline": "Unsere Dienstleistungen",
+                "subheadline": "Komplettlösungen für Ihre Schaltanlage.",
+                "ctaPrimary": {
+                    "text": "Projekt anfragen",
+                    "url": "/kontakt"
+                },
+                "ctaSecondary": {
+                    "text": "Mehr erfahren",
+                    "url": "#overview"
+                },
+                "image": "/images/hero/services/blocks/0/value/image.jpeg"
+            }
         },
-        "ctaSecondary": {
-          "text": "Mehr erfahren",
-          "url": "#overview"
+        {
+            "discriminant": "intro",
+            "value": {
+                "headline": "Unsere Kompetenzen",
+                "subheadline": "Ihr Partner für Schaltanlagen",
+                "text": "Als führender Anbieter für Schaltanlagen bieten wir Ihnen ein breites Spektrum an technischer Expertise und Branchen-Know-how. Von der ersten Beratung bis zur finalen Inbetriebnahme stehen wir Ihnen als kompetenter Partner zur Seite.",
+                "icons": [],
+                "links": []
+            }
         },
-        "image": "/images/hero/services/blocks/0/value/image.jpeg"
-      }
-    },
-    {
-      "discriminant": "intro",
-      "value": {
-        "headline": "Unsere Kompetenzen",
-        "subheadline": "Ihr Partner für Schaltanlagen",
-        "text": "Als führender Anbieter für Schaltanlagen bieten wir Ihnen ein breites Spektrum an technischer Expertise und Branchen-Know-how. Von der ersten Beratung bis zur finalen Inbetriebnahme stehen wir Ihnen als kompetenter Partner zur Seite.",
-        "icons": [],
-        "links": []
-      }
-    },
-    {
-      "discriminant": "values",
-      "value": {
-        "items": [
-          {
-            "title": "Schweizer Qualität",
-            "description": "Präzision und Zuverlässigkeit in jeder Anlage.",
-            "icon": "flag"
-          },
-          {
-            "title": "Normgerecht",
-            "description": "Konformität nach EN 61439 und NIV.",
-            "icon": "shield"
-          },
-          {
-            "title": "Erfahrenes Team",
-            "description": "Jahrelange Expertise im Verteilerbau.",
-            "icon": "users"
-          },
-          {
-            "title": "Schnelle Reaktion",
-            "description": "Kurze Wege und persönliche Ansprechpartner.",
-            "icon": "zap"
-          }
-        ]
-      }
-    }
-  ]
+        {
+            "discriminant": "values",
+            "value": {
+                "items": [
+                    {
+                        "title": "Schweizer Qualität",
+                        "description": "Präzision und Zuverlässigkeit in jeder Anlage.",
+                        "icon": "flag"
+                    },
+                    {
+                        "title": "Normgerecht",
+                        "description": "Konformität nach EN 61439 und NIV.",
+                        "icon": "shield"
+                    },
+                    {
+                        "title": "Erfahrenes Team",
+                        "description": "Jahrelange Expertise im Verteilerbau.",
+                        "icon": "users"
+                    },
+                    {
+                        "title": "Schnelle Reaktion",
+                        "description": "Kurze Wege und persönliche Ansprechpartner.",
+                        "icon": "zap"
+                    }
+                ]
+            }
+        }
+    ]
 }
