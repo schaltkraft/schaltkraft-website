@@ -1,80 +1,79 @@
 {
-    "title": "jobs",
-    "seoTitle": "Jobs & Karriere | Schaltkraft AG",
-    "seoDescription": "Werden Sie Teil unseres Teams. Offene Stellen als Elektriker und im Anlagenbau bei Schaltkraft AG.",
-    "isHomepage": false,
-    "blocks": [
-        {
-            "discriminant": "hero",
-            "value": {
-                "headline": "Karriere bei Schaltkraft",
-                "subheadline": "Gestalten Sie mit uns die Energiezukunft. Wir suchen Talente, die anpacken und Präzision lieben.",
-                "image": "/images/hero/jobs/blocks/0/value/jobs-hero.jpg"
-            }
-        },
-        {
-            "discriminant": "jobPerksGallery",
-            "value": {
-                "headline": "Das erwartet Sie bei uns",
-                "images": [
-                    {
-                        "image": "/images/jobs/jobs/blocks/1/value/images/0/image/jobs-01.webp",
-                        "alt": "Mitarbeiter bei der Arbeit im Schaltschrankbau"
-                    },
-                    {
-                        "image": "/images/jobs/jobs/blocks/1/value/images/1/image/jobs-02.webp",
-                        "alt": "Detailarbeit an einer Elektroverteilung"
-                    },
-                    {
-                        "image": "/images/jobs/jobs/blocks/1/value/images/2/image/jobs-03.webp",
-                        "alt": "Teamwork in der Werkstatt der Schaltkraft AG"
-                    }
-                ],
-                "perks": [
-                    {
-                        "title": "40",
-                        "subtitle": "Stunden Woche"
-                    },
-                    {
-                        "title": "5",
-                        "subtitle": "Wochen Ferien"
-                    }
-                ]
-            }
-        },
-        {
-            "discriminant": "jobList",
-            "value": {
-                "headline": "Offene Stellen",
-                "intro": "Wir wachsen weiter und suchen Verstärkung für unser Team in der Ostschweiz."
-            }
-        },
-        {
-            "discriminant": "values",
-            "value": {
-                "items": [
-                    {
-                        "title": "Weiterbildung",
-                        "description": "Wir investieren in Ihre Zukunft: Gezielte Schulungen, Zertifizierungen und Karriereentwicklung sind bei uns selbstverständlich.",
-                        "icon": "graduationcap"
-                    },
-                    {
-                        "title": "Modernes Werkzeug",
-                        "description": "Arbeiten Sie mit topmoderner Ausrüstung, hochwertigen Werkzeugen und bestens ausgestatteten Firmenfahrzeugen.",
-                        "icon": "wrench"
-                    },
-                    {
-                        "title": "Teamspirit",
-                        "description": "Ein kollegiales Umfeld mit flachen Hierarchien, regelmässige Teamevents und ein Chef, der zuhört.",
-                        "icon": "heart"
-                    },
-                    {
-                        "title": "Sichere Zukunft",
-                        "description": "Zukunftssichere Branche, faire Löhne, 5 Wochen Ferien und attraktive Sozialleistungen für Ihre Sicherheit.",
-                        "icon": "shield"
-                    }
-                ]
-            }
-        }
-    ]
+  "title": "jobs",
+  "seoTitle": "Jobs & Karriere | Schaltkraft AG",
+  "seoDescription": "Werden Sie Teil unseres Teams. Offene Stellen als Elektriker und im Anlagenbau bei Schaltkraft AG.",
+  "isHomepage": false,
+  "blocks": [
+    {
+      "discriminant": "hero",
+      "value": {
+        "headline": "Karriere bei Schaltkraft",
+        "subheadline": "Gestalten Sie mit uns die Energiezukunft. Wir suchen Talente, die anpacken und Präzision lieben.",
+        "ctaPrimary": {},
+        "ctaSecondary": {},
+        "image": "/images/hero/jobs/blocks/0/value/image.jpg"
+      }
+    },
+    {
+      "discriminant": "jobPerksGallery",
+      "value": {
+        "headline": "Das erwartet Sie bei uns",
+        "images": [
+          {
+            "alt": "Mitarbeiter bei der Arbeit im Schaltschrankbau"
+          },
+          {
+            "alt": "Detailarbeit an einer Elektroverteilung"
+          },
+          {
+            "alt": "Teamwork in der Werkstatt der Schaltkraft AG"
+          }
+        ],
+        "perks": [
+          {
+            "title": "40",
+            "subtitle": "Stunden Woche"
+          },
+          {
+            "title": "5",
+            "subtitle": "Wochen Ferien"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "values",
+      "value": {
+        "items": [
+          {
+            "title": "Weiterbildung",
+            "description": "Wir investieren in Ihre Zukunft: Gezielte Schulungen, Zertifizierungen und Karriereentwicklung sind bei uns selbstverständlich.",
+            "icon": "graduationcap"
+          },
+          {
+            "title": "Modernes Werkzeug",
+            "description": "Arbeiten Sie mit topmoderner Ausrüstung, hochwertigen Werkzeugen und bestens ausgestatteten Firmenfahrzeugen.",
+            "icon": "wrench"
+          },
+          {
+            "title": "Teamspirit",
+            "description": "Ein kollegiales Umfeld mit flachen Hierarchien, regelmässige Teamevents und ein Chef, der zuhört.",
+            "icon": "heart"
+          },
+          {
+            "title": "Sichere Zukunft",
+            "description": "Zukunftssichere Branche, faire Löhne, 5 Wochen Ferien und attraktive Sozialleistungen für Ihre Sicherheit.",
+            "icon": "shield"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "jobList",
+      "value": {
+        "headline": "Offene Stellen",
+        "intro": "Wir wachsen weiter und suchen Verstärkung für unser Team in der Ostschweiz."
+      }
+    }
+  ]
 }
