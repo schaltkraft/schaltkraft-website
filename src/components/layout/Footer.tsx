@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { PageContainer } from '@/components/layout/PageContainer';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
 
@@ -152,7 +152,7 @@ export function Footer({ data }: FooterProps) {
 
         {/* Bottom Bar */}
         <motion.div
-          className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-500"
+          className="pt-8 pb-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-500"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -163,6 +163,11 @@ export function Footer({ data }: FooterProps) {
             <span>Swiss Made Quality</span>
           </div>
         </motion.div>
+
+        {/* Agency Credit */}
+        <div className="flex justify-center items-center gap-1.5 text-xs text-zinc-500 pb-2">
+          Mit <Heart className="w-3.5 h-3.5 text-zinc-600 fill-zinc-600" /> erstellt von Infraone IT Solutions – IT & Weblösungen
+        </div>
       </PageContainer>
     </footer>
   );
