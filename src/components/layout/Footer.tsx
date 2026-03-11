@@ -152,22 +152,27 @@ export function Footer({ data }: FooterProps) {
 
         {/* Bottom Bar */}
         <motion.div
-          className="pt-8 pb-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-500"
+          className="pt-8 pb-6 border-t border-white/5 grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-xs text-zinc-500 text-center md:text-left"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
         >
-          <p>{data?.copyright || `© ${currentYear} All rights reserved, Schaltkraft AG`}</p>
-          <div className="flex gap-4">
+          {/* Copyright - Left on Desktop */}
+          <div>
+            {data?.copyright || `© ${currentYear} All rights reserved, Schaltkraft AG`}
+          </div>
+
+          {/* Agency Credit - Center */}
+          <div className="flex justify-center items-center gap-1.5">
+            Mit <Heart className="w-3.5 h-3.5 text-zinc-600 fill-zinc-600 shrink-0" /> erstellt von <a href="https://infraone.ch/webdesign" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300">Infraone IT Solutions – IT & Weblösungen</a>
+          </div>
+
+          {/* Swiss Made - Right on Desktop */}
+          <div className="flex justify-center md:justify-end gap-4">
             <span>Swiss Made Quality</span>
           </div>
         </motion.div>
-
-        {/* Agency Credit */}
-        <div className="flex justify-center items-center gap-1.5 text-xs text-zinc-500 pb-2">
-          Mit <Heart className="w-3.5 h-3.5 text-zinc-600 fill-zinc-600" /> erstellt von Infraone IT Solutions – IT & Weblösungen
-        </div>
       </PageContainer>
     </footer>
   );

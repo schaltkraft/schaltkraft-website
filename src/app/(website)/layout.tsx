@@ -2,6 +2,7 @@ import { getHeader, getFooter } from '@/lib/cms-server';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { StructuredData } from '@/components/seo/StructuredData';
+import { CookieBanner } from '@/components/features/CookieBanner';
 import '@/app/globals.css';
 import { inter, montserrat, oswald, archivoBlack } from '@/lib/fonts';
 import { SplashScreen } from '@/components/layout/SplashScreen';
@@ -87,6 +88,7 @@ export default async function WebsiteLayout({
                 <Header data={header} />
                 <main className="flex-grow">{children}</main>
                 <Footer data={footer} />
+                <CookieBanner />
             </body>
         </html>
     );
