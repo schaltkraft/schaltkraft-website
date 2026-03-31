@@ -25,5 +25,15 @@
     "email": "info@schaltkraft.ch",
     "phone": "071 521 77 77"
   },
-  "copyright": "© 2025 Schaltkraft AG. Alle Rechte vorbehalten."
+  "copyright": "© 2025 Schaltkraft AG. Alle Rechte vorbehalten.",
+  "openingHours": [
+    {
+      "days": "Mo - Do",
+      "times": "07:30 - 17:00"
+    },
+    {
+      "days": "Fr",
+      "times": "07:30 - 16:00"
+    }
+  ]
 }

@@ -1,4 +1,51 @@
-export function StructuredData() {
+import { getOpeningHours } from '@/lib/cms-server';
+
+// Map German day abbreviations to Schema.org day names
+function mapDaysToSchemaOrg(days: string): string[] {
+    const dayMap: Record<string, string> = {
+        'mo': 'Monday', 'di': 'Tuesday', 'mi': 'Wednesday',
+        'do': 'Thursday', 'fr': 'Friday', 'sa': 'Saturday', 'so': 'Sunday',
+    };
+    const normalized = days.toLowerCase().replace(/\s/g, '');
+    // Handle ranges like "mo-do" or "mo-fr"
+    const rangeMatch = normalized.match(/^(\w{2})\s*[-–]\s*(\w{2})$/);
+    if (rangeMatch) {
+        const orderedDays = ['mo', 'di', 'mi', 'do', 'fr', 'sa', 'so'];
+        const startIdx = orderedDays.indexOf(rangeMatch[1]);
+        const endIdx = orderedDays.indexOf(rangeMatch[2]);
+        if (startIdx !== -1 && endIdx !== -1 && startIdx <= endIdx) {
+            return orderedDays.slice(startIdx, endIdx + 1).map(d => dayMap[d]).filter(Boolean);
+        }
+    }
+    // Single day
+    const singleDay = dayMap[normalized];
+    if (singleDay) return [singleDay];
+    return [];
+}
+
+function parseTimesForSchema(times: string): { opens: string; closes: string } | null {
+    const match = times.match(/(\d{1,2}[:.]\d{2})\s*[-–]\s*(\d{1,2}[:.]\d{2})/);
+    if (!match) return null;
+    return { opens: match[1].replace('.', ':'), closes: match[2].replace('.', ':') };
+}
+
+export async function StructuredData() {
+    const openingHours = await getOpeningHours();
+
+    const openingHoursSpecification = openingHours
+        .map(entry => {
+            const schemaOrgDays = mapDaysToSchemaOrg(entry.days);
+            const parsed = parseTimesForSchema(entry.times);
+            if (schemaOrgDays.length === 0 || !parsed) return null;
+            return {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": schemaOrgDays.length === 1 ? schemaOrgDays[0] : schemaOrgDays,
+                "opens": parsed.opens,
+                "closes": parsed.closes,
+            };
+        })
+        .filter(Boolean);
+
     const structuredData = {
         "@context": "https://schema.org",
         "@graph": [
@@ -28,20 +75,7 @@ export function StructuredData() {
                 "email": "info@schaltkraft.ch",
                 "url": "https://schaltkraft.ch",
                 "priceRange": "$$",
-                "openingHoursSpecification": [
-                    {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-                        "opens": "07:30",
-                        "closes": "17:00"
-                    },
-                    {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": "Friday",
-                        "opens": "07:30",
-                        "closes": "16:00"
-                    }
-                ],
+                "openingHoursSpecification": openingHoursSpecification,
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "Mittliszelgstrasse 5",

@@ -140,10 +140,21 @@ export function Footer({ data }: FooterProps) {
               <div className="flex items-start gap-3 text-zinc-300">
                 <Clock className="w-5 h-5 text-brand-orange shrink-0 mt-1" />
                 <div className="grid grid-cols-[min-content_1fr] gap-x-3">
-                  <span className="whitespace-nowrap">Mo - Do:</span>
-                  <span>07:30 - 17:00</span>
-                  <span>Fr:</span>
-                  <span>07:30 - 16:00</span>
+                  {(data?.openingHours && data.openingHours.length > 0) ? (
+                    data.openingHours.map((entry: any, idx: number) => (
+                      <span key={idx} className="contents">
+                        <span className="whitespace-nowrap">{entry.days}:</span>
+                        <span>{entry.times}</span>
+                      </span>
+                    ))
+                  ) : (
+                    <>
+                      <span className="whitespace-nowrap">Mo - Do:</span>
+                      <span>07:30 - 17:00</span>
+                      <span>Fr:</span>
+                      <span>07:30 - 16:00</span>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

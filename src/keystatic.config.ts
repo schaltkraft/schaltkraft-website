@@ -80,6 +80,17 @@ export default config({
           phone: fields.text({ label: 'Telefon' }),
         }),
         copyright: fields.text({ label: 'Copyright', defaultValue: '©2025 All rights reserved, Schaltkraft AG' }),
+        openingHours: fields.array(
+          fields.object({
+            days: fields.text({ label: 'Tage', description: 'z.B. "Mo - Do" oder "Fr"' }),
+            times: fields.text({ label: 'Zeiten', description: 'z.B. "07:30 - 17:00"' }),
+          }),
+          {
+            label: 'Öffnungszeiten',
+            description: 'Wird im Footer, auf der Kontaktseite und im Kontakt-Formular angezeigt.',
+            itemLabel: (props) => `${props.fields.days.value}: ${props.fields.times.value}`,
+          }
+        ),
       },
     }),
 

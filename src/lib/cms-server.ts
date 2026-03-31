@@ -79,6 +79,22 @@ export async function getFooter() {
   }
 }
 
+export async function getOpeningHours() {
+  try {
+    const footer = await reader.singletons.footer.read();
+    return footer?.openingHours || [
+      { days: 'Mo - Do', times: '07:30 - 17:00' },
+      { days: 'Fr', times: '07:30 - 16:00' },
+    ];
+  } catch (e) {
+    console.error("Failed to read opening hours", e);
+    return [
+      { days: 'Mo - Do', times: '07:30 - 17:00' },
+      { days: 'Fr', times: '07:30 - 16:00' },
+    ];
+  }
+}
+
 export async function getPage(slug: string) {
   // Pattern check: Keystatic v0.5+ usually creates collections.
   let page;
