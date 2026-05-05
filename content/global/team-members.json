@@ -28,6 +28,10 @@
     {
       "name": "Dragisa Stijakovic",
       "role": "Projektleiter"
+    },
+    {
+      "name": "Philipp Wolter",
+      "role": "Leiter Technik"
     }
   ],
   "office": [
@@ -57,11 +61,6 @@
       "name": "Eduet Spahiu",
       "role": "Produktion",
       "image": "/images/team/production/3/image.jpeg"
-    },
-    {
-      "name": "Raimond Markaj",
-      "role": "Produktion",
-      "image": "/images/team/production/4/image.jpg"
     }
   ]
 }
