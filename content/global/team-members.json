@@ -27,12 +27,13 @@
     },
     {
       "name": "Dragisa Stijakovic",
-      "role": "Projektleiter"
+      "role": "Projektleiter",
+      "image": "/images/team/management/5/image.png"
     },
     {
       "name": "Philipp Wolter",
       "role": "Leiter Technik",
-      "image": "/images/team/management/6/image.jpg"
+      "image": "/images/team/management/6/image.png"
     }
   ],
   "office": [
