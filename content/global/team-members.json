@@ -3,17 +3,17 @@
     {
       "name": "Albert Sulejmani",
       "role": "Geschäftsführer",
-      "image": "/images/team/management/0/image.jpeg"
+      "image": "/images/team/management/0/image.jpg"
     },
     {
       "name": "Miodrag Dokmic",
       "role": "Teamleiter Aufbau",
-      "image": "/images/team/management/1/image.jpeg"
+      "image": "/images/team/management/1/image.jpg"
     },
     {
       "name": "Alexej Kimmerle",
       "role": "Teamleiter Verdrahten",
-      "image": "/images/team/management/2/image.jpeg"
+      "image": "/images/team/management/2/image.jpg"
     },
     {
       "name": "Riccardo Puleo",
@@ -28,12 +28,12 @@
     {
       "name": "Dragisa Stijakovic",
       "role": "Projektleiter",
-      "image": "/images/team/management/5/image.png"
+      "image": "/images/team/management/5/image.jpg"
     },
     {
       "name": "Philipp Wolter",
       "role": "Leiter Technik",
-      "image": "/images/team/management/6/image.png"
+      "image": "/images/team/management/6/image.jpg"
     }
   ],
   "office": [
@@ -52,7 +52,7 @@
     {
       "name": "Burak Ayri",
       "role": "Produktion / Auslieferung",
-      "image": "/images/team/production/1/image.jpeg"
+      "image": "/images/team/production/1/image.jpg"
     },
     {
       "name": "Edis Alija",
@@ -62,7 +62,7 @@
     {
       "name": "Eduet Spahiu",
       "role": "Produktion",
-      "image": "/images/team/production/3/image.jpeg"
+      "image": "/images/team/production/3/image.jpg"
     }
   ]
 }
