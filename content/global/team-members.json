@@ -37,7 +37,7 @@
     {
       "name": "Edis Alija",
       "role": "Produktion",
-      "image": "/images/team/production/1/image.jpeg"
+      "image": "/images/team/production/1/image.jpg"
     },
     {
       "name": "Eduet Spahiu",
@@ -46,7 +46,8 @@
     },
     {
       "name": "Noel Wüst",
-      "role": "Produktion"
+      "role": "Produktion",
+      "image": "/images/team/production/3/image.jpg"
     },
     {
       "name": "Alexej Kimmerle",
