@@ -63,6 +63,11 @@
       "name": "Riccardo Puleo",
       "role": "Produktion",
       "image": "/images/team/production/6/image.jpg"
+    },
+    {
+      "name": "Michel Fischer",
+      "role": "Auslieferung",
+      "image": "/images/team/production/7/image.jpg"
     }
   ]
 }
