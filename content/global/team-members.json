@@ -6,17 +6,17 @@
       "image": "/images/team/management/0/image.jpg"
     },
     {
-      "name": "Vladislav Stenke",
-      "role": "Projektleiter",
+      "name": "Dragisa Stijakovic",
+      "role": "Produktionsleiter",
       "image": "/images/team/management/1/image.jpg"
     },
     {
-      "name": "Dragisa Stijakovic",
-      "role": "Produktionsleiter",
+      "name": "Philipp Wolter",
+      "role": "Projektleiter",
       "image": "/images/team/management/2/image.jpg"
     },
     {
-      "name": "Philipp Wolter",
+      "name": "Vladislav Stenke",
       "role": "Projektleiter",
       "image": "/images/team/management/3/image.jpg"
     }
@@ -30,28 +30,28 @@
   ],
   "production": [
     {
-      "name": "Burak Ayri",
+      "name": "Alexej Kimmerle",
       "role": "Produktion",
       "image": "/images/team/production/0/image.jpg"
     },
     {
-      "name": "Edis Alija",
+      "name": "Burak Ayri",
       "role": "Produktion",
       "image": "/images/team/production/1/image.jpg"
     },
     {
-      "name": "Eduet Spahiu",
+      "name": "Edis Alija",
       "role": "Produktion",
       "image": "/images/team/production/2/image.jpg"
     },
     {
-      "name": "Noel Wüst",
+      "name": "Eduet Spahiu",
       "role": "Produktion",
       "image": "/images/team/production/3/image.jpg"
     },
     {
-      "name": "Alexej Kimmerle",
-      "role": "Produktion",
+      "name": "Michel Fischer",
+      "role": "Auslieferung",
       "image": "/images/team/production/4/image.jpg"
     },
     {
@@ -60,13 +60,13 @@
       "image": "/images/team/production/5/image.jpg"
     },
     {
-      "name": "Riccardo Puleo",
+      "name": "Noel Wüst",
       "role": "Produktion",
       "image": "/images/team/production/6/image.jpg"
     },
     {
-      "name": "Michel Fischer",
-      "role": "Auslieferung",
+      "name": "Riccardo Puleo",
+      "role": "Produktion",
       "image": "/images/team/production/7/image.jpg"
     }
   ]
